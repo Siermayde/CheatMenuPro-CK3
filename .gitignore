@@ -1,0 +1,8 @@
+# Temp and scratch files
+scratch_view_*.txt
+*.py
+*.ps1
+.idea/
+.vscode/
+.gemini/
+*.log

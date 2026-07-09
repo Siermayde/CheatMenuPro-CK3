@@ -1,0 +1,2 @@
+gui/sakuya_main_launcher_button.gui = sakuya_guiname_main_launcher_button_window
+gui/sakuya_main_window.gui = sakuya_guiname_main_window

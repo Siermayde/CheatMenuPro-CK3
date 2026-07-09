@@ -1,0 +1,67 @@
+sakuya_mark_character_interaction = {
+	interface_priority = 300
+	category = interaction_debug_main
+	use_diplomatic_range = no
+	ignores_pending_interaction_block = yes
+	common_interaction = yes
+
+	is_shown = {
+		scope:actor = {
+			is_ai = no
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				exists = global_var:sakuya_marked_character
+			}
+			global_var:sakuya_marked_character = {
+				remove_character_flag = sakuya_marked_character
+			}
+		}
+
+		scope:recipient = {
+			add_character_flag = sakuya_marked_character
+			set_global_variable = {
+				name = sakuya_marked_character
+				value = this
+			}
+			if = {
+				limit = { exists = primary_spouse }
+				primary_spouse = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = { exists = diarch }
+				diarch = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = { exists = player_heir }
+				player_heir = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else = {
+				set_global_variable = {
+					name = sakuya_p2_character
+					value = this
+				}
+			}
+		}
+	}
+
+	auto_accept = yes
+}

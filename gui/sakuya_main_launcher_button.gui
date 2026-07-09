@@ -1,0 +1,39 @@
+######################################################
+# CK3 CMP - Launcher Button
+######################################################
+
+window = {
+	name = "sakuya_guiname_main_launcher_button_window"
+	parentanchor = top|left
+	position = { 10 92 }
+	size = { 64 64 }
+	layer = windows_layer
+	allow_outside = yes
+
+	button = {
+		name = "sakuya_guiname_main_launcher_button"
+		size = { 64 64 }
+		onclick = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+		onclick = "[GetVariableSystem.Toggle('sakuya_main_visible')]"
+		onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+		tooltip = "sakuya_button_open_tt"
+
+		icon = {
+			size = { 64 64 }
+			texture = "gfx/interface/sakuya/sakuya_powerbutton.dds"
+			visible = "[Not(GetVariableSystem.Exists('sakuya_main_visible'))]"
+		}
+		icon = {
+			parentanchor = center
+			size = { 120 120 }
+			texture = "gfx/interface/sakuya/sakuya_light.dds"
+			alpha = 0.65
+			visible = "[GetVariableSystem.Exists('sakuya_main_visible')]"
+		}
+		icon = {
+			size = { 64 64 }
+			texture = "gfx/interface/sakuya/sakuya_powerbutton_on.dds"
+			visible = "[GetVariableSystem.Exists('sakuya_main_visible')]"
+		}
+	}
+}

@@ -1,0 +1,81 @@
+sakuya_refresh_p2_character_gui = {
+	scope = character
+
+	effect = {
+		if = {
+			limit = {
+				exists = global_var:sakuya_marked_character
+			}
+			global_var:sakuya_marked_character = {
+				if = {
+					limit = { exists = primary_spouse }
+					primary_spouse = {
+						set_global_variable = {
+							name = sakuya_p2_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = { exists = diarch }
+					diarch = {
+						set_global_variable = {
+							name = sakuya_p2_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = { exists = player_heir }
+					player_heir = {
+						set_global_variable = {
+							name = sakuya_p2_character
+							value = this
+						}
+					}
+				}
+				else = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = { exists = primary_spouse }
+				primary_spouse = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = { exists = diarch }
+				diarch = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = { exists = player_heir }
+				player_heir = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else = {
+				set_global_variable = {
+					name = sakuya_p2_character
+					value = this
+				}
+			}
+		}
+	}
+}
