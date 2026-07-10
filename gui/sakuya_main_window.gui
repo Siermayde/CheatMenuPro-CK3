@@ -1233,17 +1233,22 @@ window = {
 							parentanchor = center
 							widgetanchor = center
 							size = { 1138 570 }
-							texture = "gfx/interface/illustrations/event_scenes/ep3_constantinople.dds"
+							texture = "gfx/interface/illustrations/event_scenes/feast.dds"
 							color = { 1 1 1 1 }
 						}
+					}
 
 
 
-						# VFX Layer: standard alpha structure
+						# VFX Layer 1: original animated Fog shader
 						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow"
 							size = { 354 570 }
 							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+							gfxtype = icongfx
+							effectname = "Fog"
+							shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+							mipmaplodbias = -1
 							color = { 0.82 0.88 0.96 0.41 }
 							parentanchor = center
 							alpha = 0
@@ -1252,7 +1257,7 @@ window = {
 							state = {
 								name = show_hover
 								duration = 0.5
-								alpha = 0.5
+								alpha = 0.33
 								bezier = { 0 0 1 1 }
 							}
 
@@ -1274,12 +1279,12 @@ window = {
 							alpha = 0
 							alwaystransparent = yes
 
-							state = {
-								name = show_hover
-								duration = 0.5
-								alpha = 0.5
-								bezier = { 0 0 1 1 }
-							}
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.33
+							bezier = { 0 0 1 1 }
+						}
 
 							state = {
 								name = hide_hover
@@ -1290,11 +1295,15 @@ window = {
 							}
 					}
 
+						# VFX Layer 2: original animated HeavySmoke shader and particle entity
 						icon = {
 							name = "sakuya_guiname_main_p3_heavy_smoke"
 							size = { 354 570 }
-							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
-							color = { 0.82 0.88 0.96 0.41 }
+							texture = "gfx/interface/window_vfx/noise_01.dds"
+							gfxtype = icongfx
+							effectname = "HeavySmoke"
+							shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+							mipmaplodbias = -1
 							parentanchor = center
 							alpha = 0
 							alwaystransparent = yes
@@ -1302,7 +1311,7 @@ window = {
 							state = {
 								name = show_hover
 								duration = 0.5
-								alpha = 0.7
+								alpha = 0.8
 								bezier = { 0 0 1 1 }
 							}
 
@@ -1312,8 +1321,13 @@ window = {
 								alpha = 0
 								bezier = { 0 0 1 1 }
 							}
+
+							activity_locale_vfx = {
+								size = { 100% 100% }
+								position = { 0.0% 0.0% }
+								entity_instance = "ui_heavy_smoke"
+							}
 						}
-					}
 
 					widget = {
 						name = "sakuya_guiname_main_p3_dynasty_dim"
