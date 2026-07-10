@@ -494,6 +494,12 @@ window = {
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
+
+					icon = {
+						size = { 362 588 }
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						color = { 1 1 1 1 }
+					}
 				}
 
 				textbox = {
@@ -1120,6 +1126,12 @@ window = {
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
+
+					icon = {
+						size = { 362 588 }
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						color = { 1 1 1 1 }
+					}
 				}
 
 				textbox = {
@@ -1559,6 +1571,12 @@ window = {
 						duration = 0.33
 						alpha = 0
 						bezier = { 0 0 1 1 }
+					}
+
+					icon = {
+						size = { 362 588 }
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						color = { 1 1 1 1 }
 					}
 
 					icon = {
