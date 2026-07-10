@@ -14,6 +14,7 @@ window = {
 		name = "sakuya_guiname_main_launcher_button"
 		size = { 64 64 }
 		onclick = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+		onclick = "[GetScriptedGui('sakuya_refresh_p3_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 		onclick = "[GetVariableSystem.Toggle('sakuya_main_visible')]"
 		onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 		tooltip = "sakuya_button_open_tt"

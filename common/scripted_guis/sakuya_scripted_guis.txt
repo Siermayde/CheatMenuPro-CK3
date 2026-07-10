@@ -8,7 +8,10 @@ sakuya_refresh_p2_character_gui = {
 			}
 			global_var:sakuya_marked_character = {
 				if = {
-					limit = { exists = primary_spouse }
+					limit = {
+						exists = primary_spouse
+						primary_spouse = { is_alive = yes }
+					}
 					primary_spouse = {
 						set_global_variable = {
 							name = sakuya_p2_character
@@ -17,7 +20,10 @@ sakuya_refresh_p2_character_gui = {
 					}
 				}
 				else_if = {
-					limit = { exists = diarch }
+					limit = {
+						exists = diarch
+						diarch = { is_alive = yes }
+					}
 					diarch = {
 						set_global_variable = {
 							name = sakuya_p2_character
@@ -26,8 +32,47 @@ sakuya_refresh_p2_character_gui = {
 					}
 				}
 				else_if = {
-					limit = { exists = player_heir }
+					limit = {
+						exists = player_heir
+						player_heir = { is_alive = yes }
+					}
 					player_heir = {
+						set_global_variable = {
+							name = sakuya_p2_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = liege
+						liege = { is_alive = yes }
+					}
+					liege = {
+						set_global_variable = {
+							name = sakuya_p2_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = father
+						father = { is_alive = yes }
+					}
+					father = {
+						set_global_variable = {
+							name = sakuya_p2_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = mother
+						mother = { is_alive = yes }
+					}
+					mother = {
 						set_global_variable = {
 							name = sakuya_p2_character
 							value = this
@@ -44,7 +89,10 @@ sakuya_refresh_p2_character_gui = {
 		}
 		else = {
 			if = {
-				limit = { exists = primary_spouse }
+				limit = {
+					exists = primary_spouse
+					primary_spouse = { is_alive = yes }
+				}
 				primary_spouse = {
 					set_global_variable = {
 						name = sakuya_p2_character
@@ -53,7 +101,10 @@ sakuya_refresh_p2_character_gui = {
 				}
 			}
 			else_if = {
-				limit = { exists = diarch }
+				limit = {
+					exists = diarch
+					diarch = { is_alive = yes }
+				}
 				diarch = {
 					set_global_variable = {
 						name = sakuya_p2_character
@@ -62,8 +113,47 @@ sakuya_refresh_p2_character_gui = {
 				}
 			}
 			else_if = {
-				limit = { exists = player_heir }
+				limit = {
+					exists = player_heir
+					player_heir = { is_alive = yes }
+				}
 				player_heir = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = liege
+					liege = { is_alive = yes }
+				}
+				liege = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father
+					father = { is_alive = yes }
+				}
+				father = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = mother
+					mother = { is_alive = yes }
+				}
+				mother = {
 					set_global_variable = {
 						name = sakuya_p2_character
 						value = this
@@ -73,6 +163,183 @@ sakuya_refresh_p2_character_gui = {
 			else = {
 				set_global_variable = {
 					name = sakuya_p2_character
+					value = this
+				}
+			}
+		}
+	}
+}
+
+sakuya_refresh_p3_character_gui = {
+	scope = character
+
+	effect = {
+		if = {
+			limit = {
+				exists = global_var:sakuya_p3_character
+				global_var:sakuya_p3_character = { is_alive = no }
+			}
+			set_global_variable = {
+				name = sakuya_p3_character
+				value = this
+			}
+		}
+
+		if = {
+			limit = {
+				exists = global_var:sakuya_marked_character
+			}
+			global_var:sakuya_marked_character = {
+				if = {
+					limit = {
+						is_lowborn = yes
+					}
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+				else_if = {
+					limit = {
+						exists = house.house_head
+						house.house_head = { is_alive = yes }
+						house.house_head != this
+						house.house_head != root
+					}
+					house.house_head = {
+						set_global_variable = {
+							name = sakuya_p3_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = dynasty.dynast
+						dynasty.dynast = { is_alive = yes }
+						dynasty.dynast != this
+						dynasty.dynast != root
+					}
+					dynasty.dynast = {
+						set_global_variable = {
+							name = sakuya_p3_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = father
+						father = { is_alive = yes }
+						father != this
+						father != root
+						OR = {
+							NOT = { exists = global_var:sakuya_p2_character }
+							father = { this != global_var:sakuya_p2_character }
+						}
+					}
+					father = {
+						set_global_variable = {
+							name = sakuya_p3_character
+							value = this
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = father.father
+						father.father = { is_alive = yes }
+						father.father != this
+						father.father != root
+					}
+					father.father = {
+						set_global_variable = {
+							name = sakuya_p3_character
+							value = this
+						}
+					}
+				}
+				else = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					is_lowborn = yes
+				}
+				set_global_variable = {
+					name = sakuya_p3_character
+					value = this
+				}
+			}
+			else_if = {
+				limit = {
+					exists = house.house_head
+					house.house_head = { is_alive = yes }
+					house.house_head != this
+					house.house_head != root
+				}
+				house.house_head = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = dynasty.dynast
+					dynasty.dynast = { is_alive = yes }
+					dynasty.dynast != this
+					dynasty.dynast != root
+				}
+				dynasty.dynast = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father
+					father = { is_alive = yes }
+					father != this
+					father != root
+					OR = {
+						NOT = { exists = global_var:sakuya_p2_character }
+						father = { this != global_var:sakuya_p2_character }
+					}
+				}
+				father = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father.father
+					father.father = { is_alive = yes }
+					father.father != this
+					father.father != root
+				}
+				father.father = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else = {
+				set_global_variable = {
+					name = sakuya_p3_character
 					value = this
 				}
 			}

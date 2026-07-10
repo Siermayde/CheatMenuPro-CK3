@@ -28,7 +28,10 @@ sakuya_mark_character_interaction = {
 				value = this
 			}
 			if = {
-				limit = { exists = primary_spouse }
+				limit = {
+					exists = primary_spouse
+					primary_spouse = { is_alive = yes }
+				}
 				primary_spouse = {
 					set_global_variable = {
 						name = sakuya_p2_character
@@ -37,7 +40,10 @@ sakuya_mark_character_interaction = {
 				}
 			}
 			else_if = {
-				limit = { exists = diarch }
+				limit = {
+					exists = diarch
+					diarch = { is_alive = yes }
+				}
 				diarch = {
 					set_global_variable = {
 						name = sakuya_p2_character
@@ -46,8 +52,47 @@ sakuya_mark_character_interaction = {
 				}
 			}
 			else_if = {
-				limit = { exists = player_heir }
+				limit = {
+					exists = player_heir
+					player_heir = { is_alive = yes }
+				}
 				player_heir = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = liege
+					liege = { is_alive = yes }
+				}
+				liege = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father
+					father = { is_alive = yes }
+				}
+				father = {
+					set_global_variable = {
+						name = sakuya_p2_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = mother
+					mother = { is_alive = yes }
+				}
+				mother = {
 					set_global_variable = {
 						name = sakuya_p2_character
 						value = this

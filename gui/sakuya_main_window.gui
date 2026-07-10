@@ -21,7 +21,7 @@ window = {
 	state = { name = _hide alpha = 0 duration = 0.2 using = Animation_Curve_Default }
 
 	widget = {
-		name = "sakuya_guiname_main_root"
+		name = "sakuya_guiname_main_root" 
 		size = { 1280 720 }
 
 		icon = {
@@ -105,7 +105,10 @@ window = {
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_shine').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -115,7 +118,10 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_shine').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				tooltip = "sakuya_main_p1_character_tt"
 
 				widget = {
@@ -181,6 +187,118 @@ window = {
 						}
 					}
 
+					# VFX Layer 1: soft indoor window light
+					icon = {
+						name = "sakuya_guiname_main_p1_vfx_sunlight"
+						size = { 420 570 }
+						texture = "gfx/particles/window_sunlight_01.dds"
+						color = { 1.00 0.90 0.74 0.14 }
+						parentanchor = center
+						position = { -34 0 }
+						alpha = 0
+						alwaystransparent = yes
+
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.42
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.5
+							alpha = 0
+							bezier = { 0 0 1 1 }
+						}
+					}
+
+					# VFX Layer 2: low warm ambient glow
+					icon = {
+						name = "sakuya_guiname_main_p1_vfx_glow"
+						size = { 354 570 }
+						texture = "gfx/interface/component_masks/mask_glow.dds"
+						color = { 1.00 0.78 0.48 0.10 }
+						parentanchor = center
+						alpha = 0
+						alwaystransparent = yes
+
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.36
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.5
+							alpha = 0
+							bezier = { 0 0 1 1 }
+						}
+					}
+
+					# VFX Layer 3: soft window pattern for the indoor scene
+					icon = {
+						name = "sakuya_guiname_main_p1_vfx_window_cookie"
+						size = { 254 360 }
+						texture = "gfx/particles/window_cookie_02.dds"
+						color = { 1.00 0.88 0.68 0.16 }
+						parentanchor = center
+						widgetanchor = center
+						position = { 60 -70 }
+						alpha = 0
+						alwaystransparent = yes
+
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.55
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.5
+							alpha = 0
+							bezier = { 0 0 1 1 }
+						}
+					}
+
+					# VFX Layer: Earthquake foreground shader (hover visible, alpha 0.77)
+					icon = {
+						name = "sakuya_guiname_main_p1_vfx_earthquake"
+						size = { 354 570 }
+						texture = "gfx/interface/window_vfx/noise_01.dds"
+						gfxtype = icongfx
+						effectname = "Earthquake"
+						shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+						mipmaplodbias = -1
+						parentanchor = center
+						alpha = 0
+						alwaystransparent = yes
+
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.76
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.5
+							alpha = 0
+							bezier = { 0 0 1 1 }
+						}
+
+						activity_locale_vfx = {
+							size = { 100% 100% }
+							position = { 0.0% 0.0% }
+							entity_instance = "ui_earthquake"
+						}
+					}
+
 					widget = {
 						name = "sakuya_guiname_main_p1_marked_character_portrait_static"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
@@ -188,7 +306,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -208,12 +326,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_event_bp1_hills', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -225,7 +344,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -245,12 +364,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_event_bp1_hills', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -262,7 +382,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -282,12 +402,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_event_bp1_hills', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -299,7 +420,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -319,15 +440,18 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_event_bp1_hills', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
+
+
 
 					widget = {
 						name = "sakuya_guiname_main_p1_character_border_glow"
@@ -356,33 +480,7 @@ window = {
 						}
 					}
 
-					icon = {
-						name = "sakuya_guiname_main_p1_character_shine"
-						size = { 708 570 }
-						texture = "gfx/interface/component_effects/effect_blue_shine.dds"
-						color = { 1.00 0.85 0.50 0.4 }
-						parentanchor = center
-						widgetanchor = center
-						position = { -354 0 }
-						alpha = 0
-						alwaystransparent = yes
-
-						state = {
-							name = show_hover
-							duration = 0.45
-							position = { 354 0 }
-							alpha = 0.7
-							bezier = { 0.25 0.1 0.25 1.0 }
-						}
-
-						state = {
-							name = hide_hover
-							duration = 0.25
-							position = { -354 0 }
-							alpha = 0
-							bezier = { 0.25 0.1 0.25 1.0 }
-						}
-					}
+					# Shine sweep layer removed
 
 				}
 
@@ -408,16 +506,14 @@ window = {
 
 					state = {
 						name = show_hover
-						duration = 0.33
+						duration = 0.5
 						alpha = 1
-						bezier = { 0 0 1 1 }
 					}
 
 					state = {
 						name = hide_hover
-						duration = 0.33
+						duration = 0.5
 						alpha = 0
-						bezier = { 0 0 1 1 }
 					}
 
 					icon = {
@@ -448,6 +544,8 @@ window = {
 				size = { 354 570 }
 				allow_outside = yes
 				alwaystransparent = yes
+				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').TriggerAnimation('hide_hover')]"
+				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow_fade').TriggerAnimation('hide_hover')]"
 				onclick = "[GetVariableSystem.Set('sakuya_tab', 'title')]"
 				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'title')]"
@@ -456,22 +554,21 @@ window = {
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -482,7 +579,7 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				tooltip = "sakuya_main_p2_realm_tt"
 
 				widget = {
@@ -550,31 +647,31 @@ window = {
 						name = "sakuya_guiname_main_p2_marked_title"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
 						visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
-						alpha = 0.75
+						alpha = 0.33
 
 						state = {
 							name = show_hover
 							duration = 0.33
-							alpha = 0.955
+							alpha = 0.85
 							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.75
+							alpha = 0.33
 							bezier = { 0 0 1 1 }
 						}
 
 						widget = {
 							visible = "[Character.GetPrimaryTitle.IsValid]"
 							parentanchor = center
-							position = { 0 -18 }
+							position = { 100 30 }
 							size = { 220 250 }
 							coa_realm_big_crown = {
 								parentanchor = center
 								size = { 220 250 }
-								scale = 1.45
+								scale = 3
 							}
 						}
 					}
@@ -586,19 +683,19 @@ window = {
 						parentanchor = center
 						position = { 0 -18 }
 						size = { 220 250 }
-						alpha = 0.75
+						alpha = 0.33
 
 						state = {
 							name = show_hover
 							duration = 0.33
-							alpha = 0.955
+							alpha = 0.85
 							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.75
+							alpha = 0.33
 							bezier = { 0 0 1 1 }
 						}
 
@@ -609,51 +706,64 @@ window = {
 						}
 					}
 
-					icon = {
+					# GPU VFX Layer (parent alpha fades linearly on hover)
+					widget = {
 						name = "sakuya_guiname_main_p2_title_glow"
-						size = { 320 320 }
-						texture = "gfx/interface/sakuya/sakuya_light.dds"
-						color = { 1.00 0.82 0.48 0.4 }
+						size = { 354 570 }
 						parentanchor = center
-						position = { 0 -50 }
-						alpha = 0.25
+						alpha = 0
 						alwaystransparent = yes
 
 						state = {
-							name = idle_breathe_in
-							trigger_on_create = yes
-							next = idle_breathe_out
-							duration = 2.0
-							alpha = 0.35
-							scale = 1.05
-							bezier = { 0.4 0 0.2 1 }
-						}
-						state = {
-							name = idle_breathe_out
-							next = idle_breathe_in
-							duration = 2.0
-							alpha = 0.2
-							scale = 0.95
-							bezier = { 0.4 0 0.2 1 }
-						}
-
-						state = {
 							name = show_hover
-							duration = 0.3
-							alpha = 0.85
-							scale = 1.3
-							color = { 1.00 0.88 0.55 0.7 }
-							bezier = { 0.25 0.1 0.25 1.0 }
+							duration = 0.5
+							alpha = 1
+							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
-							duration = 0.4
-							alpha = 0.25
-							scale = 1.0
-							color = { 1.00 0.82 0.48 0.4 }
-							bezier = { 0.25 0.1 0.25 1.0 }
-							on_finish = "[PdxGuiWidget.TriggerAnimation('idle_breathe_in')]"
+							trigger_on_create = yes
+							duration = 0.5
+							alpha = 0
+							bezier = { 0 0 1 1 }
+						}
+
+						icon = {
+							size = { 354 570 }
+							texture = "gfx/map/borders/vertical_border_legend.dds"
+							gfxtype = icongfx
+							effectname = "GodRay"
+							shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+							mipmaplodbias = -1
+							color = { 1.00 0.85 0.50 0.65 }
+							alwaystransparent = yes
+						}
+					}
+
+					# Standard Blending Glow Layer (fades linearly over 0.5s)
+					icon = {
+						name = "sakuya_guiname_main_p2_title_glow_fade"
+						size = { 354 570 }
+						texture = "gfx/interface/component_masks/mask_glow.dds"
+						color = { 1.00 0.85 0.50 0.35 }
+						parentanchor = center
+						alpha = 0
+						alwaystransparent = yes
+
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.6
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							trigger_on_create = yes
+							duration = 0.5
+							alpha = 0
+							bezier = { 0 0 1 1 }
 						}
 					}
 
@@ -664,7 +774,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -684,12 +794,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -701,7 +812,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -721,12 +832,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -738,7 +850,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -758,12 +870,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -775,7 +888,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -795,12 +908,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -812,7 +926,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -832,12 +946,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -849,7 +964,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -869,12 +984,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -886,7 +1002,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -906,12 +1022,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -923,7 +1040,7 @@ window = {
 						parentanchor = center
 						widgetanchor = center
 						position = { 0 40 }
-						size = { 322 414 }
+						size = { 308 396 }
 						alpha = 0.8
 						allow_outside = no
 
@@ -943,12 +1060,13 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							size = { 322 414 }
+							scale = 0.88
+							size = { 308 396 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_war_overview', 'camera_body', 'war_attacker', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_council', 'camera_council', 'chancellor', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -1044,24 +1162,37 @@ window = {
 				size = { 354 570 }
 				allow_outside = yes
 				alwaystransparent = yes
+				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow').TriggerAnimation('hide_hover')]"
+				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').TriggerAnimation('hide_hover')]"
+				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_heavy_smoke').TriggerAnimation('hide_hover')]"
 				onclick = "[GetVariableSystem.Set('sakuya_tab', 'dynasty')]"
 				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'dynasty')]"
+				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p3_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_blur_overlay').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_blur_overlay').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				tooltip = "sakuya_main_p3_family_tt"
 
 				widget = {
@@ -1097,30 +1228,109 @@ window = {
 							parentanchor = center
 							widgetanchor = center
 							size = { 1138 570 }
-							texture = "gfx/interface/illustrations/activity_header_backgrounds/activity_adult_education.dds"
+							texture = "gfx/interface/illustrations/event_scenes/ep3_constantinople.dds"
 							color = { 0.76 0.70 0.62 1 }
 						}
 
-						icon = {
-							name = "sakuya_guiname_main_p3_dynasty_blur_overlay"
+
+
+						# GPU VFX Layer (parent alpha fades linearly on hover)
+						widget = {
+							name = "sakuya_guiname_main_p3_dynasty_glow"
+							size = { 354 570 }
 							parentanchor = center
-							widgetanchor = center
-							size = { 1138 570 }
-							texture = "gfx/interface/sakuya/sakuya_background_family_blur.png"
 							alpha = 0
+							alwaystransparent = yes
 
 							state = {
 								name = show_hover
-								duration = 0.33
-								alpha = 1.0
+								duration = 0.5
+								alpha = 0.5
 								bezier = { 0 0 1 1 }
 							}
 
 							state = {
 								name = hide_hover
-								duration = 0.33
+								trigger_on_create = yes
+								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
+							}
+
+							icon = {
+								size = { 354 570 }
+								texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+								gfxtype = icongfx
+								effectname = "Fog"
+								shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+								mipmaplodbias = -1
+								color = { 0.82 0.88 0.96 0.41 }
+								alwaystransparent = yes
+							}
+						}
+
+						# Standard Blending Mist Layer (fades linearly over 0.5s)
+						icon = {
+							name = "sakuya_guiname_main_p3_dynasty_glow_fade"
+							size = { 354 570 }
+							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+							color = { 0.82 0.88 0.96 0.26 }
+							parentanchor = center
+							alpha = 0
+							alwaystransparent = yes
+
+							state = {
+								name = show_hover
+								duration = 0.5
+								alpha = 0.5
+								bezier = { 0 0 1 1 }
+							}
+
+							state = {
+								name = hide_hover
+								trigger_on_create = yes
+								duration = 0.5
+								alpha = 0
+								bezier = { 0 0 1 1 }
+							}
+					}
+
+						widget = {
+							name = "sakuya_guiname_main_p3_heavy_smoke"
+							size = { 354 570 }
+							parentanchor = center
+							alpha = 0
+							alwaystransparent = yes
+
+							state = {
+								name = show_hover
+								duration = 0.5
+								alpha = 0.7
+								bezier = { 0 0 1 1 }
+							}
+
+							state = {
+								name = hide_hover
+								trigger_on_create = yes
+								duration = 0.5
+								alpha = 0
+								bezier = { 0 0 1 1 }
+							}
+
+							icon = {
+								size = { 354 570 }
+								texture = "gfx/interface/window_vfx/noise_01.dds"
+								gfxtype = icongfx
+								effectname = "HeavySmoke"
+								shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+								mipmaplodbias = -1
+								alwaystransparent = yes
+
+								activity_locale_vfx = {
+									size = { 100% 100% }
+									position = { 0.0% 0.0% }
+									entity_instance = "ui_heavy_smoke"
+								}
 							}
 						}
 					}
@@ -1151,61 +1361,136 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p3_marked_dynasty"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[And(GetGlobalVariable('sakuya_marked_character').IsSet, Character.GetHouse.IsValid)]"
+						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, Character.GetHouse.IsValid), Not(GetGlobalVariable('sakuya_p3_character').IsSet))]"
 						parentanchor = center
-						position = { 0 -18 }
+						position = { 0 -160 }
 						size = { 160 160 }
-						alpha = 0.75
+						alpha = 0.6
 
 						state = {
 							name = show_hover
 							duration = 0.33
-							alpha = 1.0
-							scale = 1.15
+							alpha = 0.9
 							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.75
-							scale = 1.0
+							alpha = 0.5
 							bezier = { 0 0 1 1 }
 						}
 
 						coa_house_huge = {
 							datacontext = "[Character.GetHouse]"
 							parentanchor = center
+							scale = 1.9
 						}
 					}
 
 					widget = {
 						name = "sakuya_guiname_main_p3_house_coa"
-						datacontext = "[GetPlayer.GetHouse]"
-						visible = "[And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
+						datacontext = "[GetGlobalVariable('sakuya_p3_character').Char]"
+						visible = "[And(GetGlobalVariable('sakuya_p3_character').IsSet, Character.GetHouse.IsValid)]"
 						parentanchor = center
-						position = { 0 -18 }
+						position = { -80 -160 }
 						size = { 160 160 }
-						alpha = 0.75
+						alpha = 0.6
 
 						state = {
 							name = show_hover
 							duration = 0.33
-							alpha = 1.0
-							scale = 1.15
+							alpha = 0.8
 							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.75
-							scale = 1.0
+							alpha = 0.33
 							bezier = { 0 0 1 1 }
 						}
 
 						coa_house_huge = {
+							datacontext = "[Character.GetHouse]"
 							parentanchor = center
+							scale = 1.9
+						}
+					}
+
+					widget = {
+						name = "sakuya_guiname_main_p3_character_portrait_static"
+						datacontext = "[GetGlobalVariable('sakuya_p3_character').Char]"
+						visible = "[And(GetGlobalVariable('sakuya_p3_character').IsSet, Not(GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')))]"
+						parentanchor = center
+						widgetanchor = center
+						position = { 0 40 }
+						size = { 308 396 }
+						alpha = 0.8
+						allow_outside = no
+
+						state = {
+							name = show_hover
+							duration = 0.33
+							alpha = 1.0
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.33
+							alpha = 0.8
+							bezier = { 0 0 1 1 }
+						}
+
+						portrait_body_large = {
+							parentanchor = bottom|hcenter
+							scale = 0.88
+							size = { 308 396 }
+							blockoverride "status_icons" {}
+							blockoverride "coa" {}
+							blockoverride "opinion_box" {}
+							blockoverride "portrait_texture" {
+								portrait_texture = "[Character.GetPortrait('environment_activity_western_feast', 'camera_event_right', 'drink_goblet', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+							}
+						}
+					}
+
+					widget = {
+						name = "sakuya_guiname_main_p3_character_portrait_animated"
+						datacontext = "[GetGlobalVariable('sakuya_p3_character').Char]"
+						visible = "[And(GetGlobalVariable('sakuya_p3_character').IsSet, GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty'))]"
+						parentanchor = center
+						widgetanchor = center
+						position = { 0 40 }
+						size = { 308 396 }
+						alpha = 0.8
+						allow_outside = no
+
+						state = {
+							name = show_hover
+							duration = 0.33
+							alpha = 1.0
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.33
+							alpha = 0.8
+							bezier = { 0 0 1 1 }
+						}
+
+						portrait_body_large = {
+							parentanchor = bottom|hcenter
+							scale = 0.88
+							size = { 308 396 }
+							blockoverride "status_icons" {}
+							blockoverride "coa" {}
+							blockoverride "opinion_box" {}
+							blockoverride "portrait_texture" {
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_activity_western_feast', 'camera_event_right', 'drink_goblet', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+							}
 						}
 					}
 
