@@ -91,13 +91,13 @@ window = {
 			widget = {
 				name = "sakuya_guiname_main_p1_character_card"
 				position = { 0 0 }
-				size = { 354 570 }
+				size = { 350 563 }
 				allow_outside = yes
 				alwaystransparent = yes
 
 				widget = {
 					name = "sakuya_guiname_main_p1_character_clip"
-					size = { 354 570 }
+					size = { 350 563 }
 					scissor = yes
 					alwaystransparent = yes
 
@@ -105,7 +105,7 @@ window = {
 						name = "sakuya_guiname_main_p1_character_wallpaper"
 						parentanchor = center
 						widgetanchor = center
-						size = { 354 570 }
+						size = { 350 563 }
 						scale = 1.0
 						allow_outside = yes
 						alwaystransparent = yes
@@ -135,7 +135,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p1_character_dim"
-						size = { 354 570 }
+						size = { 350 563 }
 						alpha = 0.16
 						alwaystransparent = yes
 
@@ -153,7 +153,7 @@ window = {
 							bezier = { 0 0 1 1 }
 						}
 
-						icon = { size = { 354 570 } texture = "gfx/interface/colors/black.dds" }
+						icon = { size = { 350 563 } texture = "gfx/interface/colors/black.dds" }
 					}
 
 					# VFX Layer 1: soft indoor window light
@@ -185,7 +185,7 @@ window = {
 					# VFX Layer 2: low warm ambient glow
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_glow"
-						size = { 354 570 }
+						size = { 350 563 }
 						texture = "gfx/interface/component_masks/mask_glow.dds"
 						color = { 1.00 0.78 0.48 0.10 }
 						parentanchor = center
@@ -240,7 +240,7 @@ window = {
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_earthquake"
 						visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'character')]"
-						size = { 354 570 }
+						size = { 350 563 }
 						texture = "gfx/interface/window_vfx/noise_01.dds"
 						gfxtype = icongfx
 						effectname = "Earthquake"
@@ -428,7 +428,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p1_character_border_glow"
-						size = { 354 570 }
+						size = { 350 563 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -447,7 +447,7 @@ window = {
 						}
 
 						icon = {
-							size = { 354 570 }
+							size = { 350 563 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
 							color = { 1.00 0.82 0.48 1 }
 						}
@@ -465,7 +465,7 @@ window = {
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 0.44 0.46 0.48 1 }
 					}
 				}
@@ -491,13 +491,13 @@ window = {
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 1 1 1 1 }
 					}
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 1 1 1 1 }
 					}
 				}
@@ -569,13 +569,13 @@ window = {
 			widget = {
 				name = "sakuya_guiname_main_p2_title_card"
 				position = { 405 0 }
-				size = { 354 570 }
+				size = { 350 563 }
 				allow_outside = yes
 				alwaystransparent = yes
 
 				widget = {
 					name = "sakuya_guiname_main_p2_title_clip"
-					size = { 354 570 }
+					size = { 350 563 }
 					scissor = yes
 					alwaystransparent = yes
 
@@ -583,7 +583,7 @@ window = {
 						name = "sakuya_guiname_main_p2_title_image"
 						parentanchor = center
 						widgetanchor = center
-						size = { 354 570 }
+						size = { 350 563 }
 						scale = 1.0
 						allow_outside = yes
 						alwaystransparent = yes
@@ -613,7 +613,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p2_title_dim"
-						size = { 354 570 }
+						size = { 350 563 }
 						alpha = 0.16
 						alwaystransparent = yes
 
@@ -631,7 +631,7 @@ window = {
 							bezier = { 0 0 1 1 }
 						}
 
-						icon = { size = { 354 570 } texture = "gfx/interface/colors/black.dds" }
+						icon = { size = { 350 563 } texture = "gfx/interface/colors/black.dds" }
 					}
 
 					widget = {
@@ -701,7 +701,7 @@ window = {
 					icon = {
 						name = "sakuya_guiname_main_p2_title_glow"
 						visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'title')]"
-						size = { 354 570 }
+						size = { 350 563 }
 						texture = "gfx/map/borders/vertical_border_legend.dds"
 						gfxtype = icongfx
 						effectname = "GodRay"
@@ -731,7 +731,7 @@ window = {
 					# Standard Blending Glow Layer (fades linearly over 0.5s)
 					icon = {
 						name = "sakuya_guiname_main_p2_title_glow_fade"
-						size = { 354 570 }
+						size = { 350 563 }
 						texture = "gfx/interface/component_masks/mask_glow.dds"
 						color = { 1.00 0.85 0.50 0.35 }
 						parentanchor = center
@@ -1060,7 +1060,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p2_title_border_glow"
-						size = { 354 570 }
+						size = { 350 563 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -1079,7 +1079,7 @@ window = {
 						}
 
 						icon = {
-							size = { 354 570 }
+							size = { 350 563 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
 							color = { 1.00 0.82 0.48 1 }
 						}
@@ -1095,7 +1095,7 @@ window = {
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 0.44 0.46 0.48 1 }
 					}
 				}
@@ -1123,13 +1123,13 @@ window = {
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 1 1 1 1 }
 					}
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 1 1 1 1 }
 					}
 				}
@@ -1214,13 +1214,13 @@ window = {
 			widget = {
 				name = "sakuya_guiname_main_p3_dynasty_card"
 				position = { 810 0 }
-				size = { 354 570 }
+				size = { 350 563 }
 				allow_outside = yes
 				alwaystransparent = yes
 
 				widget = {
 					name = "sakuya_guiname_main_p3_dynasty_clip"
-					size = { 354 570 }
+					size = { 350 563 }
 					scissor = yes
 					alwaystransparent = yes
 
@@ -1228,7 +1228,7 @@ window = {
 						name = "sakuya_guiname_main_p3_dynasty_image"
 						parentanchor = center
 						widgetanchor = center
-						size = { 354 570 }
+						size = { 350 563 }
 						scale = 1.0
 						allow_outside = yes
 						alwaystransparent = yes
@@ -1262,7 +1262,7 @@ window = {
 						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow"
 							visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')]"
-							size = { 354 570 }
+							size = { 350 563 }
 							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
 							gfxtype = icongfx
 							effectname = "Fog"
@@ -1292,7 +1292,7 @@ window = {
 						# Standard Blending Mist Layer (fades linearly over 0.5s)
 						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow_fade"
-							size = { 354 570 }
+							size = { 350 563 }
 							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
 							color = { 0.82 0.88 0.96 0.26 }
 							parentanchor = center
@@ -1319,7 +1319,7 @@ window = {
 						icon = {
 							name = "sakuya_guiname_main_p3_heavy_smoke"
 							visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')]"
-							size = { 354 570 }
+							size = { 350 563 }
 							texture = "gfx/interface/window_vfx/noise_01.dds"
 							gfxtype = icongfx
 							effectname = "HeavySmoke"
@@ -1353,7 +1353,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p3_dynasty_dim"
-						size = { 354 570 }
+						size = { 350 563 }
 						alpha = 0.16
 						alwaystransparent = yes
 
@@ -1371,7 +1371,7 @@ window = {
 							bezier = { 0 0 1 1 }
 						}
 
-						icon = { size = { 354 570 } texture = "gfx/interface/colors/black.dds" }
+						icon = { size = { 350 563 } texture = "gfx/interface/colors/black.dds" }
 					}
 
 					widget = {
@@ -1512,7 +1512,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p3_dynasty_border_glow"
-						size = { 354 570 }
+						size = { 350 563 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -1531,7 +1531,7 @@ window = {
 						}
 
 						icon = {
-							size = { 354 570 }
+							size = { 350 563 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
 							color = { 1.00 0.82 0.48 1 }
 						}
@@ -1547,7 +1547,7 @@ window = {
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 0.44 0.46 0.48 1 }
 					}
 				}
@@ -1575,13 +1575,13 @@ window = {
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 1 1 1 1 }
 					}
 
 					icon = {
 						size = { 362 588 }
-						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						texture = "gfx/interface/sakuya/frame_fork_border.dds"
 						color = { 1 1 1 1 }
 					}
 				}
