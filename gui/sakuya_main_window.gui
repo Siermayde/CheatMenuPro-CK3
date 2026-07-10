@@ -83,8 +83,8 @@ window = {
 
 		widget = {
 			name = "sakuya_guiname_main_home_cards"
-			position = { 52 114 }
-			size = { 1048 456 }
+			position = { 58 137 }
+			size = { 1164 507 }
 			allow_outside = yes
 			visible = "[Not(GetVariableSystem.Exists('sakuya_tab'))]"
 
