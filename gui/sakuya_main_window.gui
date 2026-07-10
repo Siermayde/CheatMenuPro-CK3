@@ -1,4 +1,4 @@
-﻿######################################################
+﻿﻿######################################################
 # CK3 CMP - Main GUI Framework
 # Current phase: GUI only. No gameplay effects.
 ######################################################
@@ -1748,7 +1748,12 @@ window = {
 			size = { 1164 507 }
 			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'character')]"
 
-			icon = { size = { 1164 507 } texture = "gfx/interface/sakuya/sakuya_background_character_blur.png" color = { 0.72 0.62 0.64 0.76 } }
+			icon = {
+				size = { 1164 507 }
+				texture = "gfx/interface/component_tiles/tile_window_background.dds"
+				spriteType = Corneredtiled
+				texture_density = 2
+			}
 			icon = { size = { 1164 507 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
 			icon = {
 				size = { 1164 507 }
@@ -1767,7 +1772,12 @@ window = {
 			size = { 1164 507 }
 			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'title')]"
 
-			icon = { size = { 1164 507 } texture = "gfx/interface/illustrations/event_scenes/corridor_day.dds" color = { 0.70 0.66 0.58 0.76 } }
+			icon = {
+				size = { 1164 507 }
+				texture = "gfx/interface/component_tiles/tile_window_background.dds"
+				spriteType = Corneredtiled
+				texture_density = 2
+			}
 			icon = { size = { 1164 507 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
 			icon = {
 				size = { 1164 507 }
