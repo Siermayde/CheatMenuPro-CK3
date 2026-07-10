@@ -1,4 +1,4 @@
-﻿﻿######################################################
+######################################################
 # CK3 CMP - Main GUI Framework
 # Current phase: GUI only. No gameplay effects.
 ######################################################
@@ -1764,7 +1764,7 @@ window = {
 				alpha = 0.88
 			}
 			icon = { position = { 12 12 } size = { 1140 483 } texture = "gfx/interface/component_overlay/overlay_effect_border.dds" alpha = 0.28 }
-
+		}
 
 		widget = {
 			name = "sakuya_guiname_page_title"
