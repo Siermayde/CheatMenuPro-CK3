@@ -239,6 +239,7 @@ window = {
 					# VFX Layer: Earthquake foreground shader (hover visible, alpha 0.77)
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_earthquake"
+						visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'character')]"
 						size = { 354 570 }
 						texture = "gfx/interface/window_vfx/noise_01.dds"
 						gfxtype = icongfx
@@ -693,6 +694,7 @@ window = {
 					# VFX Layer: original GodRay shader with card 1 alpha states
 					icon = {
 						name = "sakuya_guiname_main_p2_title_glow"
+						visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'title')]"
 						size = { 354 570 }
 						texture = "gfx/map/borders/vertical_border_legend.dds"
 						gfxtype = icongfx
@@ -1247,6 +1249,7 @@ window = {
 						# VFX Layer 1: original animated Fog shader
 						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow"
+							visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')]"
 							size = { 354 570 }
 							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
 							gfxtype = icongfx
@@ -1303,6 +1306,7 @@ window = {
 						# VFX Layer 2: original animated HeavySmoke shader and particle entity
 						icon = {
 							name = "sakuya_guiname_main_p3_heavy_smoke"
+							visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')]"
 							size = { 354 570 }
 							texture = "gfx/interface/window_vfx/noise_01.dds"
 							gfxtype = icongfx
