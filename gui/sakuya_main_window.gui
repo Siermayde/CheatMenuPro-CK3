@@ -30,16 +30,19 @@ window = {
 		}
 
 		icon = {
-			position = { 20 18 }
+			position = { 20 25 }
 			size = { 1240 684 }
 			texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+			spriteType = Corneredstretched
+			spriteborder = { 15 15 }
+			texture_density = 2
 			alpha = 0.78
 		}
 
 		textbox = {
 			name = "sakuya_guiname_main_title"
 			parentanchor = top|hcenter
-			position = { 0 40 }
+			position = { 0 50 }
 			size = { 620 52 }
 			maximumsize = { 620 52 }
 			text = "sakuya_main_title_text"
@@ -451,6 +454,9 @@ window = {
 						icon = {
 							size = { 315 507 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 15 15 }
+							texture_density = 2
 							color = { 1.00 0.82 0.48 1 }
 						}
 					}
@@ -1083,6 +1089,9 @@ window = {
 						icon = {
 							size = { 315 507 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 15 15 }
+							texture_density = 2
 							color = { 1.00 0.82 0.48 1 }
 						}
 					}
@@ -1535,6 +1544,9 @@ window = {
 						icon = {
 							size = { 315 507 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 15 15 }
+							texture_density = 2
 							color = { 1.00 0.82 0.48 1 }
 						}
 					}
@@ -1667,6 +1679,9 @@ window = {
 			icon = {
 				size = { 170 486 }
 				texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 15 15 }
+				texture_density = 2
 				alpha = 0.64
 			}
 
