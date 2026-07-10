@@ -93,6 +93,29 @@ window = {
 			allow_outside = yes
 			visible = "[Not(GetVariableSystem.Exists('sakuya_tab'))]"
 
+			icon = {
+				name = "sakuya_guiname_main_p1_underlight"
+				position = { 13 455 }
+				size = { 400 120 }
+				texture = "gfx/interface/sakuya/underlignt.png"
+				alpha = 0.01
+				alwaystransparent = yes
+
+				state = {
+					name = show_hover
+					duration = 0.35
+					alpha = 1.0
+					bezier = { 0 0 1 1 }
+				}
+
+				state = {
+					name = hide_hover
+					duration = 0.35
+					alpha = 0.01
+					bezier = { 0 0 1 1 }
+				}
+			}
+
 			widget = {
 				name = "sakuya_guiname_main_p1_character_card"
 				position = { 55 0 }
@@ -557,6 +580,7 @@ window = {
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_underlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -570,6 +594,8 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_underlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+
 
 			}
 		}
