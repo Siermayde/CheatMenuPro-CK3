@@ -5,6 +5,7 @@ sakuya_refresh_p2_character_gui = {
 		if = {
 			limit = {
 				exists = global_var:sakuya_marked_character
+				global_var:sakuya_marked_character = { is_alive = yes }
 			}
 			global_var:sakuya_marked_character = {
 				if = {
@@ -188,6 +189,7 @@ sakuya_refresh_p3_character_gui = {
 		if = {
 			limit = {
 				exists = global_var:sakuya_marked_character
+				global_var:sakuya_marked_character = { is_alive = yes }
 			}
 			global_var:sakuya_marked_character = {
 				if = {
