@@ -88,41 +88,12 @@ window = {
 			allow_outside = yes
 			visible = "[Not(GetVariableSystem.Exists('sakuya_tab'))]"
 
-			button = {
+			widget = {
 				name = "sakuya_guiname_main_p1_character_card"
 				position = { 0 0 }
 				size = { 354 570 }
 				allow_outside = yes
 				alwaystransparent = yes
-				onclick = "[GetVariableSystem.Set('sakuya_tab', 'character')]"
-				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
-				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'character')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p1_character_tt"
 
 				widget = {
 					name = "sakuya_guiname_main_p1_character_clip"
@@ -307,7 +278,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -320,7 +291,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -345,7 +316,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -358,7 +329,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -383,7 +354,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -396,7 +367,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -421,7 +392,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -434,7 +405,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -528,59 +499,71 @@ window = {
 					position = { 0 -30 }
 					size = { 300 54 }
 					maximumsize = { 300 54 }
-					text = "sakuya_main_p1_character_text"
-					font = "MapFont"
-					fontsize = 34
+				text = "sakuya_main_p1_character_text"
+				font = "MapFont"
+				fontsize = 34
 					fontsize_min = 20
 					autoresize = no
-					align = center|nobaseline
-					default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
-				}
+				align = center|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
 			}
 
 			button = {
+				name = "sakuya_guiname_main_p1_frame_fork_input"
+				position = { -4 -18 }
+				size = { 362 588 }
+				allow_outside = yes
+				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[GetVariableSystem.Set('sakuya_tab', 'character')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'character')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_sunlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				tooltip = "sakuya_main_p1_character_tt"
+			}
+		}
+
+			widget = {
 				name = "sakuya_guiname_main_p2_title_card"
 				position = { 405 0 }
 				size = { 354 570 }
 				allow_outside = yes
 				alwaystransparent = yes
-				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').TriggerAnimation('hide_hover')]"
-				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow_fade').TriggerAnimation('hide_hover')]"
-				onclick = "[GetVariableSystem.Set('sakuya_tab', 'title')]"
-				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
-				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'title')]"
-				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p2_realm_tt"
 
 				widget = {
 					name = "sakuya_guiname_main_p2_title_clip"
@@ -706,38 +689,29 @@ window = {
 						}
 					}
 
-					# GPU VFX Layer (parent alpha fades linearly on hover)
-					widget = {
+					# VFX Layer: same standard alpha structure as card 1
+					icon = {
 						name = "sakuya_guiname_main_p2_title_glow"
-						size = { 354 570 }
+						size = { 420 570 }
+						texture = "gfx/particles/window_sunlight_01.dds"
+						color = { 1.00 0.90 0.74 0.14 }
 						parentanchor = center
+						position = { -34 0 }
 						alpha = 0
 						alwaystransparent = yes
 
 						state = {
 							name = show_hover
 							duration = 0.5
-							alpha = 1
+							alpha = 0.42
 							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
-							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
-						}
-
-						icon = {
-							size = { 354 570 }
-							texture = "gfx/map/borders/vertical_border_legend.dds"
-							gfxtype = icongfx
-							effectname = "GodRay"
-							shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
-							mipmaplodbias = -1
-							color = { 1.00 0.85 0.50 0.65 }
-							alwaystransparent = yes
 						}
 					}
 
@@ -775,7 +749,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -788,7 +762,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -813,7 +787,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -826,7 +800,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -851,7 +825,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -864,7 +838,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -889,7 +863,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -902,7 +876,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -927,7 +901,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -940,7 +914,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -965,7 +939,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -978,7 +952,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -1003,7 +977,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -1016,7 +990,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -1041,7 +1015,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -1054,7 +1028,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -1146,54 +1120,84 @@ window = {
 					position = { 0 -30 }
 					size = { 300 54 }
 					maximumsize = { 300 54 }
-					text = "sakuya_main_p2_realm_text"
-					font = "MapFont"
-					fontsize = 34
+				text = "sakuya_main_p2_realm_text"
+				font = "MapFont"
+				fontsize = 34
 					fontsize_min = 20
 					autoresize = no
-					align = center|nobaseline
-					default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
-				}
+				align = center|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
 			}
 
 			button = {
+				name = "sakuya_guiname_main_p2_frame_fork_input"
+				position = { -4 -18 }
+				size = { 362 588 }
+				allow_outside = yes
+				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[GetVariableSystem.Set('sakuya_tab', 'title')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'title')]"
+				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_title').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_marked_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				tooltip = "sakuya_main_p2_realm_tt"
+			}
+		}
+
+			widget = {
 				name = "sakuya_guiname_main_p3_dynasty_card"
 				position = { 810 0 }
 				size = { 354 570 }
 				allow_outside = yes
 				alwaystransparent = yes
-				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow').TriggerAnimation('hide_hover')]"
-				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').TriggerAnimation('hide_hover')]"
-				onclick = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_heavy_smoke').TriggerAnimation('hide_hover')]"
-				onclick = "[GetVariableSystem.Set('sakuya_tab', 'dynasty')]"
-				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
-				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'dynasty')]"
-				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p3_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p3_family_tt"
 
 				widget = {
 					name = "sakuya_guiname_main_p3_dynasty_clip"
@@ -1234,10 +1238,12 @@ window = {
 
 
 
-						# GPU VFX Layer (parent alpha fades linearly on hover)
-						widget = {
+						# VFX Layer: standard alpha structure
+						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow"
 							size = { 354 570 }
+							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+							color = { 0.82 0.88 0.96 0.41 }
 							parentanchor = center
 							alpha = 0
 							alwaystransparent = yes
@@ -1251,21 +1257,9 @@ window = {
 
 							state = {
 								name = hide_hover
-								trigger_on_create = yes
 								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
-							}
-
-							icon = {
-								size = { 354 570 }
-								texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
-								gfxtype = icongfx
-								effectname = "Fog"
-								shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
-								mipmaplodbias = -1
-								color = { 0.82 0.88 0.96 0.41 }
-								alwaystransparent = yes
 							}
 						}
 
@@ -1295,9 +1289,11 @@ window = {
 							}
 					}
 
-						widget = {
+						icon = {
 							name = "sakuya_guiname_main_p3_heavy_smoke"
 							size = { 354 570 }
+							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+							color = { 0.82 0.88 0.96 0.41 }
 							parentanchor = center
 							alpha = 0
 							alwaystransparent = yes
@@ -1311,26 +1307,9 @@ window = {
 
 							state = {
 								name = hide_hover
-								trigger_on_create = yes
 								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
-							}
-
-							icon = {
-								size = { 354 570 }
-								texture = "gfx/interface/window_vfx/noise_01.dds"
-								gfxtype = icongfx
-								effectname = "HeavySmoke"
-								shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
-								mipmaplodbias = -1
-								alwaystransparent = yes
-
-								activity_locale_vfx = {
-									size = { 100% 100% }
-									position = { 0.0% 0.0% }
-									entity_instance = "ui_heavy_smoke"
-								}
 							}
 						}
 					}
@@ -1426,7 +1405,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -1439,7 +1418,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -1464,7 +1443,7 @@ window = {
 						widgetanchor = center
 						position = { 0 40 }
 						size = { 308 396 }
-						alpha = 0.8
+						alpha = 0.98
 						allow_outside = no
 
 						state = {
@@ -1477,7 +1456,7 @@ window = {
 						state = {
 							name = hide_hover
 							duration = 0.33
-							alpha = 0.8
+							alpha = 0.98
 							bezier = { 0 0 1 1 }
 						}
 
@@ -1569,15 +1548,63 @@ window = {
 					position = { 0 -30 }
 					size = { 300 54 }
 					maximumsize = { 300 54 }
-					text = "sakuya_main_p3_family_text"
-					font = "MapFont"
-					fontsize = 34
+				text = "sakuya_main_p3_family_text"
+				font = "MapFont"
+				fontsize = 34
 					fontsize_min = 20
 					autoresize = no
-					align = center|nobaseline
-					default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
-				}
+				align = center|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
 			}
+
+			button = {
+				name = "sakuya_guiname_main_p3_frame_fork_input"
+				position = { -4 -18 }
+				size = { 362 588 }
+				allow_outside = yes
+				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onclick = "[GetVariableSystem.Set('sakuya_tab', 'dynasty')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'dynasty')]"
+				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p2_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				onmousehierarchyenter = "[GetScriptedGui('sakuya_refresh_p3_character_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_heavy_smoke').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_marked_dynasty').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				tooltip = "sakuya_main_p3_family_tt"
+			}
+		}
 		}
 
 		widget = {
