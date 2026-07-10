@@ -201,6 +201,7 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
@@ -228,6 +229,7 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
@@ -256,6 +258,7 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
@@ -710,6 +713,7 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
@@ -1263,6 +1267,7 @@ window = {
 
 							state = {
 								name = hide_hover
+								trigger_on_create = yes
 								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
@@ -1317,6 +1322,7 @@ window = {
 
 							state = {
 								name = hide_hover
+								trigger_on_create = yes
 								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
