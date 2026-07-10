@@ -26,7 +26,7 @@ window = {
 
 		icon = {
 			size = { 1280 720 }
-			texture = "gfx/interface/sakuya/sakuya_background_family_blur.png"
+			texture = "gfx/interface/sakuya/main/sakuya_main_bk.png"
 		}
 
 		icon = {
@@ -2151,7 +2151,12 @@ window = {
 			size = { 970 486 }
 			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'dynasty')]"
 
-			icon = { size = { 970 486 } texture = "gfx/interface/sakuya/sakuya_background_family_blur.png" color = { 0.74 0.62 0.58 0.76 } }
+			icon = {
+				size = { 970 486 }
+				texture = "gfx/interface/component_tiles/tile_window_background.dds"
+				spriteType = Corneredtiled
+				texture_density = 2
+			}
 			icon = { size = { 970 486 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
 			icon = { size = { 970 486 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.88 }
 			icon = { position = { 12 12 } size = { 946 462 } texture = "gfx/interface/component_overlay/overlay_effect_border.dds" alpha = 0.30 }
