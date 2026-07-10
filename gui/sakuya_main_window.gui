@@ -92,36 +92,35 @@ window = {
 			size = { 1164 507 }
 			allow_outside = yes
 			visible = "[Not(GetVariableSystem.Exists('sakuya_tab'))]"
-
-			icon = {
-				name = "sakuya_guiname_main_p1_underlight"
-				position = { 13 455 }
-				size = { 400 120 }
-				texture = "gfx/interface/sakuya/underlignt.png"
-				alpha = 0.01
-				alwaystransparent = yes
-
-				state = {
-					name = show_hover
-					duration = 0.35
-					alpha = 1.0
-					bezier = { 0 0 1 1 }
-				}
-
-				state = {
-					name = hide_hover
-					duration = 0.35
-					alpha = 0.01
-					bezier = { 0 0 1 1 }
-				}
-			}
-
 			widget = {
 				name = "sakuya_guiname_main_p1_character_card"
 				position = { 55 0 }
 				size = { 315 507 }
 				allow_outside = yes
 				alwaystransparent = yes
+
+				icon = {
+					name = "sakuya_guiname_main_p1_underlight"
+					position = { -42 455 }
+					size = { 400 120 }
+					texture = "gfx/interface/sakuya/underlignt.png"
+					alpha = 0.01
+					alwaystransparent = yes
+
+					state = {
+						name = show_hover
+						duration = 0.35
+						alpha = 1.0
+						bezier = { 0 0 1 1 }
+					}
+
+					state = {
+						name = hide_hover
+						duration = 0.35
+						alpha = 0.01
+						bezier = { 0 0 1 1 }
+					}
+				}
 
 				widget = {
 					name = "sakuya_guiname_main_p1_character_clip"
