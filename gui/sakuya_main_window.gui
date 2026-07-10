@@ -570,7 +570,7 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p1_character_tt"
+
 			}
 		}
 
@@ -1218,7 +1218,7 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p2_realm_tt"
+
 			}
 		}
 
@@ -1659,7 +1659,7 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p3_family_tt"
+
 			}
 		}
 		}
