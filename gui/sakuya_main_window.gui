@@ -38,14 +38,16 @@ window = {
 
 		textbox = {
 			name = "sakuya_guiname_main_title"
-			position = { 52 40 }
+			parentanchor = top|hcenter
+			position = { 0 40 }
 			size = { 620 52 }
 			maximumsize = { 620 52 }
 			text = "sakuya_main_title_text"
-			fontsize = 36
-			fontsize_min = 22
+			font = "MapFont"
+			fontsize = 38
+			fontsize_min = 24
 			autoresize = no
-			align = left|nobaseline
+			align = center|nobaseline
 			default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
 		}
 
@@ -465,7 +467,7 @@ window = {
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 0.44 0.46 0.48 1 }
 					}
 				}
@@ -491,13 +493,13 @@ window = {
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 				}
@@ -1095,7 +1097,7 @@ window = {
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 0.44 0.46 0.48 1 }
 					}
 				}
@@ -1123,13 +1125,13 @@ window = {
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 				}
@@ -1547,7 +1549,7 @@ window = {
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 0.44 0.46 0.48 1 }
 					}
 				}
@@ -1575,13 +1577,13 @@ window = {
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 
 					icon = {
 						size = { 326 529 }
-						texture = "gfx/interface/sakuya/frame_fork_border.dds"
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 				}
