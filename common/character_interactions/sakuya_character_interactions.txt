@@ -105,6 +105,90 @@ sakuya_mark_character_interaction = {
 					value = this
 				}
 			}
+
+			if = {
+				limit = {
+					is_lowborn = yes
+				}
+				set_global_variable = {
+					name = sakuya_p3_character
+					value = this
+				}
+			}
+			else_if = {
+				limit = {
+					exists = house.house_head
+					house.house_head = {
+						is_alive = yes
+						this != scope:recipient
+						this != scope:actor
+					}
+				}
+				house.house_head = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = dynasty.dynast
+					dynasty.dynast = {
+						is_alive = yes
+						this != scope:recipient
+						this != scope:actor
+					}
+				}
+				dynasty.dynast = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father
+					father = {
+						is_alive = yes
+						this != scope:recipient
+						this != scope:actor
+						OR = {
+							NOT = { exists = global_var:sakuya_p2_character }
+							this != global_var:sakuya_p2_character
+						}
+					}
+				}
+				father = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = father.father
+					father.father = {
+						is_alive = yes
+						this != scope:recipient
+						this != scope:actor
+					}
+				}
+				father.father = {
+					set_global_variable = {
+						name = sakuya_p3_character
+						value = this
+					}
+				}
+			}
+			else = {
+				set_global_variable = {
+					name = sakuya_p3_character
+					value = this
+				}
+			}
 		}
 	}
 

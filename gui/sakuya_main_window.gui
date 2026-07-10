@@ -1,8 +1,3 @@
-######################################################
-# CK3 CMP - Main GUI Framework
-# Current phase: GUI only. No gameplay effects.
-######################################################
-
 window = {
 	name = "sakuya_guiname_main_window"
 	parentanchor = center
@@ -26,26 +21,31 @@ window = {
 
 		icon = {
 			size = { 1280 720 }
-			texture = "gfx/interface/sakuya/sakuya_background_family_blur.png"
+			texture = "gfx/interface/sakuya/main/sakuya_main_bk.png"
 		}
 
 		icon = {
-			position = { 20 18 }
+			position = { 20 25 }
 			size = { 1240 684 }
 			texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+			spriteType = Corneredstretched
+			spriteborder = { 15 15 }
+			texture_density = 2
 			alpha = 0.78
 		}
 
 		textbox = {
 			name = "sakuya_guiname_main_title"
-			position = { 52 40 }
+			parentanchor = top|hcenter
+			position = { 0 50 }
 			size = { 620 52 }
 			maximumsize = { 620 52 }
 			text = "sakuya_main_title_text"
-			fontsize = 36
-			fontsize_min = 22
+			font = "MapFont"
+			fontsize = 38
+			fontsize_min = 24
 			autoresize = no
-			align = left|nobaseline
+			align = center|nobaseline
 			default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
 		}
 
@@ -55,6 +55,15 @@ window = {
 			position = { -322 42 }
 			size = { 150 38 }
 			visible = "[GetVariableSystem.Exists('sakuya_tab')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
 			onclick = "[GetVariableSystem.Clear('sakuya_tab')]"
 			onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 			tooltip = "sakuya_main_back_tt"
@@ -83,21 +92,58 @@ window = {
 
 		widget = {
 			name = "sakuya_guiname_main_home_cards"
-			position = { 58 112 }
-			size = { 1164 570 }
+			position = { 58 137 }
+			size = { 1164 507 }
 			allow_outside = yes
-			visible = "[Not(GetVariableSystem.Exists('sakuya_tab'))]"
-
 			widget = {
 				name = "sakuya_guiname_main_p1_character_card"
-				position = { 0 0 }
-				size = { 354 570 }
+				position = { 55 0 }
+				size = { 315 507 }
 				allow_outside = yes
 				alwaystransparent = yes
+				visible = "[Or(Not(GetVariableSystem.Exists('sakuya_tab')), GetVariableSystem.HasValue('sakuya_tab', 'character'))]"
+
+				state = {
+					name = enter_subpage
+					position = { 10 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				state = {
+					name = return_home
+					position = { 55 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				icon = {
+					name = "sakuya_guiname_main_p1_underlight"
+					position = { -82 399 }
+					size = { 480 216 }
+					texture = "gfx/interface/sakuya/sakuya_underlight_glow.dds"
+					color = { 1.00 0.85 0.50 0.8 }
+					alpha = 0.01
+					alwaystransparent = yes
+
+					state = {
+						name = show_hover
+						duration = 0.35
+						alpha = 0.36
+						bezier = { 0 0 1 1 }
+					}
+
+					state = {
+						name = hide_hover
+						duration = 0.35
+						alpha = 0.01
+						bezier = { 0 0 1 1 }
+					}
+				}
 
 				widget = {
 					name = "sakuya_guiname_main_p1_character_clip"
-					size = { 354 570 }
+					size = { 315 507 }
 					scissor = yes
 					alwaystransparent = yes
 
@@ -105,7 +151,7 @@ window = {
 						name = "sakuya_guiname_main_p1_character_wallpaper"
 						parentanchor = center
 						widgetanchor = center
-						size = { 354 570 }
+						size = { 315 507 }
 						scale = 1.0
 						allow_outside = yes
 						alwaystransparent = yes
@@ -127,45 +173,42 @@ window = {
 						icon = {
 							parentanchor = center
 							widgetanchor = center
-							size = { 1138 570 }
+							size = { 1024 513 }
 							texture = "gfx/interface/illustrations/activity_header_backgrounds/activity_adult_education.dds"
-							color = { 0.58 0.54 0.55 1 }
-						}
-
-						icon = {
-							name = "sakuya_guiname_main_p1_character_bright"
-							parentanchor = center
-							widgetanchor = center
-							size = { 1138 570 }
-							texture = "gfx/interface/illustrations/activity_header_backgrounds/activity_adult_education.dds"
-							color = { 0.76 0.72 0.72 1 }
-							alpha = 0
-							alwaystransparent = yes
-
-							state = {
-								name = show_hover
-								duration = 0.33
-								alpha = 0.22
-								bezier = { 0 0 1 1 }
-							}
-
-							state = {
-								name = hide_hover
-								duration = 0.33
-								alpha = 0
-								bezier = { 0 0 1 1 }
-							}
+							color = { 1 1 1 1 }
 						}
 					}
 
-					# VFX Layer 1: soft indoor window light
+					widget = {
+						name = "sakuya_guiname_main_p1_character_dim"
+						size = { 315 507 }
+						alpha = 0.16
+						alwaystransparent = yes
+
+						state = {
+							name = show_hover
+							duration = 0.33
+							alpha = 0.04
+							bezier = { 0 0 1 1 }
+						}
+
+						state = {
+							name = hide_hover
+							duration = 0.33
+							alpha = 0.16
+							bezier = { 0 0 1 1 }
+						}
+
+						icon = { size = { 315 507 } texture = "gfx/interface/colors/black.dds" }
+					}
+
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_sunlight"
-						size = { 420 570 }
+						size = { 378 513 }
 						texture = "gfx/particles/window_sunlight_01.dds"
 						color = { 1.00 0.90 0.74 0.14 }
 						parentanchor = center
-						position = { -34 0 }
+						position = { -31 0 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -184,10 +227,9 @@ window = {
 						}
 					}
 
-					# VFX Layer 2: low warm ambient glow
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_glow"
-						size = { 354 570 }
+						size = { 315 507 }
 						texture = "gfx/interface/component_masks/mask_glow.dds"
 						color = { 1.00 0.78 0.48 0.10 }
 						parentanchor = center
@@ -203,21 +245,21 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
 						}
 					}
 
-					# VFX Layer 3: soft window pattern for the indoor scene
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_window_cookie"
-						size = { 254 360 }
+						size = { 229 324 }
 						texture = "gfx/particles/window_cookie_02.dds"
 						color = { 1.00 0.88 0.68 0.16 }
 						parentanchor = center
 						widgetanchor = center
-						position = { 60 -70 }
+						position = { 54 -63 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -230,16 +272,17 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
 						}
 					}
 
-					# VFX Layer: Earthquake foreground shader (hover visible, alpha 0.77)
 					icon = {
 						name = "sakuya_guiname_main_p1_vfx_earthquake"
-						size = { 354 570 }
+						visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'character')]"
+						size = { 315 507 }
 						texture = "gfx/interface/window_vfx/noise_01.dds"
 						gfxtype = icongfx
 						effectname = "Earthquake"
@@ -258,6 +301,7 @@ window = {
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
@@ -273,11 +317,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p1_marked_character_portrait_static"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[And(GetGlobalVariable('sakuya_marked_character').IsSet, Not(GetVariableSystem.HasValue('sakuya_main_hover', 'character')))]"
+						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, And(Character.IsValid, Character.IsAlive)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'character')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -297,8 +341,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -311,11 +355,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p1_marked_character_portrait_animated"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[And(GetGlobalVariable('sakuya_marked_character').IsSet, GetVariableSystem.HasValue('sakuya_main_hover', 'character'))]"
+						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, And(Character.IsValid, Character.IsAlive)), GetVariableSystem.HasValue('sakuya_main_hover', 'character'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -335,8 +379,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -352,8 +396,8 @@ window = {
 						visible = "[And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'character')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -373,8 +417,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -390,8 +434,8 @@ window = {
 						visible = "[And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), GetVariableSystem.HasValue('sakuya_main_hover', 'character'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -411,8 +455,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -426,7 +470,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p1_character_border_glow"
-						size = { 354 570 }
+						size = { 315 507 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -445,33 +489,35 @@ window = {
 						}
 
 						icon = {
-							size = { 354 570 }
+							size = { 315 507 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 15 15 }
+							texture_density = 2
 							color = { 1.00 0.82 0.48 1 }
 						}
 					}
 
-					# Shine sweep layer removed
 
 				}
 
 				widget = {
 					name = "sakuya_guiname_main_p1_frame_fork_base"
-					position = { -4 -18 }
-					size = { 362 588 }
+					position = { -4 -16 }
+					size = { 326 529 }
 					alwaystransparent = yes
 
 					icon = {
-						size = { 362 588 }
+						size = { 326 529 }
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
-						color = { 0.62 0.56 0.50 1 }
+						color = { 0.44 0.46 0.48 1 }
 					}
 				}
 
 				widget = {
 					name = "sakuya_guiname_main_p1_frame_fork_hover"
-					position = { -4 -18 }
-					size = { 362 588 }
+					position = { -4 -16 }
+					size = { 326 529 }
 					alpha = 0
 					alwaystransparent = yes
 
@@ -488,34 +534,144 @@ window = {
 					}
 
 					icon = {
-						size = { 362 588 }
+						size = { 326 529 }
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						color = { 1 1 1 1 }
+					}
+
+					icon = {
+						size = { 326 529 }
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 				}
 
-				textbox = {
+				widget = {
+					name = "sakuya_guiname_main_p1_title_slot"
 					parentanchor = bottom|hcenter
-					position = { 0 -30 }
-					size = { 300 54 }
-					maximumsize = { 300 54 }
-				text = "sakuya_main_p1_character_text"
-				font = "MapFont"
-				fontsize = 34
-					fontsize_min = 20
-					autoresize = no
-				align = center|nobaseline
-				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
-			}
+					position = { 0 -27 }
+					size = { 270 49 }
+					scissor = yes
+					alwaystransparent = yes
+
+					textbox = {
+						name = "sakuya_guiname_main_p1_home_title"
+						size = { 270 49 }
+						maximumsize = { 270 49 }
+						text = "sakuya_main_p1_character_text"
+						font = "MapFont"
+						fontsize = 31
+						fontsize_min = 18
+						autoresize = no
+						align = center|nobaseline
+						alpha = 1
+						default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+
+						state = {
+							name = enter_subpage
+							alpha = 0.01
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						state = {
+							name = return_home
+							alpha = 1
+							delay = 0.33
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+					}
+
+					widget = {
+						name = "sakuya_guiname_main_p1_subpage_title"
+						size = { 270 49 }
+						alpha = 0.01
+						alwaystransparent = yes
+
+						state = {
+							name = enter_subpage
+							alpha = 1
+							delay = 0.33
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						state = {
+							name = return_home
+							alpha = 0.01
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						widget = {
+							datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
+							visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
+							size = { 270 49 }
+
+							text_multi = {
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "[Character.GetFirstNameNicknamedNoTooltipRegnal]"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+						}
+
+						widget = {
+							datacontext = "[GetPlayer]"
+							visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), GetPlayer.IsValid)]"
+							size = { 270 49 }
+
+							text_multi = {
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "[Character.GetFirstNameNicknamedNoTooltipRegnal]"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+						}
+
+						text_multi = {
+							visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), Not(GetPlayer.IsValid))]"
+							size = { 270 49 }
+							maximumsize = { 270 49 }
+							text = "sakuya_main_no_player_text"
+							font = "MapFont"
+							fontsize = 22
+							fontsize_min = 18
+							autoresize = no
+							multiline = yes
+							elide = right
+							align = center|nobaseline
+							default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+						}
+					}
+				}
 
 			button = {
 				name = "sakuya_guiname_main_p1_frame_fork_input"
-				position = { -4 -18 }
-				size = { 362 588 }
+				visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab')))]"
+				position = { -4 -16 }
+				size = { 326 529 }
 				allow_outside = yes
 				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_home_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_subpage_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -530,7 +686,7 @@ window = {
 				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'character')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
-				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_dim').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
@@ -541,9 +697,10 @@ window = {
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_underlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_wallpaper').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_bright').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_frame_fork_hover').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_marked_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -554,20 +711,75 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_window_cookie').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_vfx_earthquake').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p1_character_tt"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_underlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+
+
+			}
+
+			button = {
+				name = "sakuya_guiname_main_p1_frame_fork_return_input"
+				visible = "[GetVariableSystem.HasValue('sakuya_tab', 'character')]"
+				position = { -4 -16 }
+				size = { 326 529 }
+				allow_outside = yes
+				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_tab')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 			}
 		}
 
 			widget = {
 				name = "sakuya_guiname_main_p2_title_card"
-				position = { 405 0 }
-				size = { 354 570 }
+				position = { 425 0 }
+				size = { 315 507 }
 				allow_outside = yes
 				alwaystransparent = yes
+				visible = "[Or(Not(GetVariableSystem.Exists('sakuya_tab')), GetVariableSystem.HasValue('sakuya_tab', 'title'))]"
+
+				state = {
+					name = enter_subpage
+					position = { 10 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				state = {
+					name = return_home
+					position = { 425 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				icon = {
+					name = "sakuya_guiname_main_p2_underlight"
+					position = { -82 399 }
+					size = { 480 216 }
+					texture = "gfx/interface/sakuya/sakuya_underlight_glow.dds"
+					color = { 1.00 0.85 0.50 0.8 }
+					alpha = 0.01
+					alwaystransparent = yes
+
+					state = {
+						name = show_hover
+						duration = 0.35
+						alpha = 0.36
+						bezier = { 0 0 1 1 }
+					}
+
+					state = {
+						name = hide_hover
+						duration = 0.35
+						alpha = 0.01
+						bezier = { 0 0 1 1 }
+					}
+				}
 
 				widget = {
 					name = "sakuya_guiname_main_p2_title_clip"
-					size = { 354 570 }
+					size = { 315 507 }
 					scissor = yes
 					alwaystransparent = yes
 
@@ -575,7 +787,7 @@ window = {
 						name = "sakuya_guiname_main_p2_title_image"
 						parentanchor = center
 						widgetanchor = center
-						size = { 354 570 }
+						size = { 315 507 }
 						scale = 1.0
 						allow_outside = yes
 						alwaystransparent = yes
@@ -597,15 +809,15 @@ window = {
 						icon = {
 							parentanchor = center
 							widgetanchor = center
-							size = { 1138 570 }
+							size = { 1024 513 }
 							texture = "gfx/interface/illustrations/event_scenes/corridor_day.dds"
-							color = { 0.76 0.72 0.66 1 }
+							color = { 1 1 1 1 }
 						}
 					}
 
 					widget = {
 						name = "sakuya_guiname_main_p2_title_dim"
-						size = { 354 570 }
+						size = { 315 507 }
 						alpha = 0.16
 						alwaystransparent = yes
 
@@ -623,13 +835,13 @@ window = {
 							bezier = { 0 0 1 1 }
 						}
 
-						icon = { size = { 354 570 } texture = "gfx/interface/colors/black.dds" }
+						icon = { size = { 315 507 } texture = "gfx/interface/colors/black.dds" }
 					}
 
 					widget = {
 						name = "sakuya_guiname_main_p2_marked_title"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
+						visible = "[And(GetGlobalVariable('sakuya_marked_character').IsSet, And(Character.IsValid, Character.IsAlive))]"
 						alpha = 0.33
 
 						state = {
@@ -649,12 +861,12 @@ window = {
 						widget = {
 							visible = "[Character.GetPrimaryTitle.IsValid]"
 							parentanchor = center
-							position = { 100 30 }
-							size = { 220 250 }
+							position = { 90 27 }
+							size = { 198 225 }
 							coa_realm_big_crown = {
 								parentanchor = center
-								size = { 220 250 }
-								scale = 3
+								size = { 198 225 }
+								scale = 2.7
 							}
 						}
 					}
@@ -664,8 +876,8 @@ window = {
 						datacontext = "[GetPlayer]"
 						visible = "[And(And(GetPlayer.IsValid, GetPlayer.GetPrimaryTitle.IsValid), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
 						parentanchor = center
-						position = { 0 -18 }
-						size = { 220 250 }
+						position = { 0 -16 }
+						size = { 198 225 }
 						alpha = 0.33
 
 						state = {
@@ -684,41 +896,44 @@ window = {
 
 						coa_realm_big_crown = {
 							parentanchor = center
-							size = { 220 250 }
-							scale = 1.45
+							size = { 198 225 }
+							scale = 1.30
 						}
 					}
 
-					# VFX Layer: same standard alpha structure as card 1
 					icon = {
 						name = "sakuya_guiname_main_p2_title_glow"
-						size = { 420 570 }
-						texture = "gfx/particles/window_sunlight_01.dds"
-						color = { 1.00 0.90 0.74 0.14 }
+						visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'title')]"
+						size = { 315 507 }
+						texture = "gfx/map/borders/vertical_border_legend.dds"
+						gfxtype = icongfx
+						effectname = "GodRay"
+						shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+						mipmaplodbias = -1
+						color = { 1.00 0.85 0.50 0.65 }
 						parentanchor = center
-						position = { -34 0 }
 						alpha = 0
 						alwaystransparent = yes
 
 						state = {
 							name = show_hover
 							duration = 0.5
-							alpha = 0.42
+							alpha = 1.0
 							bezier = { 0 0 1 1 }
 						}
 
 						state = {
 							name = hide_hover
+							trigger_on_create = yes
 							duration = 0.5
 							alpha = 0
 							bezier = { 0 0 1 1 }
 						}
 					}
 
-					# Standard Blending Glow Layer (fades linearly over 0.5s)
 					icon = {
 						name = "sakuya_guiname_main_p2_title_glow_fade"
-						size = { 354 570 }
+						size = { 315 507 }
 						texture = "gfx/interface/component_masks/mask_glow.dds"
 						color = { 1.00 0.85 0.50 0.35 }
 						parentanchor = center
@@ -744,11 +959,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_marked_character_portrait_static"
 						datacontext = "[GetGlobalVariable('sakuya_p2_character').Char]"
-						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, GetGlobalVariable('sakuya_p2_character').IsSet), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
+						visible = "[And(And(And(And(GetPlayer.IsValid, GetGlobalVariable('sakuya_marked_character').IsSet), GetGlobalVariable('sakuya_p2_character').IsSet), And(Character.IsValid, Character.IsAlive)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -768,8 +983,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -782,11 +997,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_marked_character_portrait_animated"
 						datacontext = "[GetGlobalVariable('sakuya_p2_character').Char]"
-						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, GetGlobalVariable('sakuya_p2_character').IsSet), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
+						visible = "[And(And(And(And(GetPlayer.IsValid, GetGlobalVariable('sakuya_marked_character').IsSet), GetGlobalVariable('sakuya_p2_character').IsSet), And(Character.IsValid, Character.IsAlive)), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -806,8 +1021,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -820,11 +1035,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_character_portrait_static"
 						datacontext = "[GetGlobalVariable('sakuya_p2_character').Char]"
-						visible = "[And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), GetGlobalVariable('sakuya_p2_character').IsSet), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
+						visible = "[And(And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), GetGlobalVariable('sakuya_p2_character').IsSet), And(Character.IsValid, Character.IsAlive)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -844,8 +1059,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -858,11 +1073,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_character_portrait_animated"
 						datacontext = "[GetGlobalVariable('sakuya_p2_character').Char]"
-						visible = "[And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), GetGlobalVariable('sakuya_p2_character').IsSet), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
+						visible = "[And(And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), GetGlobalVariable('sakuya_p2_character').IsSet), And(Character.IsValid, Character.IsAlive)), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -882,8 +1097,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -896,11 +1111,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_marked_character_portrait_static_fallback"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, Not(GetGlobalVariable('sakuya_p2_character').IsSet)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
+						visible = "[And(And(And(GetGlobalVariable('sakuya_marked_character').IsSet, Not(GetGlobalVariable('sakuya_p2_character').IsSet)), And(Character.IsValid, Character.IsAlive)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -920,8 +1135,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -934,11 +1149,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_marked_character_portrait_animated_fallback"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, Not(GetGlobalVariable('sakuya_p2_character').IsSet)), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
+						visible = "[And(And(And(GetGlobalVariable('sakuya_marked_character').IsSet, Not(GetGlobalVariable('sakuya_p2_character').IsSet)), And(Character.IsValid, Character.IsAlive)), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -958,8 +1173,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -972,11 +1187,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_character_portrait_static_fallback"
 						datacontext = "[GetPlayer]"
-						visible = "[And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), Not(GetGlobalVariable('sakuya_p2_character').IsSet)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
+						visible = "[And(And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), Not(GetGlobalVariable('sakuya_p2_character').IsSet)), And(Character.IsValid, Character.IsAlive)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'title')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -996,8 +1211,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -1010,11 +1225,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p2_character_portrait_animated_fallback"
 						datacontext = "[GetPlayer]"
-						visible = "[And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), Not(GetGlobalVariable('sakuya_p2_character').IsSet)), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
+						visible = "[And(And(And(And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet)), Not(GetGlobalVariable('sakuya_p2_character').IsSet)), And(Character.IsValid, Character.IsAlive)), GetVariableSystem.HasValue('sakuya_main_hover', 'title'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -1034,8 +1249,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -1047,7 +1262,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p2_title_border_glow"
-						size = { 354 570 }
+						size = { 315 507 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -1066,8 +1281,11 @@ window = {
 						}
 
 						icon = {
-							size = { 354 570 }
+							size = { 315 507 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 15 15 }
+							texture_density = 2
 							color = { 1.00 0.82 0.48 1 }
 						}
 					}
@@ -1076,21 +1294,21 @@ window = {
 
 				widget = {
 					name = "sakuya_guiname_main_p2_frame_fork_base"
-					position = { -4 -18 }
-					size = { 362 588 }
+					position = { -4 -16 }
+					size = { 326 529 }
 					alwaystransparent = yes
 
 					icon = {
-						size = { 362 588 }
+						size = { 326 529 }
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
-						color = { 0.62 0.56 0.50 1 }
+						color = { 0.44 0.46 0.48 1 }
 					}
 				}
 
 				widget = {
 					name = "sakuya_guiname_main_p2_frame_fork_hover"
-					position = { -4 -18 }
-					size = { 362 588 }
+					position = { -4 -16 }
+					size = { 326 529 }
 					alpha = 0
 					alwaystransparent = yes
 
@@ -1109,32 +1327,175 @@ window = {
 					}
 
 					icon = {
-						size = { 362 588 }
+						size = { 326 529 }
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						color = { 1 1 1 1 }
+					}
+
+					icon = {
+						size = { 326 529 }
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 				}
 
-				textbox = {
+				widget = {
+					name = "sakuya_guiname_main_p2_title_slot"
 					parentanchor = bottom|hcenter
-					position = { 0 -30 }
-					size = { 300 54 }
-					maximumsize = { 300 54 }
-				text = "sakuya_main_p2_realm_text"
-				font = "MapFont"
-				fontsize = 34
-					fontsize_min = 20
-					autoresize = no
-				align = center|nobaseline
-				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
-			}
+					position = { 0 -27 }
+					size = { 270 49 }
+					scissor = yes
+					alwaystransparent = yes
+
+					textbox = {
+						name = "sakuya_guiname_main_p2_home_title"
+						size = { 270 49 }
+						maximumsize = { 270 49 }
+						text = "sakuya_main_p2_realm_text"
+						font = "MapFont"
+						fontsize = 31
+						fontsize_min = 18
+						autoresize = no
+						align = center|nobaseline
+						alpha = 1
+						default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+
+						state = {
+							name = enter_subpage
+							alpha = 0.01
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						state = {
+							name = return_home
+							alpha = 1
+							delay = 0.33
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+					}
+
+					widget = {
+						name = "sakuya_guiname_main_p2_subpage_title"
+						size = { 270 49 }
+						alpha = 0.01
+						alwaystransparent = yes
+
+						state = {
+							name = enter_subpage
+							alpha = 1
+							delay = 0.33
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						state = {
+							name = return_home
+							alpha = 0.01
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						widget = {
+							datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
+							visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
+							size = { 270 49 }
+
+							text_multi = {
+								visible = "[Character.GetPrimaryTitle.IsValid]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "[Character.GetPrimaryTitle.GetNameNoTooltip]"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+
+							text_multi = {
+								visible = "[Not(Character.GetPrimaryTitle.IsValid)]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "sakuya_main_no_title_text"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+						}
+
+						widget = {
+							datacontext = "[GetPlayer]"
+							visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), GetPlayer.IsValid)]"
+							size = { 270 49 }
+
+							text_multi = {
+								visible = "[Character.GetPrimaryTitle.IsValid]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "[Character.GetPrimaryTitle.GetNameNoTooltip]"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+
+							text_multi = {
+								visible = "[Not(Character.GetPrimaryTitle.IsValid)]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "sakuya_main_no_title_text"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+						}
+
+						text_multi = {
+							visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), Not(GetPlayer.IsValid))]"
+							size = { 270 49 }
+							maximumsize = { 270 49 }
+							text = "sakuya_main_no_title_text"
+							font = "MapFont"
+							fontsize = 22
+							fontsize_min = 18
+							autoresize = no
+							multiline = yes
+							elide = right
+							align = center|nobaseline
+							default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+						}
+					}
+				}
 
 			button = {
 				name = "sakuya_guiname_main_p2_frame_fork_input"
-				position = { -4 -18 }
-				size = { 362 588 }
+				visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab')))]"
+				position = { -4 -16 }
+				size = { 326 529 }
 				allow_outside = yes
 				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_home_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_subpage_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -1171,6 +1532,7 @@ window = {
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_underlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -1188,20 +1550,74 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_static_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_character_portrait_animated_fallback').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_glow_fade').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p2_realm_tt"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_underlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+
+			}
+
+			button = {
+				name = "sakuya_guiname_main_p2_frame_fork_return_input"
+				visible = "[GetVariableSystem.HasValue('sakuya_tab', 'title')]"
+				position = { -4 -16 }
+				size = { 326 529 }
+				allow_outside = yes
+				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_tab')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 			}
 		}
 
 			widget = {
 				name = "sakuya_guiname_main_p3_dynasty_card"
-				position = { 810 0 }
-				size = { 354 570 }
+				position = { 795 0 }
+				size = { 315 507 }
 				allow_outside = yes
 				alwaystransparent = yes
+				visible = "[Or(Not(GetVariableSystem.Exists('sakuya_tab')), GetVariableSystem.HasValue('sakuya_tab', 'dynasty'))]"
+
+				state = {
+					name = enter_subpage
+					position = { 10 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				state = {
+					name = return_home
+					position = { 795 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				icon = {
+					name = "sakuya_guiname_main_p3_underlight"
+					position = { -82 399 }
+					size = { 480 216 }
+					texture = "gfx/interface/sakuya/sakuya_underlight_glow.dds"
+					color = { 1.00 0.85 0.50 0.8 }
+					alpha = 0.01
+					alwaystransparent = yes
+
+					state = {
+						name = show_hover
+						duration = 0.35
+						alpha = 0.36
+						bezier = { 0 0 1 1 }
+					}
+
+					state = {
+						name = hide_hover
+						duration = 0.35
+						alpha = 0.01
+						bezier = { 0 0 1 1 }
+					}
+				}
 
 				widget = {
 					name = "sakuya_guiname_main_p3_dynasty_clip"
-					size = { 354 570 }
+					size = { 315 507 }
 					scissor = yes
 					alwaystransparent = yes
 
@@ -1209,7 +1625,7 @@ window = {
 						name = "sakuya_guiname_main_p3_dynasty_image"
 						parentanchor = center
 						widgetanchor = center
-						size = { 354 570 }
+						size = { 315 507 }
 						scale = 1.0
 						allow_outside = yes
 						alwaystransparent = yes
@@ -1231,18 +1647,23 @@ window = {
 						icon = {
 							parentanchor = center
 							widgetanchor = center
-							size = { 1138 570 }
-							texture = "gfx/interface/illustrations/event_scenes/ep3_constantinople.dds"
-							color = { 0.76 0.70 0.62 1 }
+							size = { 1024 513 }
+							texture = "gfx/interface/illustrations/event_scenes/feast.dds"
+							color = { 1 1 1 1 }
 						}
+					}
 
 
 
-						# VFX Layer: standard alpha structure
 						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow"
-							size = { 354 570 }
+							visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')]"
+							size = { 315 507 }
 							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+							gfxtype = icongfx
+							effectname = "Fog"
+							shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+							mipmaplodbias = -1
 							color = { 0.82 0.88 0.96 0.41 }
 							parentanchor = center
 							alpha = 0
@@ -1251,34 +1672,34 @@ window = {
 							state = {
 								name = show_hover
 								duration = 0.5
-								alpha = 0.5
+								alpha = 0.33
 								bezier = { 0 0 1 1 }
 							}
 
 							state = {
 								name = hide_hover
+								trigger_on_create = yes
 								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
 							}
 						}
 
-						# Standard Blending Mist Layer (fades linearly over 0.5s)
 						icon = {
 							name = "sakuya_guiname_main_p3_dynasty_glow_fade"
-							size = { 354 570 }
+							size = { 315 507 }
 							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
 							color = { 0.82 0.88 0.96 0.26 }
 							parentanchor = center
 							alpha = 0
 							alwaystransparent = yes
 
-							state = {
-								name = show_hover
-								duration = 0.5
-								alpha = 0.5
-								bezier = { 0 0 1 1 }
-							}
+						state = {
+							name = show_hover
+							duration = 0.5
+							alpha = 0.33
+							bezier = { 0 0 1 1 }
+						}
 
 							state = {
 								name = hide_hover
@@ -1291,9 +1712,13 @@ window = {
 
 						icon = {
 							name = "sakuya_guiname_main_p3_heavy_smoke"
-							size = { 354 570 }
-							texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
-							color = { 0.82 0.88 0.96 0.41 }
+							visible = "[GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')]"
+							size = { 315 507 }
+							texture = "gfx/interface/window_vfx/noise_01.dds"
+							gfxtype = icongfx
+							effectname = "HeavySmoke"
+							shaderfile = "gfx/FX/pdxgui_event_vfx.shader"
+							mipmaplodbias = -1
 							parentanchor = center
 							alpha = 0
 							alwaystransparent = yes
@@ -1301,22 +1726,28 @@ window = {
 							state = {
 								name = show_hover
 								duration = 0.5
-								alpha = 0.7
+								alpha = 0.8
 								bezier = { 0 0 1 1 }
 							}
 
 							state = {
 								name = hide_hover
+								trigger_on_create = yes
 								duration = 0.5
 								alpha = 0
 								bezier = { 0 0 1 1 }
 							}
+
+							activity_locale_vfx = {
+								size = { 100% 100% }
+								position = { 0.0% 0.0% }
+								entity_instance = "ui_heavy_smoke"
+							}
 						}
-					}
 
 					widget = {
 						name = "sakuya_guiname_main_p3_dynasty_dim"
-						size = { 354 570 }
+						size = { 315 507 }
 						alpha = 0.16
 						alwaystransparent = yes
 
@@ -1334,16 +1765,16 @@ window = {
 							bezier = { 0 0 1 1 }
 						}
 
-						icon = { size = { 354 570 } texture = "gfx/interface/colors/black.dds" }
+						icon = { size = { 315 507 } texture = "gfx/interface/colors/black.dds" }
 					}
 
 					widget = {
 						name = "sakuya_guiname_main_p3_marked_dynasty"
 						datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-						visible = "[And(And(GetGlobalVariable('sakuya_marked_character').IsSet, Character.GetHouse.IsValid), Not(GetGlobalVariable('sakuya_p3_character').IsSet))]"
+						visible = "[And(And(And(GetGlobalVariable('sakuya_marked_character').IsSet, And(Character.IsValid, Character.IsAlive)), Character.GetHouse.IsValid), Not(GetGlobalVariable('sakuya_p3_character').IsSet))]"
 						parentanchor = center
-						position = { 0 -160 }
-						size = { 160 160 }
+						position = { 0 -144 }
+						size = { 144 144 }
 						alpha = 0.6
 
 						state = {
@@ -1363,17 +1794,17 @@ window = {
 						coa_house_huge = {
 							datacontext = "[Character.GetHouse]"
 							parentanchor = center
-							scale = 1.9
+							scale = 1.7
 						}
 					}
 
 					widget = {
 						name = "sakuya_guiname_main_p3_house_coa"
 						datacontext = "[GetGlobalVariable('sakuya_p3_character').Char]"
-						visible = "[And(GetGlobalVariable('sakuya_p3_character').IsSet, Character.GetHouse.IsValid)]"
+						visible = "[And(And(And(GetPlayer.IsValid, GetGlobalVariable('sakuya_p3_character').IsSet), And(Character.IsValid, Character.IsAlive)), Character.GetHouse.IsValid)]"
 						parentanchor = center
-						position = { -80 -160 }
-						size = { 160 160 }
+						position = { -72 -144 }
+						size = { 144 144 }
 						alpha = 0.6
 
 						state = {
@@ -1393,18 +1824,18 @@ window = {
 						coa_house_huge = {
 							datacontext = "[Character.GetHouse]"
 							parentanchor = center
-							scale = 1.9
+							scale = 1.7
 						}
 					}
 
 					widget = {
 						name = "sakuya_guiname_main_p3_character_portrait_static"
 						datacontext = "[GetGlobalVariable('sakuya_p3_character').Char]"
-						visible = "[And(GetGlobalVariable('sakuya_p3_character').IsSet, Not(GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')))]"
+						visible = "[And(And(And(GetPlayer.IsValid, GetGlobalVariable('sakuya_p3_character').IsSet), And(Character.IsValid, Character.IsAlive)), Not(GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty')))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -1424,8 +1855,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -1438,11 +1869,11 @@ window = {
 					widget = {
 						name = "sakuya_guiname_main_p3_character_portrait_animated"
 						datacontext = "[GetGlobalVariable('sakuya_p3_character').Char]"
-						visible = "[And(GetGlobalVariable('sakuya_p3_character').IsSet, GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty'))]"
+						visible = "[And(And(And(GetPlayer.IsValid, GetGlobalVariable('sakuya_p3_character').IsSet), And(Character.IsValid, Character.IsAlive)), GetVariableSystem.HasValue('sakuya_main_hover', 'dynasty'))]"
 						parentanchor = center
 						widgetanchor = center
-						position = { 0 40 }
-						size = { 308 396 }
+						position = { 0 36 }
+						size = { 277 356 }
 						alpha = 0.98
 						allow_outside = no
 
@@ -1462,8 +1893,8 @@ window = {
 
 						portrait_body_large = {
 							parentanchor = bottom|hcenter
-							scale = 0.88
-							size = { 308 396 }
+							scale = 0.79
+							size = { 277 356 }
 							blockoverride "status_icons" {}
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
@@ -1475,7 +1906,7 @@ window = {
 
 					widget = {
 						name = "sakuya_guiname_main_p3_dynasty_border_glow"
-						size = { 354 570 }
+						size = { 315 507 }
 						alpha = 0
 						alwaystransparent = yes
 
@@ -1494,8 +1925,11 @@ window = {
 						}
 
 						icon = {
-							size = { 354 570 }
+							size = { 315 507 }
 							texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 15 15 }
+							texture_density = 2
 							color = { 1.00 0.82 0.48 1 }
 						}
 					}
@@ -1504,21 +1938,21 @@ window = {
 
 				widget = {
 					name = "sakuya_guiname_main_p3_frame_fork_base"
-					position = { -4 -18 }
-					size = { 362 588 }
+					position = { -4 -16 }
+					size = { 326 529 }
 					alwaystransparent = yes
 
 					icon = {
-						size = { 362 588 }
+						size = { 326 529 }
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
-						color = { 0.62 0.56 0.50 1 }
+						color = { 0.44 0.46 0.48 1 }
 					}
 				}
 
 				widget = {
 					name = "sakuya_guiname_main_p3_frame_fork_hover"
-					position = { -4 -18 }
-					size = { 362 588 }
+					position = { -4 -16 }
+					size = { 326 529 }
 					alpha = 0
 					alwaystransparent = yes
 
@@ -1537,32 +1971,175 @@ window = {
 					}
 
 					icon = {
-						size = { 362 588 }
+						size = { 326 529 }
+						texture = "gfx/interface/sakuya/frame_fork_border.png"
+						color = { 1 1 1 1 }
+					}
+
+					icon = {
+						size = { 326 529 }
 						texture = "gfx/interface/sakuya/frame_fork_border.png"
 						color = { 1 1 1 1 }
 					}
 				}
 
-				textbox = {
+				widget = {
+					name = "sakuya_guiname_main_p3_title_slot"
 					parentanchor = bottom|hcenter
-					position = { 0 -30 }
-					size = { 300 54 }
-					maximumsize = { 300 54 }
-				text = "sakuya_main_p3_family_text"
-				font = "MapFont"
-				fontsize = 34
-					fontsize_min = 20
-					autoresize = no
-				align = center|nobaseline
-				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
-			}
+					position = { 0 -27 }
+					size = { 270 49 }
+					scissor = yes
+					alwaystransparent = yes
+
+					textbox = {
+						name = "sakuya_guiname_main_p3_home_title"
+						size = { 270 49 }
+						maximumsize = { 270 49 }
+						text = "sakuya_main_p3_family_text"
+						font = "MapFont"
+						fontsize = 31
+						fontsize_min = 18
+						autoresize = no
+						align = center|nobaseline
+						alpha = 1
+						default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+
+						state = {
+							name = enter_subpage
+							alpha = 0.01
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						state = {
+							name = return_home
+							alpha = 1
+							delay = 0.33
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+					}
+
+					widget = {
+						name = "sakuya_guiname_main_p3_subpage_title"
+						size = { 270 49 }
+						alpha = 0.01
+						alwaystransparent = yes
+
+						state = {
+							name = enter_subpage
+							alpha = 1
+							delay = 0.33
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						state = {
+							name = return_home
+							alpha = 0.01
+							duration = 0.33
+							using = Animation_Curve_Default
+						}
+
+						widget = {
+							datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
+							visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
+							size = { 270 49 }
+
+							text_multi = {
+								visible = "[Character.HasDynasty]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "[Character.GetHouse.GetNameNoTooltip]"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+
+							text_multi = {
+								visible = "[Not(Character.HasDynasty)]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "sakuya_main_lowborn_text"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+						}
+
+						widget = {
+							datacontext = "[GetPlayer]"
+							visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), GetPlayer.IsValid)]"
+							size = { 270 49 }
+
+							text_multi = {
+								visible = "[Character.HasDynasty]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "[Character.GetHouse.GetNameNoTooltip]"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+
+							text_multi = {
+								visible = "[Not(Character.HasDynasty)]"
+								size = { 270 49 }
+								maximumsize = { 270 49 }
+								text = "sakuya_main_lowborn_text"
+								font = "MapFont"
+								fontsize = 22
+								fontsize_min = 18
+								autoresize = no
+								multiline = yes
+								elide = right
+								align = center|nobaseline
+								default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+							}
+						}
+
+						text_multi = {
+							visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), Not(GetPlayer.IsValid))]"
+							size = { 270 49 }
+							maximumsize = { 270 49 }
+							text = "sakuya_main_no_player_text"
+							font = "MapFont"
+							fontsize = 22
+							fontsize_min = 18
+							autoresize = no
+							multiline = yes
+							elide = right
+							align = center|nobaseline
+							default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.9}"
+						}
+					}
+				}
 
 			button = {
 				name = "sakuya_guiname_main_p3_frame_fork_input"
-				position = { -4 -18 }
-				size = { 362 588 }
+				visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab')))]"
+				position = { -4 -16 }
+				size = { 326 529 }
 				allow_outside = yes
 				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_home_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_subpage_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_border_glow').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -1590,6 +2167,7 @@ window = {
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
+				onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_underlight').InterruptThenTriggerAnimation('hide_hover','show_hover')]"
 				onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_image').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_dim').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
@@ -1602,706 +2180,89 @@ window = {
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_house_coa').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_static').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
 				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_character_portrait_animated').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
-				tooltip = "sakuya_main_p3_family_tt"
+				onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_underlight').InterruptThenTriggerAnimation('show_hover','hide_hover')]"
+
+			}
+
+			button = {
+				name = "sakuya_guiname_main_p3_frame_fork_return_input"
+				visible = "[GetVariableSystem.HasValue('sakuya_tab', 'dynasty')]"
+				position = { -4 -16 }
+				size = { 326 529 }
+				allow_outside = yes
+				alwaystransparent = no
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_tab')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 			}
 		}
 		}
 
-		widget = {
-			name = "sakuya_guiname_page_nav"
-			position = { 58 120 }
-			size = { 170 486 }
-			visible = "[GetVariableSystem.Exists('sakuya_tab')]"
 
-			icon = {
-				size = { 170 486 }
-				texture = "gfx/interface/sakuya/sakuya_bkmask2.png"
-				color = { 0.10 0.16 0.18 0.84 }
-			}
-
-			icon = {
-				size = { 170 486 }
-				texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
-				alpha = 0.64
-			}
-
-			vbox = {
-				position = { 12 24 }
-				size = { 146 438 }
-				spacing = 12
-
-				button_standard = {
-					name = "sakuya_guiname_nav_character"
-					size = { 146 40 }
-					down = "[GetVariableSystem.HasValue('sakuya_tab', 'character')]"
-					onclick = "[GetVariableSystem.Set('sakuya_tab', 'character')]"
-					text_single = {
-						parentanchor = center
-						text = "sakuya_main_p1_character_text"
-						fontsize = 16
-						fontsize_min = 10
-						autoresize = no
-						align = center|nobaseline
-					}
-				}
-
-				button_standard = {
-					name = "sakuya_guiname_nav_title"
-					size = { 146 40 }
-					down = "[GetVariableSystem.HasValue('sakuya_tab', 'title')]"
-					onclick = "[GetVariableSystem.Set('sakuya_tab', 'title')]"
-					text_single = {
-						parentanchor = center
-						text = "sakuya_main_p2_realm_text"
-						fontsize = 16
-						fontsize_min = 10
-						autoresize = no
-						align = center|nobaseline
-					}
-				}
-
-				button_standard = {
-					name = "sakuya_guiname_nav_dynasty"
-					size = { 146 40 }
-					down = "[GetVariableSystem.HasValue('sakuya_tab', 'dynasty')]"
-					onclick = "[GetVariableSystem.Set('sakuya_tab', 'dynasty')]"
-					text_single = {
-						parentanchor = center
-						text = "sakuya_main_p3_family_text"
-						fontsize = 16
-						fontsize_min = 10
-						autoresize = no
-						align = center|nobaseline
-					}
-				}
-			}
-		}
-
-		widget = {
-			name = "sakuya_guiname_page_character"
-			position = { 250 120 }
-			size = { 970 486 }
-			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'character')]"
-
-			icon = { size = { 970 486 } texture = "gfx/interface/sakuya/sakuya_background_character_blur.png" color = { 0.72 0.62 0.64 0.76 } }
-			icon = { size = { 970 486 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
-			icon = { size = { 970 486 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.88 }
-			icon = { position = { 12 12 } size = { 946 462 } texture = "gfx/interface/component_overlay/overlay_effect_border.dds" alpha = 0.28 }
-
-			widget = {
-				name = "sakuya_guiname_page_character_portrait"
-				position = { 38 66 }
-				size = { 250 350 }
-
-				icon = { size = { 250 350 } texture = "gfx/interface/colors/black.dds" alpha = 0.36 }
-				icon = { size = { 250 350 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.68 }
-
-				widget = {
-					datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-					visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
-					parentanchor = bottom|hcenter
-					position = { 0 -8 }
-					size = { 220 306 }
-					portrait_body = {
-						parentanchor = bottom|hcenter
-					}
-				}
-
-				widget = {
-					datacontext = "[GetPlayer]"
-					visible = "[And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
-					parentanchor = bottom|hcenter
-					position = { 0 -8 }
-					size = { 220 306 }
-					portrait_body = {
-						parentanchor = bottom|hcenter
-					}
-				}
-
-				textbox = {
-					visible = "[And(Not(GetPlayer.IsValid), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
-					parentanchor = center
-					size = { 190 78 }
-					text = "sakuya_main_no_player_text"
-					fontsize = 18
-					fontsize_min = 11
-					autoresize = no
-					multiline = yes
-					align = center|nobaseline
-					default_format = "#weak"
-				}
-			}
-
-			textbox = {
-				position = { 326 52 }
-				size = { 420 40 }
-				maximumsize = { 420 40 }
-				text = "sakuya_page_character_title_text"
-				font = "StandardGameFont"
-				fontsize = 30
-				fontsize_min = 18
-				autoresize = no
-				align = left|nobaseline
-				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
-			}
-
-			textbox = {
-				visible = "[And(GetPlayer.IsValid, Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
-				position = { 328 98 }
-				size = { 430 28 }
-				maximumsize = { 430 28 }
-				text = "[GetPlayer.GetUINameNoTooltip]"
-				fontsize = 20
-				fontsize_min = 12
-				autoresize = no
-				align = left|nobaseline
-				default_format = "#high"
-			}
-
-			widget = {
-				datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-				visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
-				textbox = {
-					position = { 328 98 }
-					size = { 430 28 }
-					maximumsize = { 430 28 }
-					text = "[Character.GetUINameNoTooltip]"
-					fontsize = 20
-					fontsize_min = 12
-					autoresize = no
-					align = left|nobaseline
-					default_format = "#high"
-				}
-			}
-
-			textbox = {
-				position = { 328 138 }
-				size = { 500 42 }
-				maximumsize = { 500 42 }
-				text = "sakuya_page_character_desc_text"
-				fontsize = 16
-				fontsize_min = 10
-				autoresize = no
-				multiline = yes
-				align = left|nobaseline
-				default_format = "#medium"
-			}
-
-			vbox = {
-				position = { 328 210 }
-				size = { 500 146 }
-				spacing = 12
-				hbox = {
-					spacing = 12
-					button_standard = {
-						name = "sakuya_guiname_character_attr"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_character_attr_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_character_attr_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_1_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_character_trait"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_character_trait_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_character_trait_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_2_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_character_relation"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_3_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-				hbox = {
-					spacing = 12
-					button_standard = {
-						name = "sakuya_guiname_character_health"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_character_health_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_character_health_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_4_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_character_resource"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_5_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_character_appearance"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_6_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-			}
-
-			widget = {
-				name = "sakuya_guiname_character_test_strip"
-				position = { 328 382 }
-				size = { 500 56 }
-				icon = { size = { 500 56 } texture = "gfx/interface/colors/black.dds" alpha = 0.28 }
-				icon = { size = { 500 56 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.46 }
-				hbox = {
-					position = { 16 10 }
-					spacing = 14
-					button_plus = { name = "sakuya_guiname_character_test_plus" size = { 36 36 } down = "[GetVariableSystem.Exists('sakuya_page_character_plus_active')]" onclick = "[GetVariableSystem.Toggle('sakuya_page_character_plus_active')]" tooltip = "sakuya_page_icon_test_tt" }
-					button_minus = { name = "sakuya_guiname_character_test_minus" size = { 36 36 } enabled = no tooltip = "sakuya_page_icon_test_tt" }
-					button_standard = {
-						name = "sakuya_guiname_character_test_placeholder"
-						size = { 150 34 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_small_btn_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-			}
-		}
 
 		widget = {
 			name = "sakuya_guiname_page_title"
-			position = { 250 120 }
-			size = { 970 486 }
+			position = { 425 137 }
+			size = { 797 507 }
 			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'title')]"
 
-			icon = { size = { 970 486 } texture = "gfx/interface/illustrations/event_scenes/corridor_day.dds" color = { 0.70 0.66 0.58 0.76 } }
-			icon = { size = { 970 486 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
-			icon = { size = { 970 486 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.88 }
-			icon = { position = { 12 12 } size = { 946 462 } texture = "gfx/interface/component_overlay/overlay_effect_border.dds" alpha = 0.34 }
-
-			widget = {
-				name = "sakuya_guiname_page_title_coa"
-				position = { 58 120 }
-				size = { 190 220 }
-				icon = { size = { 190 220 } texture = "gfx/interface/colors/black.dds" alpha = 0.34 }
-				icon = { size = { 190 220 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.68 }
-				widget = {
-					datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-					visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
-					parentanchor = center
-					size = { 142 164 }
-					widget = {
-						visible = "[Character.IsRuler]"
-						parentanchor = center
-						size = { 142 164 }
-						coa_realm_big_crown = { parentanchor = center }
-					}
-					textbox = { visible = "[Not(Character.IsRuler)]" parentanchor = center size = { 150 72 } text = "sakuya_main_no_title_text" fontsize = 18 fontsize_min = 11 autoresize = no multiline = yes align = center|nobaseline default_format = "#weak" }
-				}
-				widget = {
-					datacontext = "[GetPlayer]"
-					visible = "[And(And(GetPlayer.IsValid, GetPlayer.IsRuler), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
-					parentanchor = center
-					size = { 142 164 }
-					coa_realm_big_crown = { parentanchor = center }
-				}
-				textbox = { visible = "[And(Not(And(GetPlayer.IsValid, GetPlayer.IsRuler)), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]" parentanchor = center size = { 150 72 } text = "sakuya_main_no_title_text" fontsize = 18 fontsize_min = 11 autoresize = no multiline = yes align = center|nobaseline default_format = "#weak" }
+			icon = {
+				size = { 797 507 }
+				texture = "gfx/interface/component_tiles/tile_window_background.dds"
+				spriteType = Corneredtiled
+				texture_density = 2
+			}
+			icon = { size = { 797 507 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
+			icon = {
+				size = { 797 507 }
+				texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 15 15 }
+				texture_density = 2
+				alpha = 0.88
 			}
 
-			textbox = { position = { 326 52 } size = { 420 40 } maximumsize = { 420 40 } text = "sakuya_page_realm_title_text" font = "TitleFont" fontsize = 30 fontsize_min = 18 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}" }
-			widget = { datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]" visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]" textbox = { visible = "[Character.IsRuler]" position = { 328 98 } size = { 430 28 } maximumsize = { 430 28 } text = "[Character.GetPrimaryTitle.GetNameNoTierNoTooltip]" fontsize = 20 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#high" } }
-			textbox = { visible = "[And(And(GetPlayer.IsValid, GetPlayer.IsRuler), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]" position = { 328 98 } size = { 430 28 } maximumsize = { 430 28 } text = "[GetPlayer.GetPrimaryTitle.GetNameNoTierNoTooltip]" fontsize = 20 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#high" }
-			textbox = { position = { 328 138 } size = { 500 42 } maximumsize = { 500 42 } text = "sakuya_page_realm_desc_text" fontsize = 16 fontsize_min = 10 autoresize = no multiline = yes align = left|nobaseline default_format = "#medium" }
-
-			vbox = {
-				position = { 328 210 }
-				size = { 500 146 }
-				spacing = 12
-				hbox = {
-					spacing = 12
-					button_standard = {
-						name = "sakuya_guiname_title_title"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_title_title_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_title_title_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_7_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_title_vassal"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_title_vassal_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_title_vassal_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_8_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_title_domain"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_9_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-				hbox = {
-					spacing = 12
-					button_standard = {
-						name = "sakuya_guiname_title_military"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_title_military_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_title_military_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_10_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_title_court"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_11_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_title_law"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_12_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-			}
-
-			widget = {
-				name = "sakuya_guiname_title_test_strip"
-				position = { 328 382 }
-				size = { 500 56 }
-				icon = { size = { 500 56 } texture = "gfx/interface/colors/black.dds" alpha = 0.30 }
-				icon = { size = { 500 56 } texture = "gfx/interface/component_overlay/overlay_effect_border.dds" alpha = 0.38 }
-				hbox = {
-					position = { 16 10 }
-					spacing = 14
-					button_plus = { name = "sakuya_guiname_title_test_plus" size = { 36 36 } down = "[GetVariableSystem.Exists('sakuya_page_title_plus_active')]" onclick = "[GetVariableSystem.Toggle('sakuya_page_title_plus_active')]" tooltip = "sakuya_page_icon_test_tt" }
-					button_minus = { name = "sakuya_guiname_title_test_minus" size = { 36 36 } enabled = no tooltip = "sakuya_page_icon_test_tt" }
-					button_standard = {
-						name = "sakuya_guiname_title_test_placeholder"
-						size = { 150 34 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_small_btn_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
+			text_single = {
+				parentanchor = center
+				text = "sakuya_page_designing"
+				font = "TitleFont"
+				fontsize = 28
+				align = center|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
 			}
 		}
 
 		widget = {
 			name = "sakuya_guiname_page_dynasty"
-			position = { 250 120 }
-			size = { 970 486 }
+			position = { 425 137 }
+			size = { 797 507 }
 			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'dynasty')]"
 
-			icon = { size = { 970 486 } texture = "gfx/interface/sakuya/sakuya_background_family_blur.png" color = { 0.74 0.62 0.58 0.76 } }
-			icon = { size = { 970 486 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
-			icon = { size = { 970 486 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.88 }
-			icon = { position = { 12 12 } size = { 946 462 } texture = "gfx/interface/component_overlay/overlay_effect_border.dds" alpha = 0.30 }
-
-			widget = {
-				name = "sakuya_guiname_page_dynasty_coa"
-				position = { 58 120 }
-				size = { 190 220 }
-				icon = { size = { 190 220 } texture = "gfx/interface/colors/black.dds" alpha = 0.34 }
-				icon = { size = { 190 220 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.68 }
-				widget = {
-					datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-					visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]"
-					parentanchor = center
-					size = { 142 142 }
-					widget = {
-						visible = "[Character.IsDynast]"
-						datacontext = "[Character.GetHouse]"
-						parentanchor = center
-						size = { 142 142 }
-						coa_house_big = { parentanchor = center }
-					}
-					widget = {
-						visible = "[Not(Character.IsDynast)]"
-						parentanchor = center
-						size = { 142 142 }
-						coa_lowborn_icon = {
-							parentanchor = center
-							blockoverride "icon_size" {
-								size = { 92 92 }
-							}
-						}
-					}
-				}
-				widget = {
-					datacontext = "[GetPlayer.GetHouse]"
-					visible = "[And(And(GetPlayer.IsValid, GetPlayer.IsDynast), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
-					parentanchor = center
-					size = { 142 142 }
-					coa_house_big = { parentanchor = center }
-				}
-				widget = {
-					visible = "[And(And(GetPlayer.IsValid, Not(GetPlayer.IsDynast)), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]"
-					parentanchor = center
-					size = { 142 142 }
-					coa_lowborn_icon = {
-						parentanchor = center
-						blockoverride "icon_size" {
-							size = { 92 92 }
-						}
-					}
-				}
-				textbox = { visible = "[And(Not(GetPlayer.IsValid), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]" parentanchor = center size = { 150 72 } text = "sakuya_main_no_player_text" fontsize = 18 fontsize_min = 11 autoresize = no multiline = yes align = center|nobaseline default_format = "#weak" }
+			icon = {
+				size = { 797 507 }
+				texture = "gfx/interface/component_tiles/tile_window_background.dds"
+				spriteType = Corneredtiled
+				texture_density = 2
+			}
+			icon = { size = { 797 507 } texture = "gfx/interface/colors/black.dds" alpha = 0.42 }
+			icon = {
+				size = { 797 507 }
+				texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 15 15 }
+				texture_density = 2
+				alpha = 0.88
 			}
 
-			textbox = { position = { 326 52 } size = { 420 40 } maximumsize = { 420 40 } text = "sakuya_page_family_title_text" font = "MapFont" fontsize = 30 fontsize_min = 18 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}" }
-			widget = { datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]" visible = "[GetGlobalVariable('sakuya_marked_character').IsSet]" textbox = { visible = "[Character.IsDynast]" position = { 328 98 } size = { 430 28 } maximumsize = { 430 28 } text = "sakuya_main_p3_family_text" fontsize = 20 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#high" } textbox = { visible = "[Not(Character.IsDynast)]" position = { 328 98 } size = { 430 28 } maximumsize = { 430 28 } text = "sakuya_main_lowborn_text" fontsize = 20 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#weak" } }
-			textbox = { visible = "[And(And(GetPlayer.IsValid, GetPlayer.IsDynast), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]" position = { 328 98 } size = { 430 28 } maximumsize = { 430 28 } text = "sakuya_main_p3_family_text" fontsize = 20 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#high" }
-			textbox = { visible = "[And(And(GetPlayer.IsValid, Not(GetPlayer.IsDynast)), Not(GetGlobalVariable('sakuya_marked_character').IsSet))]" position = { 328 98 } size = { 430 28 } maximumsize = { 430 28 } text = "sakuya_main_lowborn_text" fontsize = 20 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#weak" }
-			textbox = { position = { 328 138 } size = { 500 42 } maximumsize = { 500 42 } text = "sakuya_page_family_desc_text" fontsize = 16 fontsize_min = 10 autoresize = no multiline = yes align = left|nobaseline default_format = "#medium" }
-
-			vbox = {
-				position = { 328 210 }
-				size = { 500 146 }
-				spacing = 12
-				hbox = {
-					spacing = 12
-					button_standard = {
-						name = "sakuya_guiname_dynasty_house"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_dynasty_house_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_dynasty_house_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_13_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_dynasty_dynasty"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_dynasty_dynasty_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_dynasty_dynasty_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_14_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_dynasty_kin"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_15_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-				hbox = {
-					spacing = 12
-					button_standard = {
-						name = "sakuya_guiname_dynasty_prestige"
-						size = { 150 36 }
-						down = "[GetVariableSystem.Exists('sakuya_page_dynasty_prestige_active')]"
-						onclick = "[GetVariableSystem.Toggle('sakuya_page_dynasty_prestige_active')]"
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_16_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_dynasty_legacy"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_17_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-					button_standard = {
-						name = "sakuya_guiname_dynasty_blood"
-						size = { 150 36 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_btn_placeholder_18_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
-			}
-
-			widget = {
-				name = "sakuya_guiname_dynasty_test_strip"
-				position = { 328 382 }
-				size = { 500 56 }
-				icon = { size = { 500 56 } texture = "gfx/interface/colors/black.dds" alpha = 0.26 }
-				icon = { size = { 500 56 } texture = "gfx/interface/component_overlay/overlay_thin_frame.dds" alpha = 0.50 }
-				hbox = {
-					position = { 16 10 }
-					spacing = 14
-					button_plus = { name = "sakuya_guiname_dynasty_test_plus" size = { 36 36 } down = "[GetVariableSystem.Exists('sakuya_page_dynasty_plus_active')]" onclick = "[GetVariableSystem.Toggle('sakuya_page_dynasty_plus_active')]" tooltip = "sakuya_page_icon_test_tt" }
-					button_minus = { name = "sakuya_guiname_dynasty_test_minus" size = { 36 36 } enabled = no tooltip = "sakuya_page_icon_test_tt" }
-					button_standard = {
-						name = "sakuya_guiname_dynasty_test_placeholder"
-						size = { 150 34 }
-						enabled = no
-						tooltip = "sakuya_page_btn_placeholder_tt"
-						text_single = {
-							parentanchor = center
-							text = "sakuya_page_small_btn_text"
-							fontsize = 14
-							fontsize_min = 9
-							autoresize = no
-							align = center|nobaseline
-							default_format = "#medium"
-						}
-					}
-				}
+			text_single = {
+				parentanchor = center
+				text = "sakuya_page_designing"
+				font = "TitleFont"
+				fontsize = 28
+				align = center|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
 			}
 		}
 	}

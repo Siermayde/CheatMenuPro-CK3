@@ -1,7 +1,3 @@
-######################################################
-# CK3 CMP - Launcher Button
-######################################################
-
 window = {
 	name = "sakuya_guiname_main_launcher_button_window"
 	parentanchor = top|left

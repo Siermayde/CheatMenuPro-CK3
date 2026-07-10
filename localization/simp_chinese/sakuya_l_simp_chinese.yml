@@ -13,7 +13,7 @@
  SKY_title: "领地"
  SKY_dynasty: "家族"
  SKY_no_character: "无有效角色"
- SKY_no_title: "无有效领地"
+ SKY_no_title: "无领地"
  SKY_lowborn: "出身卑微"
  SKY_test: "测试"
  SKY_placeholder: "占位"
@@ -63,3 +63,5 @@
  sakuya_page_small_btn_text: "$SKY_placeholder$"
  sakuya_mark_character_interaction: "设为咲夜目标"
  sakuya_mark_character_interaction_desc: "将该角色设为咲夜菜单目标。"
+ sakuya_page_designing: "设计中"
+
