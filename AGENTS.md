@@ -8,70 +8,9 @@
 
 ---
 
-## 0. 强制 Git 备份（最高优先级项目规则）
+## 0. Git
 
-**本项目任意文件变动后，必须立刻进入 git 并尽量推到远程。禁止只改磁盘、不 commit。**
-
-此条优先于「图省事」「等做完再交」「监视器会兜底」等一切借口。
-
-### 0.1 适用范围
-
-- 仓库路径：本模组根目录（含 `gui/`、`common/`、`localization/`、`docs/`、`tools/`、`AGENTS.md` 等）
-- 远程：`origin` → `https://github.com/Siermayde/CheatMenuPro-CK3.git`（以 `git remote -v` 为准）
-- 默认分支：`main`
-- 适用对象：用户本人、任何 AI（Grok / Claude / Cursor 等）、脚本
-
-### 0.2 每次改完必须执行的步骤
-
-在本目录下：
-
-1. `git add -A`（或精确 add 相关文件；必须遵守 `.gitignore`）
-2. `git status` 确认将要提交的内容
-3. `git commit -m "..."`  
-   - 用完整句子写清改了什么  
-   - 未完成可用前缀 `WIP:`  
-   - 禁止空提交借口；有改动就必须 commit
-4. `git push origin HEAD`（或 `git push origin main`）  
-   - 网络可用时**必须** push  
-   - push 失败：本地 commit 仍算完成，但必须在回复中明确写出失败原因与后续处理
-
-### 0.3 硬性禁止
-
-1. **禁止**连续多轮修改却不 commit（包括「只改一点点」）。
-2. **禁止**以「还没做完 / 还在试 / 布局难看」为由跳过 commit。
-3. **禁止**假设用户会手动备份；本项目默认 AI/工具负责入库。
-4. **禁止**把自动监视器当成可以拖延 commit 的理由；监视器是双保险，不是主流程。
-5. **禁止**在未授权时使用破坏性 git：  
-   `git reset --hard`、`git clean -fd`、`git push --force` / `--force-with-lease`（除非用户明确要求）。
-
-### 0.4 用户一句话即授权提交
-
-用户说以下任一意思时，**立即** commit + push，不必再问「要不要提交」：
-
-- 备份 / 上 git / 强制 git / 提交 / push / 入库
-
-### 0.5 本机自动监视（双保险，须保持运行才生效）
-
-改文件并空闲约 45 秒后，脚本会自动 `add` / `commit` / `push`。
-
-| 用途 | 命令 / 路径 |
-|------|-------------|
-| 启动监视 | 双击 `tools\start_auto_git_backup.cmd` |
-| 或 | `powershell -NoProfile -ExecutionPolicy Bypass -File tools\auto_git_backup.ps1` |
-| 只本地不推 | `tools\auto_git_backup.ps1 -NoPush` |
-| 立刻备份一次 | `tools\auto_git_backup.ps1 -Once` |
-| 日志 | `tools\_auto_git_state\auto_git_backup.log` |
-
-AI 仍须主动 commit；不得等监视器。
-
-### 0.6 收工检查（每次回复涉及改文件时）
-
-改完文件后，在结束前自检：
-
-- [ ] 相关改动已 `git add`
-- [ ] 已成功 `git commit`
-- [ ] 已尝试 `git push`（失败已说明）
-- [ ] 未使用未授权的破坏性 git
+**强制每次修改后 git（add + commit + push）。**
 
 ---
 
