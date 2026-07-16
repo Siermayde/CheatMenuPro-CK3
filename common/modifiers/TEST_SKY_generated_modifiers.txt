@@ -1,0 +1,5130 @@
+# TEST_SKY named modifiers. Numeric step values follow CK3 modifier_definition_formats; numeric modifiers scale by a scope variable for repeated left-click stacking.
+# Existing VALUE_05 identifiers are kept stable so modifiers already applied during development can still be removed; the actual per-layer value is defined below and in the tooltip.
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0001_dynasty_opinion_VALUE_05 = {
+	dynasty_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0001_dynasty_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0001_legitimacy_loss_mult_VALUE_05 = {
+	legitimacy_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0001_legitimacy_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0001_intimidated_vassal_piety_contribution_mult_VALUE_05 = {
+	intimidated_vassal_piety_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0001_intimidated_vassal_piety_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0001_vassal_herd_contribution_add_VALUE_05 = {
+	vassal_herd_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0001_vassal_herd_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0001_ai_boldness_VALUE_05 = {
+	ai_boldness = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0001_ai_boldness_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0002_ai_compassion_VALUE_05 = {
+	ai_compassion = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0002_ai_compassion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0002_same_faith_opinion_VALUE_05 = {
+	same_faith_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0002_same_faith_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0003_monthly_merit_mult_VALUE_05 = {
+	monthly_merit_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0003_monthly_merit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0004_diplomatic_range_mult_VALUE_05 = {
+	diplomatic_range_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0004_diplomatic_range_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0002_monthly_prestige_gain_per_legitimacy_level_add_VALUE_05 = {
+	monthly_prestige_gain_per_legitimacy_level_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0002_monthly_prestige_gain_per_legitimacy_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0001_owned_hostile_scheme_success_chance_add_VALUE_05 = {
+	owned_hostile_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0001_owned_hostile_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0002_build_piety_cost_VALUE_05 = {
+	build_piety_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0002_build_piety_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0001_intrigue_mult_VALUE_05 = {
+	intrigue_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0001_intrigue_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0005_provisions_gain_mult_VALUE_05 = {
+	provisions_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0005_provisions_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0001_owned_political_scheme_success_chance_growth_add_VALUE_05 = {
+	owned_political_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0001_owned_political_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0001_happy_powerful_vassal_tax_contribution_add_VALUE_05 = {
+	happy_powerful_vassal_tax_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0001_happy_powerful_vassal_tax_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0002_personal_scheme_phase_duration_add_VALUE_05 = {
+	personal_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0002_personal_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0001_stationed_maa_screen_add_VALUE_05 = {
+	stationed_maa_screen_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0001_stationed_maa_screen_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0002_intrigue_per_stress_level_VALUE_05 = {
+	intrigue_per_stress_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0002_intrigue_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0003_ignore_different_faith_opinion_VALUE_YES = { ignore_different_faith_opinion = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0003_knight_effectiveness_per_martial_VALUE_05 = {
+	knight_effectiveness_per_martial = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0003_knight_effectiveness_per_martial_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0003_owned_personal_scheme_success_chance_max_add_VALUE_05 = {
+	owned_personal_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0003_owned_personal_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0002_owned_personal_scheme_success_chance_growth_add_VALUE_05 = {
+	owned_personal_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0002_owned_personal_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0003_cowed_vassal_prestige_contribution_add_VALUE_05 = {
+	cowed_vassal_prestige_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0003_cowed_vassal_prestige_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0001_mercenary_hire_cost_add_VALUE_05 = {
+	mercenary_hire_cost_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0001_mercenary_hire_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0006_treasury_ministry_budget_allocation_VALUE_05 = {
+	treasury_ministry_budget_allocation = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0006_treasury_ministry_budget_allocation_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0004_fellow_vassal_opinion_VALUE_05 = {
+	fellow_vassal_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0004_fellow_vassal_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0001_independent_primary_defender_advantage_add_VALUE_05 = {
+	independent_primary_defender_advantage_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0001_independent_primary_defender_advantage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0002_army_damage_mult_VALUE_05 = {
+	army_damage_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0002_army_damage_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0004_enemy_personal_scheme_phase_duration_add_VALUE_05 = {
+	enemy_personal_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0004_enemy_personal_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0005_opinion_of_female_rulers_VALUE_05 = {
+	opinion_of_female_rulers = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0005_opinion_of_female_rulers_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0001_revolting_siege_morale_loss_mult_VALUE_05 = {
+	revolting_siege_morale_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0001_revolting_siege_morale_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0002_revolting_siege_morale_loss_add_VALUE_05 = {
+	revolting_siege_morale_loss_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0002_revolting_siege_morale_loss_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0007_provisions_use_mult_VALUE_05 = {
+	provisions_use_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0007_provisions_use_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0002_vassal_tax_contribution_mult_VALUE_05 = {
+	vassal_tax_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0002_vassal_tax_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0005_enemy_contract_scheme_success_chance_max_add_VALUE_05 = {
+	enemy_contract_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0005_enemy_contract_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0008_herd_capacity_add_VALUE_05 = {
+	herd_capacity_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0008_herd_capacity_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0009_hard_casualty_modifier_VALUE_05 = {
+	hard_casualty_modifier = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0009_hard_casualty_modifier_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0001_monthly_county_control_growth_factor_even_if_baron_VALUE_05 = {
+	monthly_county_control_growth_factor_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0001_monthly_county_control_growth_factor_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0001_naval_movement_speed_mult_VALUE_05 = {
+	naval_movement_speed_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0001_naval_movement_speed_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0002_monthly_war_influence_income_mult_VALUE_05 = {
+	monthly_war_influence_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0002_monthly_war_influence_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0006_monthly_prestige_gain_per_dread_mult_VALUE_05 = {
+	monthly_prestige_gain_per_dread_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0006_monthly_prestige_gain_per_dread_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0002_intimidated_vassal_levy_contribution_add_VALUE_05 = {
+	intimidated_vassal_levy_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0002_intimidated_vassal_levy_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0010_provisions_loss_mult_VALUE_05 = {
+	provisions_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0010_provisions_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0011_character_max_merit_level_add_VALUE_05 = {
+	character_max_merit_level_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0011_character_max_merit_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0003_advantage_VALUE_05 = {
+	advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0003_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0007_dynasty_house_opinion_VALUE_05 = {
+	dynasty_house_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0007_dynasty_house_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0004_prowess_VALUE_05 = {
+	prowess = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0004_prowess_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0005_learning_per_stress_level_VALUE_05 = {
+	learning_per_stress_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0005_learning_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0001_stationed_maa_damage_add_VALUE_05 = {
+	stationed_maa_damage_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0001_stationed_maa_damage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0003_monthly_income_mult_VALUE_05 = {
+	monthly_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0003_monthly_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0001_maa_toughness_add_VALUE_05 = {
+	maa_toughness_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0001_maa_toughness_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0003_domain_tax_different_faith_mult_VALUE_05 = {
+	domain_tax_different_faith_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0003_domain_tax_different_faith_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0006_prowess_per_influence_level_VALUE_05 = {
+	prowess_per_influence_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0006_prowess_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0003_faith_conversion_piety_cost_add_VALUE_05 = {
+	faith_conversion_piety_cost_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0003_faith_conversion_piety_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0001_monthly_income_per_stress_level_mult_VALUE_05 = {
+	monthly_income_per_stress_level_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0001_monthly_income_per_stress_level_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0004_monthly_prestige_gain_per_knight_mult_VALUE_05 = {
+	monthly_prestige_gain_per_knight_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0004_monthly_prestige_gain_per_knight_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0003_domain_limit_min_VALUE_05 = {
+	domain_limit_min = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0003_domain_limit_min_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0003_development_decline_factor_VALUE_05 = {
+	development_decline_factor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0003_development_decline_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0008_opinion_of_same_faith_VALUE_05 = {
+	opinion_of_same_faith = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0008_opinion_of_same_faith_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0007_knight_effectiveness_per_intrigue_VALUE_05 = {
+	knight_effectiveness_per_intrigue = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0007_knight_effectiveness_per_intrigue_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0004_vassal_herder_contribution_mult_VALUE_05 = {
+	vassal_herder_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0004_vassal_herder_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0009_close_relative_opinion_VALUE_05 = {
+	close_relative_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0009_close_relative_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0005_monthly_prestige_VALUE_05 = {
+	monthly_prestige = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0005_monthly_prestige_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0010_courtier_and_guest_opinion_VALUE_05 = {
+	courtier_and_guest_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0010_courtier_and_guest_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0012_monthly_barter_goods_VALUE_05 = {
+	monthly_barter_goods = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0012_monthly_barter_goods_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0006_happy_powerful_vassal_prestige_contribution_add_VALUE_05 = {
+	happy_powerful_vassal_prestige_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0006_happy_powerful_vassal_prestige_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0008_diplomacy_scheme_resistance_VALUE_05 = {
+	diplomacy_scheme_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0008_diplomacy_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0005_cowed_vassal_barter_goods_contribution_mult_VALUE_05 = {
+	cowed_vassal_barter_goods_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0005_cowed_vassal_barter_goods_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0009_negate_diplomacy_penalty_add_VALUE_05 = {
+	negate_diplomacy_penalty_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0009_negate_diplomacy_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0002_raid_speed_VALUE_05 = {
+	raid_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0002_raid_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0001_levy_screen_VALUE_05 = {
+	levy_screen = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0001_levy_screen_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0013_accolade_glory_gain_mult_VALUE_05 = {
+	accolade_glory_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0013_accolade_glory_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_KNIGHT_0001_knight_effectiveness_per_tyranny_VALUE_05 = {
+	knight_effectiveness_per_tyranny = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_KNIGHT_0001_knight_effectiveness_per_tyranny_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0003_character_travel_speed_VALUE_05 = {
+	character_travel_speed = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0003_character_travel_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0002_levy_reinforcement_rate_VALUE_05 = {
+	levy_reinforcement_rate = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0002_levy_reinforcement_rate_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0001_max_combat_roll_VALUE_05 = {
+	max_combat_roll = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0001_max_combat_roll_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0001_character_capital_monthly_county_fertility_decline_add_VALUE_05 = {
+	character_capital_monthly_county_fertility_decline_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0001_character_capital_monthly_county_fertility_decline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0006_owned_contract_scheme_success_chance_add_VALUE_05 = {
+	owned_contract_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0006_owned_contract_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0011_different_faith_county_opinion_mult_even_if_baron_VALUE_05 = {
+	different_faith_county_opinion_mult_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0011_different_faith_county_opinion_mult_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0004_monthly_war_piety_income_add_VALUE_05 = {
+	monthly_war_piety_income_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0004_monthly_war_piety_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0006_cowed_vassal_herd_contribution_mult_VALUE_05 = {
+	cowed_vassal_herd_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0006_cowed_vassal_herd_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0005_monthly_piety_gain_per_happy_powerful_vassal_mult_VALUE_05 = {
+	monthly_piety_gain_per_happy_powerful_vassal_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0005_monthly_piety_gain_per_happy_powerful_vassal_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0007_monthly_prestige_gain_per_legitimacy_level_mult_VALUE_05 = {
+	monthly_prestige_gain_per_legitimacy_level_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0007_monthly_prestige_gain_per_legitimacy_level_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0014_inbreeding_chance_VALUE_05 = {
+	inbreeding_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0014_inbreeding_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0008_build_prestige_cost_VALUE_05 = {
+	build_prestige_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0008_build_prestige_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0010_diplomacy_mult_VALUE_05 = {
+	diplomacy_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0010_diplomacy_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0009_prestige_level_impact_mult_VALUE_05 = {
+	prestige_level_impact_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0009_prestige_level_impact_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_BUILDING_0001_building_slot_add_VALUE_05 = {
+	building_slot_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_BUILDING_0001_building_slot_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0004_hostage_renown_mult_VALUE_05 = {
+	hostage_renown_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0004_hostage_renown_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0002_stationed_maa_toughness_mult_VALUE_05 = {
+	stationed_maa_toughness_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0002_stationed_maa_toughness_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0015_monthly_tyranny_VALUE_05 = {
+	monthly_tyranny = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0015_monthly_tyranny_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0010_blood_brother_prestige_mult_VALUE_05 = {
+	blood_brother_prestige_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0010_blood_brother_prestige_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0005_monthly_lifestyle_xp_gain_add_VALUE_05 = {
+	monthly_lifestyle_xp_gain_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0005_monthly_lifestyle_xp_gain_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0006_winter_advantage_VALUE_05 = {
+	winter_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0006_winter_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0011_cowed_vassal_prestige_contribution_mult_VALUE_05 = {
+	cowed_vassal_prestige_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0011_cowed_vassal_prestige_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0012_different_faith_liege_opinion_VALUE_05 = {
+	different_faith_liege_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0012_different_faith_liege_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0007_owned_hostile_scheme_success_chance_max_add_VALUE_05 = {
+	owned_hostile_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0007_owned_hostile_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0002_army_toughness_mult_VALUE_05 = {
+	army_toughness_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0002_army_toughness_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0007_vassal_barter_goods_contribution_add_VALUE_05 = {
+	vassal_barter_goods_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0007_vassal_barter_goods_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0013_direct_vassal_opinion_VALUE_05 = {
+	direct_vassal_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0013_direct_vassal_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0002_monthly_county_control_decline_at_war_factor_VALUE_05 = {
+	monthly_county_control_decline_at_war_factor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0002_monthly_county_control_decline_at_war_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0003_levy_siege_VALUE_05 = {
+	levy_siege = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0003_levy_siege_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0012_legitimacy_gain_mult_VALUE_05 = {
+	legitimacy_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0012_legitimacy_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0004_cowed_vassal_tax_contribution_mult_VALUE_05 = {
+	cowed_vassal_tax_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0004_cowed_vassal_tax_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0007_monthly_lifestyle_xp_gain_mult_VALUE_05 = {
+	monthly_lifestyle_xp_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0007_monthly_lifestyle_xp_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0002_county_fertility_decline_mult_VALUE_05 = {
+	county_fertility_decline_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0002_county_fertility_decline_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0005_intimidated_vassal_tax_contribution_add_VALUE_05 = {
+	intimidated_vassal_tax_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0005_intimidated_vassal_tax_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0016_tyranny_loss_mult_VALUE_05 = {
+	tyranny_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0016_tyranny_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0004_great_project_build_speed_VALUE_05 = {
+	great_project_build_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0004_great_project_build_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0008_enemy_contract_scheme_phase_duration_add_VALUE_05 = {
+	enemy_contract_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0008_enemy_contract_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0006_character_max_piety_level_add_VALUE_05 = {
+	character_max_piety_level_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0006_character_max_piety_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0004_levy_reinforcement_rate_same_faith_even_if_baron_VALUE_05 = {
+	levy_reinforcement_rate_same_faith_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0004_levy_reinforcement_rate_same_faith_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0014_monthly_prestige_gain_per_dread_add_VALUE_05 = {
+	monthly_prestige_gain_per_dread_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0014_monthly_prestige_gain_per_dread_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0003_capital_fort_level_VALUE_05 = {
+	capital_fort_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0003_capital_fort_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0009_hostile_scheme_phase_duration_add_VALUE_05 = {
+	hostile_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0009_hostile_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0011_prowess_per_piety_level_VALUE_05 = {
+	prowess_per_piety_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0011_prowess_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0012_intrigue_VALUE_05 = {
+	intrigue = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0012_intrigue_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0017_cultural_head_acceptance_gain_mult_VALUE_05 = {
+	cultural_head_acceptance_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0017_cultural_head_acceptance_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0013_monthly_prestige_gain_per_happy_powerful_vassal_add_VALUE_05 = {
+	monthly_prestige_gain_per_happy_powerful_vassal_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0013_monthly_prestige_gain_per_happy_powerful_vassal_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0015_fellow_tributary_opinion_VALUE_05 = {
+	fellow_tributary_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0015_fellow_tributary_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0008_hostage_income_mult_VALUE_05 = {
+	hostage_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0008_hostage_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0007_blood_brother_piety_mult_VALUE_05 = {
+	blood_brother_piety_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0007_blood_brother_piety_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0010_political_scheme_phase_duration_add_VALUE_05 = {
+	political_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0010_political_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0002_stress_gain_mult_VALUE_05 = {
+	stress_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0002_stress_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0014_monthly_prestige_gain_per_knight_add_VALUE_05 = {
+	monthly_prestige_gain_per_knight_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0014_monthly_prestige_gain_per_knight_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0013_no_prowess_loss_from_age_VALUE_YES = { no_prowess_loss_from_age = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0004_army_siege_value_mult_VALUE_05 = {
+	army_siege_value_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0004_army_siege_value_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0018_cultural_head_fascination_add_VALUE_05 = {
+	cultural_head_fascination_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0018_cultural_head_fascination_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0005_domicile_build_speed_VALUE_05 = {
+	domicile_build_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0005_domicile_build_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0016_player_heir_opinion_VALUE_05 = {
+	player_heir_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0016_player_heir_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0015_happy_powerful_vassal_prestige_contribution_mult_VALUE_05 = {
+	happy_powerful_vassal_prestige_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0015_happy_powerful_vassal_prestige_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0008_monthly_piety_from_buildings_mult_VALUE_05 = {
+	monthly_piety_from_buildings_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0008_monthly_piety_from_buildings_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0014_intrigue_scheme_resistance_VALUE_05 = {
+	intrigue_scheme_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0014_intrigue_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0015_learning_scheme_phase_duration_VALUE_05 = {
+	learning_scheme_phase_duration = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0015_learning_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0004_same_culture_holy_order_hire_cost_mult_VALUE_05 = {
+	same_culture_holy_order_hire_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0004_same_culture_holy_order_hire_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0016_negate_learning_penalty_add_VALUE_05 = {
+	negate_learning_penalty_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0016_negate_learning_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0005_levy_attack_VALUE_05 = {
+	levy_attack = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0005_levy_attack_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0003_monthly_county_control_decline_factor_even_if_baron_VALUE_05 = {
+	monthly_county_control_decline_factor_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0003_monthly_county_control_decline_factor_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0003_stress_loss_per_piety_level_VALUE_05 = {
+	stress_loss_per_piety_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0003_stress_loss_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0017_opinion_of_same_culture_VALUE_05 = {
+	opinion_of_same_culture = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0017_opinion_of_same_culture_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0006_character_travel_safety_mult_VALUE_05 = {
+	character_travel_safety_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0006_character_travel_safety_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_PIETY_0001_tax_per_piety_level_VALUE_05 = {
+	tax_per_piety_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_PIETY_0001_tax_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0016_character_max_prestige_level_add_VALUE_05 = {
+	character_max_prestige_level_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0016_character_max_prestige_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0011_owned_scheme_secrecy_add_VALUE_05 = {
+	owned_scheme_secrecy_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0011_owned_scheme_secrecy_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0006_domain_tax_different_faith_mult_even_if_baron_VALUE_05 = {
+	domain_tax_different_faith_mult_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0006_domain_tax_different_faith_mult_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0009_monthly_war_piety_income_mult_VALUE_05 = {
+	monthly_war_piety_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0009_monthly_war_piety_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0008_happy_powerful_vassal_herd_contribution_add_VALUE_05 = {
+	happy_powerful_vassal_herd_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0008_happy_powerful_vassal_herd_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0005_men_at_arms_maintenance_VALUE_05 = {
+	men_at_arms_maintenance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0005_men_at_arms_maintenance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0019_herd_capacity_mult_VALUE_05 = {
+	herd_capacity_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0019_herd_capacity_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0009_defender_advantage_VALUE_05 = {
+	defender_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0009_defender_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0010_monthly_piety_gain_per_happy_powerful_vassal_add_VALUE_05 = {
+	monthly_piety_gain_per_happy_powerful_vassal_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0010_monthly_piety_gain_per_happy_powerful_vassal_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0017_prowess_per_prestige_level_VALUE_05 = {
+	prowess_per_prestige_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0017_prowess_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0002_maa_screen_mult_VALUE_05 = {
+	maa_screen_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0002_maa_screen_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0018_prowess_per_merit_level_VALUE_05 = {
+	prowess_per_merit_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0018_prowess_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0009_monthly_treasury_from_liege_add_VALUE_05 = {
+	monthly_treasury_from_liege_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0009_monthly_treasury_from_liege_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0012_enemy_political_scheme_phase_duration_add_VALUE_05 = {
+	enemy_political_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0012_enemy_political_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0019_martial_mult_VALUE_05 = {
+	martial_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0019_martial_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0011_monthly_piety_gain_per_court_position_add_VALUE_05 = {
+	monthly_piety_gain_per_court_position_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0011_monthly_piety_gain_per_court_position_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0018_different_faith_suzerain_opinion_VALUE_05 = {
+	different_faith_suzerain_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0018_different_faith_suzerain_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0010_defender_holding_advantage_VALUE_05 = {
+	defender_holding_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0010_defender_holding_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0017_domicile_monthly_prestige_mult_VALUE_05 = {
+	domicile_monthly_prestige_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0017_domicile_monthly_prestige_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0013_enemy_political_scheme_success_chance_add_VALUE_05 = {
+	enemy_political_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0013_enemy_political_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0019_dread_per_tyranny_mult_VALUE_05 = {
+	dread_per_tyranny_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0019_dread_per_tyranny_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0020_stewardship_per_influence_level_VALUE_05 = {
+	stewardship_per_influence_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0020_stewardship_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0020_general_opinion_VALUE_05 = {
+	general_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0020_general_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0018_intimidated_vassal_prestige_contribution_add_VALUE_05 = {
+	intimidated_vassal_prestige_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0018_intimidated_vassal_prestige_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0019_monthly_prestige_from_buildings_mult_VALUE_05 = {
+	monthly_prestige_from_buildings_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0019_monthly_prestige_from_buildings_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0014_enemy_hostile_scheme_phase_duration_add_VALUE_05 = {
+	enemy_hostile_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0014_enemy_hostile_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0015_enemy_personal_scheme_success_chance_max_add_VALUE_05 = {
+	enemy_personal_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0015_enemy_personal_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0021_prowess_scheme_resistance_VALUE_05 = {
+	prowess_scheme_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0021_prowess_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0022_negate_prowess_penalty_add_VALUE_05 = {
+	negate_prowess_penalty_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0022_negate_prowess_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0003_army_pursuit_mult_VALUE_05 = {
+	army_pursuit_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0003_army_pursuit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0004_elderly_health_VALUE_05 = {
+	elderly_health = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0004_elderly_health_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0004_monthly_county_control_decline_add_even_if_baron_VALUE_05 = {
+	monthly_county_control_decline_add_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0004_monthly_county_control_decline_add_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0020_counter_resistance_VALUE_05 = {
+	counter_resistance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0020_counter_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0021_independent_ruler_opinion_VALUE_05 = {
+	independent_ruler_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0021_independent_ruler_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0016_max_contract_schemes_add_VALUE_05 = {
+	max_contract_schemes_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0016_max_contract_schemes_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0012_intimidated_vassal_piety_contribution_add_VALUE_05 = {
+	intimidated_vassal_piety_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0012_intimidated_vassal_piety_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0022_strife_opinion_gain_mult_VALUE_05 = {
+	strife_opinion_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0022_strife_opinion_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0020_monthly_dynasty_prestige_VALUE_05 = {
+	monthly_dynasty_prestige = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0020_monthly_dynasty_prestige_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0023_opinion_of_parents_VALUE_05 = {
+	opinion_of_parents = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0023_opinion_of_parents_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_PIETY_0002_stationed_maa_toughness_mult_per_piety_level_VALUE_05 = {
+	stationed_maa_toughness_mult_per_piety_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_PIETY_0002_stationed_maa_toughness_mult_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0021_character_max_influence_level_add_VALUE_05 = {
+	character_max_influence_level_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0021_character_max_influence_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0010_vassal_herd_contribution_mult_VALUE_05 = {
+	vassal_herd_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0010_vassal_herd_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0003_county_fertility_growth_mult_VALUE_05 = {
+	county_fertility_growth_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0003_county_fertility_growth_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0022_tyranny_gain_mult_VALUE_05 = {
+	tyranny_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0022_tyranny_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0006_levy_reinforcement_rate_different_faith_even_if_baron_VALUE_05 = {
+	levy_reinforcement_rate_different_faith_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0006_levy_reinforcement_rate_different_faith_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0024_different_faith_opinion_VALUE_05 = {
+	different_faith_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0024_different_faith_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0023_intrigue_per_piety_level_VALUE_05 = {
+	intrigue_per_piety_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0023_intrigue_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0023_monthly_merit_VALUE_05 = {
+	monthly_merit = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0023_monthly_merit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0005_monthly_county_control_growth_at_war_factor_VALUE_05 = {
+	monthly_county_control_growth_at_war_factor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0005_monthly_county_control_growth_at_war_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0005_capital_additional_fort_level_VALUE_05 = {
+	capital_additional_fort_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0005_capital_additional_fort_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0011_maa_damage_mult_VALUE_05 = {
+	maa_damage_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0011_maa_damage_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0011_cowed_vassal_levy_contribution_add_VALUE_05 = {
+	cowed_vassal_levy_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0011_cowed_vassal_levy_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0012_coastal_advantage_VALUE_05 = {
+	coastal_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0012_coastal_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0025_opinion_of_suzerain_VALUE_05 = {
+	opinion_of_suzerain = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0025_opinion_of_suzerain_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0024_intrigue_per_influence_level_VALUE_05 = {
+	intrigue_per_influence_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0024_intrigue_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0005_child_health_VALUE_05 = {
+	child_health = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0005_child_health_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0026_powerful_vassal_opinion_VALUE_05 = {
+	powerful_vassal_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0026_powerful_vassal_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0025_knight_effectiveness_per_learning_VALUE_05 = {
+	knight_effectiveness_per_learning = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0025_knight_effectiveness_per_learning_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0021_monthly_prestige_gain_per_court_position_add_VALUE_05 = {
+	monthly_prestige_gain_per_court_position_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0021_monthly_prestige_gain_per_court_position_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0027_prisoner_opinion_VALUE_05 = {
+	prisoner_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0027_prisoner_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0004_monthly_treasury_from_military_budget_mult_VALUE_05 = {
+	monthly_treasury_from_military_budget_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0004_monthly_treasury_from_military_budget_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0012_vassal_barter_goods_contribution_mult_VALUE_05 = {
+	vassal_barter_goods_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0012_vassal_barter_goods_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0024_supply_limit_VALUE_05 = {
+	supply_limit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0024_supply_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0003_monthly_merit_per_title_maa_value_VALUE_05 = {
+	monthly_merit_per_title_maa_value = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0003_monthly_merit_per_title_maa_value_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0013_title_creation_piety_cost_mult_VALUE_05 = {
+	title_creation_piety_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0013_title_creation_piety_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0025_ai_war_cooldown_VALUE_05 = {
+	ai_war_cooldown = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0025_ai_war_cooldown_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0006_monthly_war_barter_goods_income_add_VALUE_05 = {
+	monthly_war_barter_goods_income_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0006_monthly_war_barter_goods_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0013_monthly_treasury_from_vassals_VALUE_05 = {
+	monthly_treasury_from_vassals = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0013_monthly_treasury_from_vassals_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0007_holding_build_gold_cost_VALUE_05 = {
+	holding_build_gold_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0007_holding_build_gold_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0007_levy_toughness_VALUE_05 = {
+	levy_toughness = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0007_levy_toughness_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0007_happy_powerful_vassal_tax_contribution_mult_VALUE_05 = {
+	happy_powerful_vassal_tax_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0007_happy_powerful_vassal_tax_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0026_ai_zeal_VALUE_05 = {
+	ai_zeal = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0026_ai_zeal_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0014_cowed_vassal_piety_contribution_add_VALUE_05 = {
+	cowed_vassal_piety_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0014_cowed_vassal_piety_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0006_monthly_county_control_growth_add_even_if_baron_VALUE_05 = {
+	monthly_county_control_growth_add_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0006_monthly_county_control_growth_add_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0028_monthly_dread_VALUE_05 = {
+	monthly_dread = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0028_monthly_dread_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0027_herd_conversion_VALUE_05 = {
+	herd_conversion = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0027_herd_conversion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0029_monthly_piety_gain_per_dread_mult_VALUE_05 = {
+	monthly_piety_gain_per_dread_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0029_monthly_piety_gain_per_dread_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0030_dread_gain_mult_VALUE_05 = {
+	dread_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0030_dread_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0026_martial_VALUE_05 = {
+	martial = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0026_martial_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0004_maa_siege_value_add_VALUE_05 = {
+	maa_siege_value_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0004_maa_siege_value_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0027_learning_per_prestige_level_VALUE_05 = {
+	learning_per_prestige_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0027_learning_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0013_maa_damage_add_VALUE_05 = {
+	maa_damage_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0013_maa_damage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0028_martial_per_piety_level_VALUE_05 = {
+	martial_per_piety_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0028_martial_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0029_stewardship_mult_VALUE_05 = {
+	stewardship_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0029_stewardship_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0030_learning_per_influence_level_VALUE_05 = {
+	learning_per_influence_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0030_learning_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0022_monthly_prestige_gain_per_court_position_mult_VALUE_05 = {
+	monthly_prestige_gain_per_court_position_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0022_monthly_prestige_gain_per_court_position_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0028_domicile_monthly_herd_add_VALUE_05 = {
+	domicile_monthly_herd_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0028_domicile_monthly_herd_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0003_stationed_maa_siege_value_mult_VALUE_05 = {
+	stationed_maa_siege_value_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0003_stationed_maa_siege_value_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0031_martial_per_stress_level_VALUE_05 = {
+	martial_per_stress_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0031_martial_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0002_stationed_maa_damage_mult_VALUE_05 = {
+	stationed_maa_damage_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0002_stationed_maa_damage_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0004_enemy_political_scheme_success_chance_growth_add_VALUE_05 = {
+	enemy_political_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0004_enemy_political_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0031_opinion_of_different_faith_liege_VALUE_05 = {
+	opinion_of_different_faith_liege = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0031_opinion_of_different_faith_liege_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0029_owned_legend_spread_mult_VALUE_05 = {
+	owned_legend_spread_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0029_owned_legend_spread_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0032_knight_effectiveness_per_diplomacy_VALUE_05 = {
+	knight_effectiveness_per_diplomacy = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0032_knight_effectiveness_per_diplomacy_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0032_dread_per_tyranny_add_VALUE_05 = {
+	dread_per_tyranny_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0032_dread_per_tyranny_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0008_title_creation_cost_mult_VALUE_05 = {
+	title_creation_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0008_title_creation_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0023_monthly_prestige_gain_mult_VALUE_05 = {
+	monthly_prestige_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0023_monthly_prestige_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0014_domain_limit_max_VALUE_05 = {
+	domain_limit_max = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0014_domain_limit_max_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0017_enemy_hostile_scheme_success_chance_max_add_VALUE_05 = {
+	enemy_hostile_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0017_enemy_hostile_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0015_monthly_piety_VALUE_05 = {
+	monthly_piety = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0015_monthly_piety_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0024_intimidated_vassal_prestige_contribution_mult_VALUE_05 = {
+	intimidated_vassal_prestige_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0024_intimidated_vassal_prestige_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0006_siege_phase_time_VALUE_05 = {
+	siege_phase_time = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0006_siege_phase_time_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0033_opinion_of_different_faith_VALUE_05 = {
+	opinion_of_different_faith = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0033_opinion_of_different_faith_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0016_faith_creation_piety_cost_mult_VALUE_05 = {
+	faith_creation_piety_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0016_faith_creation_piety_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0015_intimidated_vassal_barter_goods_contribution_add_VALUE_05 = {
+	intimidated_vassal_barter_goods_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0015_intimidated_vassal_barter_goods_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0033_martial_scheme_resistance_VALUE_05 = {
+	martial_scheme_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0033_martial_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0034_prowess_scheme_phase_duration_VALUE_05 = {
+	prowess_scheme_phase_duration = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0034_prowess_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0017_tributary_piety_contribution_mult_VALUE_05 = {
+	tributary_piety_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0017_tributary_piety_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0016_vassal_limit_VALUE_05 = {
+	vassal_limit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0016_vassal_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0030_supply_duration_VALUE_05 = {
+	supply_duration = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0030_supply_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0014_uncontrolled_province_advantage_VALUE_05 = {
+	uncontrolled_province_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0014_uncontrolled_province_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0007_character_travel_safety_VALUE_05 = {
+	character_travel_safety = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0007_character_travel_safety_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0006_health_VALUE_05 = {
+	health = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0006_health_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0007_monthly_county_control_decline_factor_VALUE_05 = {
+	monthly_county_control_decline_factor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0007_monthly_county_control_decline_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0018_contract_scheme_phase_duration_add_VALUE_05 = {
+	contract_scheme_phase_duration_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0018_contract_scheme_phase_duration_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0018_cowed_vassal_piety_contribution_mult_VALUE_05 = {
+	cowed_vassal_piety_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0018_cowed_vassal_piety_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0001_ai_amenity_spending_VALUE_05 = {
+	ai_amenity_spending = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_COURT_0001_ai_amenity_spending_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0025_monthly_dynasty_prestige_mult_VALUE_05 = {
+	monthly_dynasty_prestige_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0025_monthly_dynasty_prestige_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0017_intimidated_vassal_herd_contribution_add_VALUE_05 = {
+	intimidated_vassal_herd_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0017_intimidated_vassal_herd_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0034_opinion_of_different_faith_suzerain_VALUE_05 = {
+	opinion_of_different_faith_suzerain = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0034_opinion_of_different_faith_suzerain_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0035_stewardship_per_piety_level_VALUE_05 = {
+	stewardship_per_piety_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0035_stewardship_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0026_monthly_piety_gain_per_legitimacy_level_add_VALUE_05 = {
+	monthly_piety_gain_per_legitimacy_level_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0026_monthly_piety_gain_per_legitimacy_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0009_horde_conversion_cost_VALUE_05 = {
+	horde_conversion_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0009_horde_conversion_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0031_monthly_influence_mult_VALUE_05 = {
+	monthly_influence_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0031_monthly_influence_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0036_stewardship_per_prestige_level_VALUE_05 = {
+	stewardship_per_prestige_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0036_stewardship_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0037_martial_per_prestige_level_VALUE_05 = {
+	martial_per_prestige_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0037_martial_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0015_hostage_prestige_mult_VALUE_05 = {
+	hostage_prestige_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0015_hostage_prestige_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0032_mercenary_hire_time_mult_VALUE_05 = {
+	mercenary_hire_time_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0032_mercenary_hire_time_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0033_pursue_efficiency_VALUE_05 = {
+	pursue_efficiency = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0033_pursue_efficiency_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0016_life_expectancy_VALUE_05 = {
+	life_expectancy = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0016_life_expectancy_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0008_domicile_travel_speed_VALUE_05 = {
+	domicile_travel_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0008_domicile_travel_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0009_movement_speed_land_raiding_VALUE_05 = {
+	movement_speed_land_raiding = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0009_movement_speed_land_raiding_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0008_domain_tax_same_faith_mult_VALUE_05 = {
+	domain_tax_same_faith_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0008_domain_tax_same_faith_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0010_domicile_monthly_gold_add_VALUE_05 = {
+	domicile_monthly_gold_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0010_domicile_monthly_gold_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0019_monthly_piety_gain_mult_VALUE_05 = {
+	monthly_piety_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0019_monthly_piety_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_KNIGHT_0002_knight_effectiveness_mult_VALUE_05 = {
+	knight_effectiveness_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_KNIGHT_0002_knight_effectiveness_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0005_men_at_arms_title_cap_VALUE_05 = {
+	men_at_arms_title_cap = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0005_men_at_arms_title_cap_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0035_dread_decay_add_VALUE_05 = {
+	dread_decay_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0035_dread_decay_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0005_development_decline_VALUE_05 = {
+	development_decline = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0005_development_decline_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0036_eligible_child_except_player_heir_opinion_VALUE_05 = {
+	eligible_child_except_player_heir_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0036_eligible_child_except_player_heir_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0005_monthly_treasury_from_military_budget_base_VALUE_05 = {
+	monthly_treasury_from_military_budget_base = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0005_monthly_treasury_from_military_budget_base_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0018_happy_powerful_vassal_barter_goods_contribution_mult_VALUE_05 = {
+	happy_powerful_vassal_barter_goods_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0018_happy_powerful_vassal_barter_goods_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0034_accolades_VALUE_05 = {
+	accolades = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0034_accolades_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0035_ai_war_chance_VALUE_05 = {
+	ai_war_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0035_ai_war_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0037_religious_head_opinion_VALUE_05 = {
+	religious_head_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0037_religious_head_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0009_monthly_merit_per_liege_tax_VALUE_05 = {
+	monthly_merit_per_liege_tax = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0009_monthly_merit_per_liege_tax_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0017_advantage_against_coreligionists_VALUE_05 = {
+	advantage_against_coreligionists = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0017_advantage_against_coreligionists_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0019_holding_build_speed_VALUE_05 = {
+	holding_build_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0019_holding_build_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0027_monthly_legitimacy_add_VALUE_05 = {
+	monthly_legitimacy_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0027_monthly_legitimacy_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0010_tax_mult_VALUE_05 = {
+	tax_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0010_tax_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0038_county_opinion_add_VALUE_05 = {
+	county_opinion_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0038_county_opinion_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0036_ai_greed_VALUE_05 = {
+	ai_greed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0036_ai_greed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0039_ignore_negative_opinion_of_culture_VALUE_YES = { ignore_negative_opinion_of_culture = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0040_twin_opinion_VALUE_05 = {
+	twin_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0040_twin_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0006_min_combat_roll_VALUE_05 = {
+	min_combat_roll = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0006_min_combat_roll_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0011_intimidated_vassal_tax_contribution_mult_VALUE_05 = {
+	intimidated_vassal_tax_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0011_intimidated_vassal_tax_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0018_attacker_advantage_VALUE_05 = {
+	attacker_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0018_attacker_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0037_artifact_decay_reduction_mult_VALUE_05 = {
+	artifact_decay_reduction_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0037_artifact_decay_reduction_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0038_stewardship_per_merit_level_VALUE_05 = {
+	stewardship_per_merit_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0038_stewardship_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0020_vassal_piety_contribution_mult_VALUE_05 = {
+	vassal_piety_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0020_vassal_piety_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0041_county_opinion_add_even_if_baron_VALUE_05 = {
+	county_opinion_add_even_if_baron = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0041_county_opinion_add_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0039_character_opinion_from_low_prowess_add_VALUE_05 = {
+	character_opinion_from_low_prowess_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0039_character_opinion_from_low_prowess_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0011_men_at_arms_recruitment_cost_VALUE_05 = {
+	men_at_arms_recruitment_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0011_men_at_arms_recruitment_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0020_cowed_vassal_herd_contribution_add_VALUE_05 = {
+	cowed_vassal_herd_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0020_cowed_vassal_herd_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0040_diplomacy_per_piety_level_VALUE_05 = {
+	diplomacy_per_piety_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0040_diplomacy_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0007_fort_level_VALUE_05 = {
+	fort_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0007_fort_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0021_domain_limit_VALUE_05 = {
+	domain_limit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0021_domain_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0042_suzerain_opinion_VALUE_05 = {
+	suzerain_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0042_suzerain_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0006_maa_pursuit_mult_VALUE_05 = {
+	maa_pursuit_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0006_maa_pursuit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0012_monthly_war_income_mult_VALUE_05 = {
+	monthly_war_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0012_monthly_war_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0021_domicile_monthly_piety_mult_VALUE_05 = {
+	domicile_monthly_piety_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0021_domicile_monthly_piety_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0038_domicile_external_slots_capacity_add_VALUE_05 = {
+	domicile_external_slots_capacity_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0038_domicile_external_slots_capacity_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0019_enemy_political_scheme_success_chance_max_add_VALUE_05 = {
+	enemy_political_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0019_enemy_political_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0039_supply_capacity_add_VALUE_05 = {
+	supply_capacity_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0039_supply_capacity_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0004_stationed_maa_toughness_add_VALUE_05 = {
+	stationed_maa_toughness_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0004_stationed_maa_toughness_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0008_garrison_size_VALUE_05 = {
+	garrison_size = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0008_garrison_size_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0006_owned_hostile_scheme_success_chance_growth_add_VALUE_05 = {
+	owned_hostile_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0006_owned_hostile_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0040_monthly_treasury_from_ministry_budget_mult_VALUE_05 = {
+	monthly_treasury_from_ministry_budget_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0040_monthly_treasury_from_ministry_budget_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0019_led_by_owner_extra_advantage_add_VALUE_05 = {
+	led_by_owner_extra_advantage_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0019_led_by_owner_extra_advantage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0041_knight_effectiveness_per_prowess_VALUE_05 = {
+	knight_effectiveness_per_prowess = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0041_knight_effectiveness_per_prowess_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0020_controlled_province_advantage_VALUE_05 = {
+	controlled_province_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0020_controlled_province_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0022_title_creation_piety_cost_VALUE_05 = {
+	title_creation_piety_cost = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0022_title_creation_piety_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0041_max_loot_mult_VALUE_05 = {
+	max_loot_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0041_max_loot_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0023_holding_build_piety_cost_VALUE_05 = {
+	holding_build_piety_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0023_holding_build_piety_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0020_scheme_discovery_chance_mult_VALUE_05 = {
+	scheme_discovery_chance_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0020_scheme_discovery_chance_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0004_negate_fertility_penalty_add_VALUE_05 = {
+	negate_fertility_penalty_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0004_negate_fertility_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_OTHER_0001_supply_loss_winter_VALUE_05 = {
+	supply_loss_winter = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_OTHER_0001_supply_loss_winter_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0003_stationed_maa_damage_mult_per_piety_level_VALUE_05 = {
+	stationed_maa_damage_mult_per_piety_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0003_stationed_maa_damage_mult_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0022_monthly_treasury_from_non_vassals_mult_VALUE_05 = {
+	monthly_treasury_from_non_vassals_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0022_monthly_treasury_from_non_vassals_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0024_happy_powerful_vassal_piety_contribution_add_VALUE_05 = {
+	happy_powerful_vassal_piety_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0024_happy_powerful_vassal_piety_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0008_levy_reinforcement_rate_even_if_baron_VALUE_05 = {
+	levy_reinforcement_rate_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0008_levy_reinforcement_rate_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_KNIGHT_0003_knight_limit_VALUE_05 = {
+	knight_limit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_KNIGHT_0003_knight_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0023_happy_powerful_vassal_herd_contribution_mult_VALUE_05 = {
+	happy_powerful_vassal_herd_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0023_happy_powerful_vassal_herd_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0024_can_vassals_be_attacked_VALUE_YES = { can_vassals_be_attacked = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0028_monthly_war_prestige_income_add_VALUE_05 = {
+	monthly_war_prestige_income_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0028_monthly_war_prestige_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0021_owned_contract_scheme_success_chance_max_add_VALUE_05 = {
+	owned_contract_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0021_owned_contract_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0042_learning_per_merit_level_VALUE_05 = {
+	learning_per_merit_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0042_learning_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0029_monthly_prestige_gain_per_happy_powerful_vassal_mult_VALUE_05 = {
+	monthly_prestige_gain_per_happy_powerful_vassal_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0029_monthly_prestige_gain_per_happy_powerful_vassal_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0043_monthly_piety_gain_per_dread_add_VALUE_05 = {
+	monthly_piety_gain_per_dread_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0043_monthly_piety_gain_per_dread_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0030_monthly_piety_gain_per_legitimacy_level_mult_VALUE_05 = {
+	monthly_piety_gain_per_legitimacy_level_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0030_monthly_piety_gain_per_legitimacy_level_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0043_diplomacy_per_prestige_level_VALUE_05 = {
+	diplomacy_per_prestige_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0043_diplomacy_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0013_monthly_income_from_herd_mult_VALUE_05 = {
+	monthly_income_from_herd_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0013_monthly_income_from_herd_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0042_genetic_trait_strengthen_chance_VALUE_05 = {
+	genetic_trait_strengthen_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0042_genetic_trait_strengthen_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0043_counter_efficiency_VALUE_05 = {
+	counter_efficiency = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0043_counter_efficiency_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0022_hostile_county_attrition_raiding_VALUE_05 = {
+	hostile_county_attrition_raiding = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0022_hostile_county_attrition_raiding_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0044_martial_per_influence_level_VALUE_05 = {
+	martial_per_influence_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0044_martial_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0044_provisions_capacity_mult_VALUE_05 = {
+	provisions_capacity_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0044_provisions_capacity_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0045_owned_legend_spread_add_VALUE_05 = {
+	owned_legend_spread_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0045_owned_legend_spread_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0044_dread_baseline_add_VALUE_05 = {
+	dread_baseline_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0044_dread_baseline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0046_monthly_barter_goods_mult_VALUE_05 = {
+	monthly_barter_goods_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0046_monthly_barter_goods_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0023_enemy_scheme_secrecy_add_VALUE_05 = {
+	enemy_scheme_secrecy_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0023_enemy_scheme_secrecy_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0045_eligible_child_opinion_VALUE_05 = {
+	eligible_child_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0045_eligible_child_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0014_same_culture_holy_order_hire_cost_add_VALUE_05 = {
+	same_culture_holy_order_hire_cost_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0014_same_culture_holy_order_hire_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0015_monthly_income_VALUE_05 = {
+	monthly_income = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0015_monthly_income_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0047_negative_random_genetic_chance_VALUE_05 = {
+	negative_random_genetic_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0047_negative_random_genetic_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0010_travel_danger_VALUE_05 = {
+	travel_danger = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0010_travel_danger_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0046_different_culture_opinion_VALUE_05 = {
+	different_culture_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0046_different_culture_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0025_happy_powerful_vassal_piety_contribution_mult_VALUE_05 = {
+	happy_powerful_vassal_piety_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0025_happy_powerful_vassal_piety_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0047_opinion_of_liege_VALUE_05 = {
+	opinion_of_liege = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0047_opinion_of_liege_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0048_dread_loss_mult_VALUE_05 = {
+	dread_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0048_dread_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0048_short_reign_duration_mult_VALUE_05 = {
+	short_reign_duration_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0048_short_reign_duration_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0021_enemy_terrain_advantage_VALUE_05 = {
+	enemy_terrain_advantage = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0021_enemy_terrain_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0012_domain_tax_same_faith_mult_even_if_baron_VALUE_05 = {
+	domain_tax_same_faith_mult_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0012_domain_tax_same_faith_mult_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0011_build_speed_VALUE_05 = {
+	build_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0011_build_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0025_vassal_levy_contribution_add_VALUE_05 = {
+	vassal_levy_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0025_vassal_levy_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0024_owned_personal_scheme_success_chance_add_VALUE_05 = {
+	owned_personal_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0024_owned_personal_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0005_stationed_maa_pursuit_add_VALUE_05 = {
+	stationed_maa_pursuit_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0005_stationed_maa_pursuit_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0049_councillor_opinion_VALUE_05 = {
+	councillor_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0049_councillor_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0007_maa_screen_add_VALUE_05 = {
+	maa_screen_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0007_maa_screen_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0026_monthly_piety_gain_per_knight_add_VALUE_05 = {
+	monthly_piety_gain_per_knight_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0026_monthly_piety_gain_per_knight_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0045_prowess_per_stress_level_VALUE_05 = {
+	prowess_per_stress_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0045_prowess_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0026_monthly_treasury_from_liege_mult_VALUE_05 = {
+	monthly_treasury_from_liege_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0026_monthly_treasury_from_liege_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0009_levy_reinforcement_rate_friendly_territory_VALUE_05 = {
+	levy_reinforcement_rate_friendly_territory = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0009_levy_reinforcement_rate_friendly_territory_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0049_long_reign_bonus_mult_VALUE_05 = {
+	long_reign_bonus_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0049_long_reign_bonus_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0010_levy_size_VALUE_05 = {
+	levy_size = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0010_levy_size_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0007_enemy_personal_scheme_success_chance_growth_add_VALUE_05 = {
+	enemy_personal_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0007_enemy_personal_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0007_treasury_military_budget_allocation_VALUE_05 = {
+	treasury_military_budget_allocation = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0007_treasury_military_budget_allocation_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0050_ignore_negative_culture_opinion_VALUE_YES = { ignore_negative_culture_opinion = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0050_cultural_head_fascination_mult_VALUE_05 = {
+	cultural_head_fascination_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0050_cultural_head_fascination_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0051_monthly_treasury_from_ministry_budget_base_VALUE_05 = {
+	monthly_treasury_from_ministry_budget_base = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0051_monthly_treasury_from_ministry_budget_base_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0051_child_opinion_VALUE_05 = {
+	child_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0051_child_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0004_defender_winter_advantage_VALUE_05 = {
+	defender_winter_advantage = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_LIFESPAN_0004_defender_winter_advantage_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0027_monthly_treasury_from_non_vassals_VALUE_05 = {
+	monthly_treasury_from_non_vassals = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0027_monthly_treasury_from_non_vassals_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0031_holding_build_prestige_cost_VALUE_05 = {
+	holding_build_prestige_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0031_holding_build_prestige_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0046_learning_scheme_resistance_VALUE_05 = {
+	learning_scheme_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0046_learning_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0016_same_culture_mercenary_hire_cost_add_VALUE_05 = {
+	same_culture_mercenary_hire_cost_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0016_same_culture_mercenary_hire_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0011_levy_pursuit_VALUE_05 = {
+	levy_pursuit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0011_levy_pursuit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0052_ai_energy_VALUE_05 = {
+	ai_energy = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0052_ai_energy_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0025_enemy_contract_scheme_success_chance_add_VALUE_05 = {
+	enemy_contract_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0025_enemy_contract_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0017_embarkation_cost_mult_VALUE_05 = {
+	embarkation_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0017_embarkation_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0032_monthly_war_prestige_income_mult_VALUE_05 = {
+	monthly_war_prestige_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0032_monthly_war_prestige_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0047_diplomacy_VALUE_05 = {
+	diplomacy = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0047_diplomacy_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0008_character_capital_county_monthly_control_add_VALUE_05 = {
+	character_capital_county_monthly_control_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0008_character_capital_county_monthly_control_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0048_stewardship_VALUE_05 = {
+	stewardship = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0048_stewardship_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0049_character_opinion_from_high_prowess_add_VALUE_05 = {
+	character_opinion_from_high_prowess_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0049_character_opinion_from_high_prowess_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0050_intrigue_per_prestige_level_VALUE_05 = {
+	intrigue_per_prestige_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0050_intrigue_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0027_piety_level_impact_mult_VALUE_05 = {
+	piety_level_impact_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0027_piety_level_impact_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0012_movement_speed_VALUE_05 = {
+	movement_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0012_movement_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0018_domicile_monthly_gold_mult_VALUE_05 = {
+	domicile_monthly_gold_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0018_domicile_monthly_gold_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0053_influence_level_impact_mult_VALUE_05 = {
+	influence_level_impact_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0053_influence_level_impact_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0052_dread_decay_mult_VALUE_05 = {
+	dread_decay_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0052_dread_decay_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0053_guest_opinion_VALUE_05 = {
+	guest_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0053_guest_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0002_ai_amenity_target_baseline_VALUE_05 = {
+	ai_amenity_target_baseline = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_COURT_0002_ai_amenity_target_baseline_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0019_same_culture_mercenary_hire_cost_mult_VALUE_05 = {
+	same_culture_mercenary_hire_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0019_same_culture_mercenary_hire_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MILITARY_0008_army_screen_mult_VALUE_05 = {
+	army_screen_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MILITARY_0008_army_screen_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0054_knight_effectiveness_per_dread_VALUE_05 = {
+	knight_effectiveness_per_dread = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0054_knight_effectiveness_per_dread_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0055_opinion_of_different_culture_VALUE_05 = {
+	opinion_of_different_culture = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0055_opinion_of_different_culture_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0013_tax_slot_add_VALUE_05 = {
+	tax_slot_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0013_tax_slot_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0056_travel_companion_opinion_VALUE_05 = {
+	travel_companion_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0056_travel_companion_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0054_ai_honor_VALUE_05 = {
+	ai_honor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0054_ai_honor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0028_intimidated_vassal_herd_contribution_mult_VALUE_05 = {
+	intimidated_vassal_herd_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0028_intimidated_vassal_herd_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0029_happy_powerful_vassal_levy_contribution_mult_VALUE_05 = {
+	happy_powerful_vassal_levy_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0029_happy_powerful_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0020_monthly_war_merit_income_add_VALUE_05 = {
+	monthly_war_merit_income_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0020_monthly_war_merit_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0051_diplomacy_per_merit_level_VALUE_05 = {
+	diplomacy_per_merit_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0051_diplomacy_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0055_retreat_losses_VALUE_05 = {
+	retreat_losses = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0055_retreat_losses_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0021_build_gold_cost_VALUE_05 = {
+	build_gold_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0021_build_gold_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0026_max_hostile_schemes_add_VALUE_05 = {
+	max_hostile_schemes_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0026_max_hostile_schemes_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0007_monthly_income_per_stress_level_add_VALUE_05 = {
+	monthly_income_per_stress_level_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0007_monthly_income_per_stress_level_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0033_domicile_monthly_prestige_add_VALUE_05 = {
+	domicile_monthly_prestige_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0033_domicile_monthly_prestige_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0056_max_migration_distance_mult_VALUE_05 = {
+	max_migration_distance_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0056_max_migration_distance_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0057_monthly_influence_VALUE_05 = {
+	monthly_influence = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0057_monthly_influence_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0008_maa_toughness_mult_VALUE_05 = {
+	maa_toughness_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0008_maa_toughness_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0058_domicile_monthly_influence_mult_VALUE_05 = {
+	domicile_monthly_influence_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0058_domicile_monthly_influence_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0022_domicile_build_gold_cost_VALUE_05 = {
+	domicile_build_gold_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0022_domicile_build_gold_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0030_vassal_herder_contribution_add_VALUE_05 = {
+	vassal_herder_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0030_vassal_herder_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0008_enemy_hostile_scheme_success_chance_growth_add_VALUE_05 = {
+	enemy_hostile_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0008_enemy_hostile_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0006_stationed_maa_siege_value_add_VALUE_05 = {
+	stationed_maa_siege_value_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0006_stationed_maa_siege_value_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0028_faith_creation_piety_cost_add_VALUE_05 = {
+	faith_creation_piety_cost_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0028_faith_creation_piety_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0059_ai_sociability_VALUE_05 = {
+	ai_sociability = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0059_ai_sociability_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0009_men_at_arms_title_limit_VALUE_05 = {
+	men_at_arms_title_limit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0009_men_at_arms_title_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0023_title_creation_cost_VALUE_05 = {
+	title_creation_cost = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0023_title_creation_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0024_monthly_treasury_from_salary_budget_mult_VALUE_05 = {
+	monthly_treasury_from_salary_budget_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0024_monthly_treasury_from_salary_budget_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0057_religious_vassal_opinion_VALUE_05 = {
+	religious_vassal_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0057_religious_vassal_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0014_vassal_tax_mult_VALUE_05 = {
+	vassal_tax_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0014_vassal_tax_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0005_county_fertility_growth_add_VALUE_05 = {
+	county_fertility_growth_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0005_county_fertility_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0058_same_culture_opinion_VALUE_05 = {
+	same_culture_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0058_same_culture_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0060_character_innovation_progress_chance_from_fascination_add_VALUE_05 = {
+	character_innovation_progress_chance_from_fascination_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0060_character_innovation_progress_chance_from_fascination_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0009_monthly_county_control_decline_add_VALUE_05 = {
+	monthly_county_control_decline_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0009_monthly_county_control_decline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0009_owned_contract_scheme_success_chance_growth_add_VALUE_05 = {
+	owned_contract_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0009_owned_contract_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0052_martial_per_merit_level_VALUE_05 = {
+	martial_per_merit_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0052_martial_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0061_herd_gain_mult_VALUE_05 = {
+	herd_gain_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0061_herd_gain_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0062_enemy_hard_casualty_modifier_VALUE_05 = {
+	enemy_hard_casualty_modifier = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0062_enemy_hard_casualty_modifier_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0015_cowed_vassal_tax_contribution_add_VALUE_05 = {
+	cowed_vassal_tax_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0015_cowed_vassal_tax_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0029_vassal_piety_contribution_add_VALUE_05 = {
+	vassal_piety_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0029_vassal_piety_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0059_opinion_of_tributary_VALUE_05 = {
+	opinion_of_tributary = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0059_opinion_of_tributary_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0022_hostage_piety_mult_VALUE_05 = {
+	hostage_piety_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0022_hostage_piety_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DIPLOMACY_0001_house_relation_change_mult_VALUE_05 = {
+	house_relation_change_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DIPLOMACY_0001_house_relation_change_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05 = {
+	prowess_no_portrait = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05 = {
+	owned_political_scheme_success_chance_max_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05 = {
+	adult_health = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05 = {
+	stewardship_per_stress_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05 = {
+	levy_reinforcement_rate_different_faith = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05 = {
+	happy_powerful_vassal_levy_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05 = {
+	vassal_limit_max = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05 = {
+	clergy_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05 = {
+	courtier_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05 = {
+	monthly_war_barter_goods_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05 = {
+	holy_order_hire_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05 = {
+	diplomacy_scheme_phase_duration = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05 = {
+	stewardship_scheme_phase_duration = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05 = {
+	negate_intrigue_penalty_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05 = {
+	negate_health_penalty_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05 = {
+	epidemic_travel_danger = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05 = {
+	negative_inactive_inheritance_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05 = {
+	happy_powerful_vassal_barter_goods_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05 = {
+	positive_inactive_inheritance_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05 = {
+	different_faith_county_opinion_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05 = {
+	spouse_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05 = {
+	monthly_treasury_from_vassals_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05 = {
+	domain_tax_mult_even_if_baron = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05 = {
+	monthly_war_merit_income_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05 = {
+	strife_opinion_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05 = {
+	men_at_arms_limit = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05 = {
+	monthly_war_income_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05 = {
+	intrigue_per_merit_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05 = {
+	monthly_county_control_growth_at_war_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05 = {
+	tolerance_advantage_mod = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05 = {
+	learning_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05 = {
+	development_growth = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05 = {
+	diplomacy_per_stress_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05 = {
+	maa_pursuit_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05 = {
+	monthly_piety_gain_per_knight_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05 = {
+	domicile_monthly_herd_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05 = {
+	monthly_county_control_growth_factor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05 = {
+	years_of_fertility = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05 = {
+	diplomacy_per_influence_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05 = {
+	domicile_monthly_influence_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05 = {
+	vassal_limit_min = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05 = {
+	realm_priest_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05 = {
+	supply_capacity_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05 = {
+	opinion_of_vassal = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05 = {
+	monthly_court_grandeur_change_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05 = {
+	child_except_player_heir_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05 = {
+	vassal_prestige_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0068_no_disembark_penalty_VALUE_YES = { no_disembark_penalty = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05 = {
+	monthly_treasury_from_salary_budget_base = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05 = {
+	stress_loss_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05 = {
+	levy_maintenance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05 = {
+	opinion_of_male_rulers = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05 = {
+	independent_primary_attacker_advantage_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05 = {
+	positive_random_genetic_chance = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05 = {
+	monthly_county_control_decline_at_war_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05 = {
+	domain_tax_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05 = {
+	intimidated_vassal_barter_goods_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05 = {
+	attraction_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05 = {
+	hostile_raid_time = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0070_ignore_opinion_of_different_faith_VALUE_YES = { ignore_opinion_of_different_faith = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05 = {
+	ai_vengefulness = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05 = {
+	men_at_arms_cap = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05 = {
+	vassal_levy_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05 = {
+	character_capital_monthly_county_fertility_growth_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0071_no_water_crossing_penalty_VALUE_YES = { no_water_crossing_penalty = yes }
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05 = {
+	max_personal_schemes_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05 = {
+	supply_limit_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05 = {
+	tributary_tax_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05 = {
+	tributary_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05 = {
+	enemy_personal_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05 = {
+	blood_brother_renown_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05 = {
+	stationed_maa_pursuit_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05 = {
+	levy_reinforcement_rate_same_faith = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05 = {
+	knight_effectiveness_per_stewardship = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05 = {
+	monthly_court_grandeur_change_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05 = {
+	learning = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05 = {
+	provisions_capacity_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05 = {
+	holy_order_hire_cost_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05 = {
+	mercenary_hire_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05 = {
+	treasury_salary_budget_allocation = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05 = {
+	hard_casualty_winter = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05 = {
+	stress_loss_per_prestige_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05 = {
+	siege_morale_loss = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05 = {
+	martial_scheme_phase_duration = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05 = {
+	intrigue_scheme_phase_duration = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05 = {
+	stewardship_scheme_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05 = {
+	epidemic_resistance = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05 = {
+	fertility = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05 = {
+	negate_stewardship_penalty_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05 = {
+	cowed_vassal_barter_goods_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05 = {
+	court_grandeur_baseline_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05 = {
+	ai_rationality = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05 = {
+	cowed_vassal_levy_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05 = {
+	intimidated_vassal_levy_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05 = {
+	county_fertility_decline_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05 = {
+	army_maintenance_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05 = {
+	vassal_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05 = {
+	enemy_contract_scheme_success_chance_growth_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05 = {
+	monthly_income_per_piety_level = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05 = {
+	build_herd_cost = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05 = {
+	monthly_war_influence_income_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05 = {
+	additional_fort_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05 = {
+	hostile_county_attrition = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05 = {
+	enemy_hostile_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05 = {
+	vassal_tax_contribution_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05 = {
+	development_growth_factor = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05 = {
+	learning_per_piety_level = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05 = {
+	merit_level_impact_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05 = {
+	prowess_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05 = {
+	stationed_maa_screen_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05 = {
+	character_capital_county_monthly_development_growth_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05 = {
+	men_at_arms_maintenance_per_dread_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05 = {
+	monthly_piety_gain_per_court_position_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05 = {
+	maa_siege_value_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05 = {
+	domicile_monthly_piety_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05 = {
+	monthly_county_control_growth_add = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05 = {
+	fellow_confederation_member_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05 = {
+	owned_political_scheme_success_chance_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05 = {
+	max_political_schemes_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05 = {
+	faith_conversion_piety_cost_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05 = {
+	same_heritage_county_advantage_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05 = {
+	liege_opinion = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05 = {
+	vassal_prestige_contribution_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05 = {
+	winter_movement_speed = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05 = {
+	negate_martial_penalty_add = 50
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05 = {
+	character_travel_speed_mult = 0.5
+	scale = {
+		value = {
+			add = var:TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_STACK
+		}
+	}
+}

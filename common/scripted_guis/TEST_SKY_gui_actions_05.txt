@@ -1,0 +1,1357 @@
+TEST_SKY_EFFECT_CHARACTER_OTHER_0005_banish_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { banish = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_WAR_0001_cancel_truce_both_ways_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { cancel_truce_both_ways = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0001_change_current_court_grandeur_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_current_court_grandeur = indebt_guest_interaction_lost_test_grandeur_cost_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0002_change_current_weight_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_current_weight = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0003_change_diarchy_swing_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_diarchy_swing = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0004_change_first_name_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_first_name = birth.9002.a.rename } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0005_change_government_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_government = nomad_government } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0006_change_influence_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_influence = medium_influence_gain } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0007_change_influence_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_influence_level = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0008_change_influence_no_experience_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_influence_no_experience = standard_activity_base_cost } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0009_change_merit_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_merit = medium_merit_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0010_change_merit_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_merit_level = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0011_change_prison_type_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_prison_type = dungeon } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CHANGE_0012_change_strife_opinion_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { change_strife_opinion = massive_strife_gain } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CLEAR_0001_clear_appointment_timeout_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { clear_appointment_timeout = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CLEAR_0002_clear_designated_heir_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { clear_designated_heir = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0006_complete_activity_intent_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { complete_activity_intent = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0002_copy_inheritable_appearance_from_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { copy_inheritable_appearance_from = character:dynamic_mongol_1 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CREATE_0001_create_divergent_culture_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { create_divergent_culture = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CREATE_0002_create_divergent_culture_with_side_effects_excluding_cost_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { create_divergent_culture_with_side_effects_excluding_cost = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CREATE_0003_create_hybrid_culture_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { create_hybrid_culture = culture:levantine } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CREATE_0004_create_inspiration_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { create_inspiration = book_inspiration } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_CREATE_0005_create_story_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { create_story = story_take_mandate_of_heaven } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0007_death_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { death = natural } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0008_depose_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { depose = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0009_depose_diarch_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { depose_diarch = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0003_designate_diarch_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { designate_diarch = title:e_minister_chancellor.holder } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_DESTROY_0001_destroy_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { destroy_title = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0010_enact_treasury_budgets_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { enact_treasury_budgets = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0011_enact_treasury_budgets_init_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { enact_treasury_budgets_init = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0012_enact_treasury_budgets_no_costs_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { enact_treasury_budgets_no_costs = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_END_0001_end_diarchy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { end_diarchy = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_END_0002_end_pregnancy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { end_pregnancy = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_END_0003_end_tributary_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { end_tributary = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0004_execute_decision_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { execute_decision = create_cadet_branch_decision } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0013_finish_council_task_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { finish_council_task = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0005_fire_councillor_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { fire_councillor = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0014_force_character_skill_recalculation_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { force_character_skill_recalculation = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_TITLE_0001_force_step_down_landed_titles_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { force_step_down_landed_titles = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_TITLE_0002_get_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { get_title = title:h_dar_al_islam } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0015_give_domain_to_herders_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { give_domain_to_herders = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0016_give_nickname_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { give_nickname = nick_the_conqueror } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0006_learn_court_language_of_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { learn_court_language_of = host } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0017_learn_language_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { learn_language = language_arabic } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0007_learn_language_of_culture_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { learn_language_of_culture = liege.culture } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0008_leave_faction_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { leave_faction = joined_faction } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_TITLE_0003_make_claim_strong_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { make_claim_strong = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0009_make_trait_active_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { make_trait_active = lunatic_genetic } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0010_make_trait_inactive_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { make_trait_inactive = depressed_genetic } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0018_make_unprunable_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { make_unprunable = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_MOVE_0001_move_to_pool_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { move_to_pool = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0019_open_appoint_court_position_window_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { open_appoint_court_position_window = court_physician_court_position } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0020_play_music_cue_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { play_music_cue = mx_cue_murder } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0011_recalculate_participant_group_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { recalculate_participant_group = situation:dynastic_cycle } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0021_refund_all_perks_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { refund_all_perks = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0022_release_from_prison_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { release_from_prison = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0001_remove_all_character_modifier_instances_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_all_character_modifier_instances = embassies_perk_modifier } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0002_remove_character_flag_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_character_flag = should_become_independent } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0003_remove_character_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_character_modifier = ep3_loyal_troops_raid_modifier } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0004_remove_character_secret_faith_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_character_secret_faith = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0005_remove_claim_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_claim = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0006_remove_concubine_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_concubine = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0007_remove_courtier_or_guest_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_courtier_or_guest = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0008_remove_decision_cooldown_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_decision_cooldown = mpo_become_greatest_of_khans_decision } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0009_remove_from_activity_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_from_activity = involved_activity } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0010_remove_interaction_cooldown_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_interaction_cooldown = challenge_for_artifact_interaction } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0011_remove_localized_text_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_localized_text = story_cycle_cat_name } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0012_remove_long_term_gold_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_long_term_gold = gold } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0013_remove_nickname_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_nickname = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0014_remove_realm_law_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_realm_law = crowned_king } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0015_remove_relation_crush_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_relation_crush = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0016_remove_relation_potential_rival_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_relation_potential_rival = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0017_remove_short_term_gold_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_short_term_gold = ninety_percent_gold_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0018_remove_short_term_treasury_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_short_term_treasury = medium_treasury_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0019_remove_trait_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_trait = devoted } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0020_remove_trait_force_tooltip_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_trait_force_tooltip = kinslayer_3 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0021_remove_treasury_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_treasury = treasury_raided_loot_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_REMOVE_0022_remove_treasury_or_gold_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_treasury_or_gold = medium_treasury_or_gold_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0023_reset_beneficiary_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { reset_beneficiary = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0024_return_home_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { return_home = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0025_return_hostage_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { return_hostage = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0026_return_to_court_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { return_to_court = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0001_set_absolute_country_control_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_absolute_country_control = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0002_set_activity_intent_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_activity_intent = imperial_exam_taker_intent } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0003_set_age_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_age = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0004_set_character_faith_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_character_faith = faith:tengri_pagan } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0005_set_character_faith_with_conversion_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_character_faith_with_conversion = capital_county.faith } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0006_set_character_secret_faith_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_character_secret_faith = faith:rabbinism } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0007_set_court_type_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_court_type = court_nomadic } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0008_set_culture_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_culture = culture:occitan } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0009_set_current_court_grandeur_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_current_court_grandeur = court_grandeur_minimum_expected } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0010_set_default_education_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_default_education = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0011_set_designated_heir_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_designated_heir = character:1736 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0012_set_diarch_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_diarch = character:1736 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0013_set_diarchy_mandate_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_diarchy_mandate = placate_movements } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0014_set_diarchy_swing_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_diarchy_swing = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0015_set_diarchy_type_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_diarchy_type = regency } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0016_set_employer_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_employer = character:japanese_minamoto_seiwa_10 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0017_set_father_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_father = real_father } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0018_set_focus_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_focus = stewardship_wealth_focus } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0019_set_house_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_house = mother.house } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0020_set_knight_status_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_knight_status = force } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0021_set_known_bastard_on_pregnancy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_known_bastard_on_pregnancy = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0022_set_location_to_default_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_location_to_default = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0023_set_num_pregnancy_children_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_num_pregnancy_children = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0024_set_override_designated_winner_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_override_designated_winner = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0025_set_player_character_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_player_character = character:906 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0026_set_primary_title_to_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_primary_title_to = title:k_bavaria } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0027_set_realm_capital_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_realm_capital = title:c_middlesex } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0028_set_sexuality_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_sexuality = bisexual } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0029_set_subject_contract_modification_blocked_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_subject_contract_modification_blocked = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0030_set_to_lowborn_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_to_lowborn = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SET_0031_set_vassal_contract_modification_blocked_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { set_vassal_contract_modification_blocked = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_START_0001_start_default_task_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { start_default_task = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0027_stop_promoting_legend_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { stop_promoting_legend = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0028_store_localized_text_in_death_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { store_localized_text_in_death = test_saved_text } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0029_try_start_diarchy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { try_start_diarchy = vizierate } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0012_use_hook_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { use_hook = liege } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0030_vassal_contract_decrease_obligation_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { vassal_contract_decrease_obligation_level = feudal_government_taxes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0031_vassal_contract_increase_obligation_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { vassal_contract_increase_obligation_level = feudal_government_levies } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0013_visit_court_of_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { visit_court_of = prev } }
+}
+
+TEST_SKY_EFFECT_TITLE_ADD_0001_add_county_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { add_county_modifier = oath_university_county } }
+}
+
+TEST_SKY_EFFECT_TITLE_CHANGE_0001_change_county_control_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { change_county_control = 0.5 } }
+}
+
+TEST_SKY_EFFECT_TITLE_CHANGE_0002_change_county_fertility_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { change_county_fertility = major_county_fertility_level_gain } }
+}
+
+TEST_SKY_EFFECT_TITLE_CHANGE_0003_change_development_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { change_development_level = 0.5 } }
+}
+
+TEST_SKY_EFFECT_TITLE_CHANGE_0004_change_development_progress_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { change_development_progress = cultivated_sophistication_development_gain } }
+}
+
+TEST_SKY_EFFECT_TITLE_CHANGE_0005_change_development_progress_with_overflow_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { change_development_progress_with_overflow = greek_anarchy_development_value } }
+}
+
+TEST_SKY_EFFECT_TITLE_CLEAR_0001_clear_title_laws_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { clear_title_laws = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_TITLE_0001_copy_title_history_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { copy_title_history = title:k_danelaw } }
+}
+
+TEST_SKY_EFFECT_TITLE_REMOVE_0001_remove_county_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { remove_county_modifier = peasant_war_lost_county_modifier } }
+}
+
+TEST_SKY_EFFECT_TITLE_TITLE_0002_reset_title_name_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { reset_title_name = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_REVOKE_0001_revoke_lease_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { revoke_lease = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0001_set_always_follows_primary_heir_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_always_follows_primary_heir = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0002_set_can_be_named_after_dynasty_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_can_be_named_after_dynasty = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0003_set_can_use_nomadic_naming_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_can_use_nomadic_naming = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0004_set_capital_barony_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_capital_barony = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0005_set_capital_county_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_capital_county = prev.capital_county } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0006_set_color_from_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_color_from_title = title:d_normandy } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0007_set_county_culture_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_county_culture = culture:east_bantu } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0008_set_county_faith_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_county_faith = faith:azariqa } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0009_set_de_jure_liege_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_de_jure_liege_title = title:k_england } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0010_set_definitive_form_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_definitive_form = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0011_set_delete_on_destroy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_delete_on_destroy = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0012_set_destroy_if_invalid_heir_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_destroy_if_invalid_heir = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0013_set_destroy_on_gain_same_tier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_destroy_on_gain_same_tier = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0014_set_destroy_on_succession_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_destroy_on_succession = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0015_set_landless_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_landless_title = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0016_set_no_automatic_claims_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_no_automatic_claims = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0017_set_title_name_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_title_name = d_normandy } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0018_set_title_name_dynamic_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_title_name_dynamic = peasant_leader_title_name } }
+}
+
+TEST_SKY_EFFECT_TITLE_OTHER_0001_update_dynamic_coa_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { update_dynamic_coa = yes } }
+}
+
+TEST_SKY_EFFECT_HOUSE_ADD_0001_add_house_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.house = { add_house_modifier = oath_of_purge_pretenders_house } }
+}
+
+TEST_SKY_EFFECT_HOUSE_REMOVE_0001_remove_house_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.house = { remove_house_modifier = oath_of_purge_pretenders_house } }
+}
+
+TEST_SKY_EFFECT_HOUSE_SET_0001_set_house_head_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.house = { set_house_head = prev } }
+}
+
+TEST_SKY_EFFECT_HOUSE_SET_0002_set_house_name_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.house = { set_house_name = japanese_dynasty_name } }
+}
+
+TEST_SKY_EFFECT_FAITH_ADD_0001_add_doctrine_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.faith = { add_doctrine = divine_destiny_doctrine } }
+}
+
+TEST_SKY_EFFECT_FAITH_REMOVE_0001_remove_doctrine_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.faith = { remove_doctrine = doctrine_polygamy } }
+}
+
+TEST_SKY_EFFECT_FAITH_REMOVE_0002_remove_religious_head_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.faith = { remove_religious_head_title = yes } }
+}
+
+TEST_SKY_EFFECT_FAITH_SET_0001_set_religious_head_title_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.faith = { set_religious_head_title = title:k_papal_state } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_ADD_0001_add_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { add_building = military_camps_01 } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_ADD_0002_add_great_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { add_great_building = mandala_capital_01 } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_ADD_0003_add_province_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { add_province_modifier = temporary_fort_province_modifier } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_ADD_0004_add_special_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { add_special_building = generic_university } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_ADD_0005_add_special_building_slot_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { add_special_building_slot = legendary_shrine } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_ADD_0006_add_travel_point_of_interest_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { add_travel_point_of_interest = poi_special_buildings_martial } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_OTHER_0001_begin_create_holding_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { begin_create_holding = church_holding } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_OTHER_0002_generate_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { generate_building = yes } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_OTHER_0003_refill_garrison_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { refill_garrison = yes } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_OTHER_0004_refill_levy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { refill_levy = yes } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_REMOVE_0001_remove_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { remove_building = angkor_wat_01 } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_REMOVE_0002_remove_holding_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { remove_holding = yes } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_REMOVE_0003_remove_province_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { remove_province_modifier = temporary_fort_province_modifier } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_OTHER_0005_replace_building_effect_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { replace_building_effect = celestial_great_barracks_01 } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_OTHER_0006_ruin_great_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { ruin_great_building = yes } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_SET_0001_set_great_building_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { set_great_building = mandala_capital_01 } }
+}
+
+TEST_SKY_EFFECT_PROVINCE_SET_0002_set_holding_type_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.capital_province = { set_holding_type = nomad_holding } }
+}
+
+TEST_SKY_EFFECT_DYNASTY_ADD_0001_add_dynasty_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.dynasty = { add_dynasty_modifier = majapahit_empire_founding_modifier } }
+}
+
+TEST_SKY_EFFECT_DYNASTY_ADD_0002_add_dynasty_perk_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.dynasty = { add_dynasty_perk = warfare_legacy_1 } }
+}
+
+TEST_SKY_EFFECT_DYNASTY_ADD_0003_add_dynasty_prestige_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.dynasty = { add_dynasty_prestige = medium_dynasty_prestige_value } }
+}
+
+TEST_SKY_EFFECT_DYNASTY_ADD_0004_add_dynasty_prestige_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.dynasty = { add_dynasty_prestige_level = 0.5 } }
+}
+
+TEST_SKY_EFFECT_DYNASTY_REMOVE_0001_remove_dynasty_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.dynasty = { remove_dynasty_modifier = mandala_sanctified_domes_dynasty_modifier } }
+}
+
+TEST_SKY_EFFECT_CULTURE_ADD_0001_add_culture_tradition_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { add_culture_tradition = oath_mend_the_fracture_tradition } }
+}
+
+TEST_SKY_EFFECT_CULTURE_ADD_0002_add_fascination_progress_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { add_fascination_progress = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CULTURE_ADD_0003_add_innovation_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { add_innovation = innovation_desert_tactics } }
+}
+
+TEST_SKY_EFFECT_CULTURE_ADD_0004_add_name_list_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { add_name_list = name_list_romansh } }
+}
+
+TEST_SKY_EFFECT_CULTURE_ADD_0005_add_random_innovation_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { add_random_innovation = culture_group_military } }
+}
+
+TEST_SKY_EFFECT_CULTURE_SCOPE_0001_get_all_innovations_from_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { get_all_innovations_from = culture:norman } }
+}
+
+TEST_SKY_EFFECT_CULTURE_OTHER_0001_get_random_innovation_from_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { get_random_innovation_from = culture:persian } }
+}
+
+TEST_SKY_EFFECT_CULTURE_REMOVE_0001_remove_culture_tradition_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { remove_culture_tradition = tradition_tgp_imperial_peace } }
+}
+
+TEST_SKY_EFFECT_CULTURE_OTHER_0002_reset_culture_creation_date_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { reset_culture_creation_date = yes } }
+}
+
+TEST_SKY_EFFECT_CULTURE_SET_0001_set_culture_pillar_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { set_culture_pillar = language_israelite } }
+}
+
+TEST_SKY_EFFECT_CULTURE_SET_0002_set_name_list_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.culture = { set_name_list = name_list_late_norman } }
+}
+
+TEST_SKY_EFFECT_TITLE_OTHER_0002_generate_coa_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { generate_coa = yes } }
+}
+
+TEST_SKY_EFFECT_TITLE_SET_0019_set_coa_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character.primary_title = { set_coa = holder.house } }
+}

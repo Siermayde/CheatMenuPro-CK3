@@ -1,0 +1,18 @@
+on_death = {
+	on_actions = {
+		sakuya_on_marked_character_death
+	}
+}
+
+sakuya_on_marked_character_death = {
+	effect = {
+		if = {
+			limit = {
+				exists = global_var:sakuya_marked_character
+				this = global_var:sakuya_marked_character
+			}
+			remove_character_flag = sakuya_marked_character
+			remove_global_variable = sakuya_marked_character
+		}
+	}
+}

@@ -19,6 +19,7 @@ sakuya_mark_character_interaction = {
 			global_var:sakuya_marked_character = {
 				remove_character_flag = sakuya_marked_character
 			}
+			remove_global_variable = sakuya_marked_character
 		}
 
 		scope:recipient = {

@@ -1,2 +1,5 @@
 gui/sakuya_main_launcher_button.gui = sakuya_guiname_main_launcher_button_window
 gui/sakuya_main_window.gui = sakuya_guiname_main_window
+# TEST_SKY_BEGIN_WIDGET_REGISTRATION
+gui/TEST_SKY_main.gui = TEST_SKY_main_window
+# TEST_SKY_END_WIDGET_REGISTRATION

@@ -1,0 +1,74 @@
+{
+  "total_unique_keys": 2658,
+  "ck3_confirmed": 1611,
+  "ck3_probable_shared": 20,
+  "ck3_unobserved": 1027,
+  "by_category": {
+    "attribute": 2519,
+    "layout": 27,
+    "state_event": 50,
+    "animation": 17,
+    "sprite_texture": 20,
+    "structure": 4,
+    "data_binding": 2,
+    "text": 10,
+    "behavior": 9
+  },
+  "files": {
+    "CK3": 376,
+    "V3": 209,
+    "EU5": 485
+  },
+  "file_counts": {
+    "CK3": 376,
+    "V3": 209,
+    "EU5": 485
+  },
+  "library_files": [
+    {
+      "game": "CK3",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\debug\\window_component_library.gui",
+      "size": 94582
+    },
+    {
+      "game": "CK3",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Crusader Kings III\\game\\gui\\shared\\misc_components.gui",
+      "size": 10584
+    },
+    {
+      "game": "V3",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Victoria 3\\game\\gui\\window_component_library.gui",
+      "size": 144279
+    },
+    {
+      "game": "EU5",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Europa Universalis V\\game\\in_game\\gui\\ui_library.gui",
+      "size": 588409
+    },
+    {
+      "game": "EU5",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Europa Universalis V\\game\\main_menu\\gui\\debug\\debug_misc_components.gui",
+      "size": 239
+    }
+  ],
+  "block_types_count": {
+    "CK3": 1608,
+    "V3": 1644,
+    "EU5": 1038
+  },
+  "expressions_count": {
+    "CK3": 1129,
+    "V3": 1018,
+    "EU5": 1365
+  },
+  "type_defs_count": {
+    "CK3": 0,
+    "V3": 0,
+    "EU5": 0
+  },
+  "templates_count": {
+    "CK3": 10,
+    "V3": 26,
+    "EU5": 105
+  }
+}

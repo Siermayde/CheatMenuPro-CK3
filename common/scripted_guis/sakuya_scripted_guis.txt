@@ -2,6 +2,18 @@ sakuya_refresh_p2_character_gui = {
 	scope = character
 
 	effect = {
+		# Repair saves where the marked character died before the death cleanup existed.
+		if = {
+			limit = {
+				exists = global_var:sakuya_marked_character
+				global_var:sakuya_marked_character = { is_alive = no }
+			}
+			global_var:sakuya_marked_character = {
+				remove_character_flag = sakuya_marked_character
+			}
+			remove_global_variable = sakuya_marked_character
+		}
+
 		if = {
 			limit = {
 				exists = global_var:sakuya_marked_character

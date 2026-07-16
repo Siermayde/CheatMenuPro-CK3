@@ -1,0 +1,3944 @@
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0053_prowess_no_portrait_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0027_owned_political_scheme_success_chance_max_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0008_adult_health_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0054_stewardship_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_LEVY_0012_levy_reinforcement_rate_different_faith_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0031_happy_powerful_vassal_levy_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0032_vassal_limit_max_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0060_clergy_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0061_courtier_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0025_monthly_war_barter_goods_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0057_negate_intrigue_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0009_negate_health_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0033_happy_powerful_vassal_barter_goods_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0064_positive_inactive_inheritance_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0063_spouse_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0034_monthly_treasury_from_vassals_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0016_domain_tax_mult_even_if_baron_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0027_monthly_war_merit_income_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0064_strife_opinion_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0010_men_at_arms_limit_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0028_monthly_war_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0058_intrigue_per_merit_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0010_monthly_county_control_growth_at_war_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0023_tolerance_advantage_mod_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0059_learning_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0010_development_growth_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0060_diplomacy_per_stress_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0011_maa_pursuit_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0030_monthly_piety_gain_per_knight_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0065_domicile_monthly_herd_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0011_monthly_county_control_growth_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0006_years_of_fertility_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0061_diplomacy_per_influence_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0066_domicile_monthly_influence_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0035_vassal_limit_min_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0065_realm_priest_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0067_supply_capacity_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0066_opinion_of_vassal_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_COURT_0003_monthly_court_grandeur_change_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0067_child_except_player_heir_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0034_vassal_prestige_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0068_no_disembark_penalty_VALUE_YES_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0068_no_disembark_penalty_VALUE_YES } }
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0068_no_disembark_penalty_VALUE_YES_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0068_no_disembark_penalty_VALUE_YES } }
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0029_monthly_treasury_from_salary_budget_base_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0010_stress_loss_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0068_opinion_of_male_rulers_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0024_independent_primary_attacker_advantage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0069_positive_random_genetic_chance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0012_monthly_county_control_decline_at_war_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0017_domain_tax_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0036_intimidated_vassal_barter_goods_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0069_attraction_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0028_hostile_raid_time_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0070_ignore_opinion_of_different_faith_VALUE_YES_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0070_ignore_opinion_of_different_faith_VALUE_YES } }
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0070_ignore_opinion_of_different_faith_VALUE_YES_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0070_ignore_opinion_of_different_faith_VALUE_YES } }
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0070_ai_vengefulness_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0012_men_at_arms_cap_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0037_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0007_character_capital_monthly_county_fertility_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0071_no_water_crossing_penalty_VALUE_YES_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0071_no_water_crossing_penalty_VALUE_YES } }
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0071_no_water_crossing_penalty_VALUE_YES_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0071_no_water_crossing_penalty_VALUE_YES } }
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0029_max_personal_schemes_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0072_supply_limit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0018_tributary_tax_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0071_tributary_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0073_blood_brother_renown_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_STACK add = 1 }
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05
+			add_province_modifier = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0007_stationed_maa_pursuit_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_LEVY_0013_levy_reinforcement_rate_same_faith_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0062_knight_effectiveness_per_stewardship_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_COURT_0004_monthly_court_grandeur_change_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0063_learning_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0074_provisions_capacity_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0033_treasury_salary_budget_allocation_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_STACK add = 1 }
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05
+			add_province_modifier = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_HEALTH_0011_stress_loss_per_prestige_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0009_siege_morale_loss_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0066_stewardship_scheme_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0075_epidemic_resistance_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0008_fertility_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0067_negate_stewardship_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0038_cowed_vassal_barter_goods_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_COURT_0005_court_grandeur_baseline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0076_ai_rationality_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0039_cowed_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0040_intimidated_vassal_levy_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0009_county_fertility_decline_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0072_vassal_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_STACK add = 1 }
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05
+			add_province_modifier = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_PROVINCE_PIETY_0003_monthly_income_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0036_monthly_war_influence_income_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_GARRISON_0010_additional_fort_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TAX_0019_vassal_tax_contribution_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0012_development_growth_factor_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0068_learning_per_piety_level_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OTHER_0077_merit_level_impact_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0069_prowess_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_STACK add = 1 }
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05
+			add_province_modifier = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character.capital_province = {
+			remove_province_modifier = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_PROVINCE_MEN_AT_ARMS_0008_stationed_maa_screen_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0013_character_capital_county_monthly_development_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0031_monthly_piety_gain_per_court_position_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_MEN_AT_ARMS_0013_maa_siege_value_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0032_domicile_monthly_piety_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_CONTROL_0013_monthly_county_control_growth_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0074_fellow_confederation_member_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0033_owned_political_scheme_success_chance_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_SCHEME_0034_max_political_schemes_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0025_same_heritage_county_advantage_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_OPINION_0075_liege_opinion_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0035_vassal_prestige_contribution_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0014_winter_movement_speed_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0070_negate_martial_penalty_add_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_ADD_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			if = {
+				limit = { NOT = { has_variable = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_STACK } }
+				set_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_STACK value = 0 }
+			}
+			change_variable = { name = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_STACK add = 1 }
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05
+			add_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05
+		}
+	}
+}
+
+TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_REMOVE_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		global_var:sakuya_marked_character = {
+			remove_character_modifier = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05
+			remove_variable = TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0015_character_travel_speed_mult_VALUE_05_STACK
+		}
+	}
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0001_add_character_flag_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_character_flag = should_become_independent } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0002_add_character_modifier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_character_modifier = ep3_loyal_troops_raid_modifier } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0003_add_courtier_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_courtier = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0004_add_diplomacy_lifestyle_perk_points_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_diplomacy_lifestyle_perk_points = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0005_add_diplomacy_lifestyle_xp_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_diplomacy_lifestyle_xp = medium_lifestyle_xp } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0006_add_dread_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_dread = medium_dread_gain } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0007_add_gold_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_gold = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0008_add_intrigue_lifestyle_perk_points_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_intrigue_lifestyle_perk_points = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0009_add_intrigue_lifestyle_xp_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_intrigue_lifestyle_xp = medium_lifestyle_xp } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0010_add_joined_faction_discontent_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_joined_faction_discontent = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0011_add_learning_lifestyle_perk_points_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_learning_lifestyle_perk_points = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0012_add_learning_lifestyle_xp_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_learning_lifestyle_xp = medium_lifestyle_xp } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0013_add_legitimacy_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_legitimacy = medium_legitimacy_loss } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0014_add_martial_lifestyle_perk_points_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_martial_lifestyle_perk_points = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0015_add_martial_lifestyle_xp_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_martial_lifestyle_xp = medium_lifestyle_xp } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0016_add_perk_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_perk = peacemaker_perk } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0017_add_personal_artifact_claim_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_personal_artifact_claim = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0018_add_piety_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_piety = omega_piety_gain } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0019_add_piety_experience_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_piety_experience = massive_piety_loss } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0020_add_piety_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_piety_level = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0021_add_piety_no_experience_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_piety_no_experience = major_piety_gain } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0022_add_pressed_claim_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_pressed_claim = prev } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0023_add_prestige_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_prestige = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0024_add_prestige_experience_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_prestige_experience = minor_prestige_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0025_add_prestige_level_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_prestige_level = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0026_add_prestige_no_experience_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_prestige_no_experience = tribal_subjugation_cb_prestige_cost } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0027_add_realm_law_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_realm_law = crown_authority_0 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0028_add_realm_law_skip_effects_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_realm_law_skip_effects = crown_authority_1 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0029_add_short_term_gold_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_short_term_gold = medium_gold_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0030_add_stewardship_lifestyle_perk_points_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_stewardship_lifestyle_perk_points = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0031_add_stewardship_lifestyle_xp_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_stewardship_lifestyle_xp = medium_lifestyle_xp } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0032_add_stress_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_stress = generous_title_grant_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0033_add_subject_standing_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_subject_standing = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0034_add_targeting_factions_discontent_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_targeting_factions_discontent = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0035_add_to_activity_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_to_activity = involved_activity } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0036_add_trait_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_trait = pilgrim } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0037_add_trait_force_tooltip_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_trait_force_tooltip = legitimized_bastard } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0038_add_treasury_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_treasury = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0039_add_treasury_or_gold_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_treasury_or_gold = major_treasury_or_gold_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0040_add_tyranny_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_tyranny = massive_tyranny_value } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0041_add_unpressed_claim_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_unpressed_claim = title:k_england } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0042_add_wanderer_lifestyle_perk_points_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_wanderer_lifestyle_perk_points = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_ADD_0043_add_wanderer_lifestyle_xp_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { add_wanderer_lifestyle_xp = 0.5 } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0001_ai_attempt_to_build_building_effect_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { ai_attempt_to_build_building_effect = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_SCOPE_0001_ai_attempt_to_host_activity_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { ai_attempt_to_host_activity = activity_tournament } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0002_apply_ai_vassal_admin_province_obligation_liege_most_desired_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { apply_ai_vassal_admin_province_obligation_liege_most_desired = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0003_apply_ai_vassal_obligation_liege_most_desired_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { apply_ai_vassal_obligation_liege_most_desired = yes } }
+}
+
+TEST_SKY_EFFECT_CHARACTER_OTHER_0004_apply_ai_vassal_obligation_vassal_most_desired_DEFAULT_DEFAULT_SGUI = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = { global_var:sakuya_marked_character = { apply_ai_vassal_obligation_vassal_most_desired = yes } }
+}

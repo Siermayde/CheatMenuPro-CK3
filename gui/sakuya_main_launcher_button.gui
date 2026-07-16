@@ -14,6 +14,13 @@ window = {
 		onclick = "[GetVariableSystem.Toggle('sakuya_main_visible')]"
 		onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 		tooltip = "sakuya_button_open_tt"
+		# TEST_SKY_BEGIN_RIGHT_CLICK_ENTRY
+		button_ignore = none
+		onrightclick = "[GetVariableSystem.Set('TEST_SKY_LEVEL0', 'MODIFIER')]"
+		onrightclick = "[GetVariableSystem.Set('TEST_SKY_LEVEL1', 'CHARACTER')]"
+		onrightclick = "[GetVariableSystem.Set('TEST_SKY_LEVEL2', 'ATTRIBUTE')]"
+		onrightclick = "[GetVariableSystem.Toggle('TEST_SKY_WINDOW_OPEN')]"
+		# TEST_SKY_END_RIGHT_CLICK_ENTRY
 
 		icon = {
 			size = { 64 64 }

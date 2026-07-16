@@ -54,7 +54,8 @@ window = {
 			parentanchor = top|right
 			position = { -322 42 }
 			size = { 150 38 }
-			visible = "[And(GetVariableSystem.Exists('sakuya_tab'), Not(GetVariableSystem.HasValue('sakuya_tab', 'dynasty')))]"
+			visible = "[GetVariableSystem.HasValue('sakuya_tab', 'title')]"
+			onclick = "[GetVariableSystem.Set('sakuya_p2_transition', 'active')]"
 			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
 			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
 			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
@@ -76,6 +77,37 @@ window = {
 				autoresize = no
 				align = center|nobaseline
 			}
+		}
+
+		button_standard = {
+			name = "sakuya_guiname_main_character_return_button"
+			parentanchor = top|right
+			position = { -322 42 }
+			size = { 150 38 }
+			visible = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+			onclick = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+			onclick = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+			onclick = "[GetVariableSystem.Set('sakuya_character_page_transition', 'active')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('enter_subpage','return_home_after_bookmarks')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_page_character_title').InterruptThenTriggerAnimation('page_enter','page_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_page_character_content').InterruptThenTriggerAnimation('page_enter','page_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_1').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_2').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_3').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_4').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_5').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_6').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_7').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+			onclick = "[GetVariableSystem.Clear('sakuya_tab')]"
+			onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+			onclick = "[GetVariableSystem.Clear('sakuya_card_fade_transition')]"
+			tooltip = "sakuya_main_back_tt"
+			text_single = { parentanchor = center text = "sakuya_main_back_text" fontsize = 16 fontsize_min = 10 autoresize = no align = center|nobaseline }
 		}
 
 		button_standard = {
@@ -112,15 +144,1278 @@ window = {
 			tooltip = "sakuya_main_close_tt"
 			onclick = "[GetVariableSystem.Clear('sakuya_main_visible')]"
 			onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+			onclick = "[GetVariableSystem.Clear('sakuya_p2_transition')]"
 			onclick = "[GetVariableSystem.Clear('sakuya_p3_transition')]"
+			onclick = "[GetVariableSystem.Clear('sakuya_character_page_transition')]"
+			onclick = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+			onclick = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
 			onclick = "[GetVariableSystem.Clear('sakuya_card_fade_transition')]"
 			onrightclick = "[GetVariableSystem.Clear('sakuya_main_visible')]"
 			onrightclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
+			onrightclick = "[GetVariableSystem.Clear('sakuya_p2_transition')]"
 			onrightclick = "[GetVariableSystem.Clear('sakuya_p3_transition')]"
+			onrightclick = "[GetVariableSystem.Clear('sakuya_character_page_transition')]"
+			onrightclick = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+			onrightclick = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
 			onrightclick = "[GetVariableSystem.Clear('sakuya_card_fade_transition')]"
 			shortcut = "close_window"
 		}
 
+		# Drawn before the card container so the card frame covers each ribbon root.
+		widget = {
+			name = "sakuya_guiname_character_bookmark_navigation"
+			# Active card frame right edge is x=390; 345 + 100 - 390 = 55 px, i.e. 46 * 1.2 rounded.
+			position = { 345 182 }
+			size = { 390 370 }
+			allow_outside = yes
+			visible = "[Or(GetVariableSystem.HasValue('sakuya_tab', 'character'), GetVariableSystem.Exists('sakuya_character_page_transition'))]"
+			vbox = {
+				size = { 390 370 }
+				spacing = 8
+				ignoreinvisible = yes
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_1"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.16
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.28
+							duration = 0.09
+							using = Animation_Curve_Default
+							on_finish = "[GetVariableSystem.Clear('sakuya_character_page_transition')]"
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_1"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_1"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_1')]"
+										text = "sakuya_character_bookmark_1_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_1"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_1"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_1"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_1"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_1')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_1')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_1').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_1').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_1"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_1')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_1')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_1').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_1').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_2"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.18
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.26
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_2"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_2"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_2')]"
+										text = "sakuya_character_bookmark_2_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_2"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_2"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_2"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_2"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_2')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_2')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_2').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_2').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_2"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_2')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_2')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_2').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_2').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_3"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.20
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.24
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_3"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_3"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_3')]"
+										text = "sakuya_character_bookmark_3_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_3"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_3"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_3"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_3"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_3')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_3')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_3').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_3').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_3"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_3')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_3')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_3').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_3').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_4"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.22
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.22
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_4"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_4"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_4')]"
+										text = "sakuya_character_bookmark_4_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_4"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_4"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_4"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_4"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_4')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_4')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_4').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_4').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_4"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_4')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_4')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_4').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_4').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_5"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.24
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.20
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_5"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_5"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_5')]"
+										text = "sakuya_character_bookmark_5_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_5"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_5"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_5"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_5"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_5')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_5')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_5').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_5').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_5"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_5')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_5')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_5').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_5').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_6"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.26
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.18
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_6"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_6"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_6')]"
+										text = "sakuya_character_bookmark_6_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_6"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_6"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_6"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_6"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_6')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_6')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_6').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_6').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_6"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_6')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_6')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_6').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_6').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+
+				widget = {
+					size = { 390 46 }
+					allow_outside = yes
+					widget = {
+						name = "sakuya_guiname_character_bookmark_row_7"
+						position = { -90 0 }
+						size = { 390 46 }
+						alpha = 0.01
+						allow_outside = yes
+						state = {
+							name = bookmark_enter
+							position_x = 0
+							alpha = 1
+							delay = 0.28
+							duration = 0.09
+							using = Animation_Curve_Default
+							on_finish = "[GetVariableSystem.Clear('sakuya_character_page_transition')]"
+						}
+						state = {
+							name = bookmark_exit
+							position_x = -90
+							alpha = 0.01
+							delay = 0.16
+							duration = 0.09
+							using = Animation_Curve_Default
+						}
+						widget = {
+							name = "sakuya_guiname_character_bookmark_hover_shift_7"
+							size = { 390 46 }
+							allow_outside = yes
+							icon = {
+								size = { 100 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7'))]"
+								alwaystransparent = yes
+							}
+
+							# 45 px remain under the active card frame; 119 - 45 = 74 px, the nearest whole-pixel 46 * 1.618 length.
+							icon = {
+								size = { 119 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7')]"
+								alwaystransparent = yes
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_visual_7"
+								minimumsize = { 119 46 }
+								maximumsize = { 373 46 }
+								texture = "gfx/interface/sakuya/slik_right.png"
+								spriteType = Corneredstretched
+								spriteborder = { 55 0 }
+								spriteborder_right = 24
+								alwaystransparent = yes
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								modify_texture = {
+									name = "bookmark_reveal"
+									texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+									blend_mode = alphaMultiply
+									translate_uv = { -1 0 }
+									alpha = 1
+								}
+								glow = {
+									glow_radius = 4
+									color = { 0.85 0.42 0.18 1 }
+									using = Glow_Standard
+									alpha = 0
+								}
+								state = {
+									name = bookmark_hover_reveal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0.66
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { 1 0 }
+									}
+								}
+								state = {
+									name = bookmark_hover_conceal
+									duration = 0.16
+									using = Animation_Curve_Default
+									glow_alpha = 0
+									modify_texture = {
+										name = "bookmark_reveal"
+										translate_uv = { -1 0 }
+									}
+								}
+								flowcontainer = {
+									resizeparent = yes
+									margin_left = 100
+									margin_right = 28
+									margin_top = 9
+									margin_bottom = 9
+									spacing = 8
+
+									text_single = {
+										visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark_hover', 'item_7')]"
+										text = "sakuya_character_bookmark_7_text"
+										fontsize = 20
+										fontsize_min = 14
+										autoresize = yes
+										max_width = 245
+										align = nobaseline
+										default_format = "#high;bold"
+										alwaystransparent = yes
+									}
+								}
+							}
+
+							# Draw selection VFX and slot icon after the button so the expanded ribbon cannot cover them.
+							icon = {
+								name = "sakuya_guiname_character_bookmark_selected_glow_7"
+								position = { 54 -5 }
+								size = { 56 56 }
+								texture = "gfx/interface/component_masks/mask_glow.dds"
+								color = { 1.00 0.78 0.48 0.40 }
+								alpha = 0.32
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7')]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_7"
+								position = { 57 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7'))]"
+								alwaystransparent = yes
+							}
+
+							icon_flat_standard_gold = {
+								name = "sakuya_guiname_character_bookmark_icon_selected_7"
+								position = { 66 7 }
+								size = { 32 32 }
+								texture = "gfx/interface/icons/flat_icons/star.dds"
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7')]"
+								alwaystransparent = yes
+							}
+
+							# Only the collapsed tab is interactive. The expanded ribbon above is visual and mouse-transparent.
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_7"
+								size = { 100 46 }
+								visible = "[Not(GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7'))]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_7')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_7')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_7').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_7').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+
+							button = {
+								name = "sakuya_guiname_character_bookmark_input_selected_7"
+								size = { 119 46 }
+								visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7')]"
+								enabled = "[And(GetVariableSystem.HasValue('sakuya_tab', 'character'), Not(GetVariableSystem.Exists('sakuya_character_page_transition')))]"
+								alwaystransparent = no
+								onclick = "[PdxGuiTriggerAllAnimations('sakuya_character_title_select_7')]"
+								onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_character_bookmark_hover', 'item_7')]"
+								onmousehierarchyenter = "[PdxGuiTriggerAllAnimations('bookmark_hover_conceal')]"
+								onmousehierarchyenter = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_7').InterruptThenTriggerAnimation('bookmark_hover_conceal','bookmark_hover_reveal')]"
+								onmousehierarchyleave = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+								onmousehierarchyleave = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_character_bookmark_visual_7').InterruptThenTriggerAnimation('bookmark_hover_reveal','bookmark_hover_conceal')]"
+							}
+						}
+					}
+				}
+			}
+		}
 		widget = {
 			name = "sakuya_guiname_main_home_cards"
 			position = { 58 137 }
@@ -144,6 +1439,14 @@ window = {
 				state = {
 					name = return_home
 					position = { 55 0 }
+					duration = 0.33
+					using = Animation_Curve_Default
+				}
+
+				state = {
+					name = return_home_after_bookmarks
+					position = { 55 0 }
+					delay = 0.26
 					duration = 0.33
 					using = Animation_Curve_Default
 				}
@@ -393,7 +1696,7 @@ window = {
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_body', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -431,7 +1734,7 @@ window = {
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_body', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -469,7 +1772,7 @@ window = {
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetPortrait('environment_body', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -507,7 +1810,7 @@ window = {
 							blockoverride "coa" {}
 							blockoverride "opinion_box" {}
 							blockoverride "portrait_texture" {
-								portrait_texture = "[Character.GetAnimatedPortrait('environment_event_study', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+								portrait_texture = "[Character.GetAnimatedPortrait('environment_body', 'camera_body', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							}
 						}
 					}
@@ -707,6 +2010,16 @@ window = {
 					}
 				}
 
+			# Moves with the card, intercepts native portrait input, and stays below both intentional card click masks.
+			button = {
+				name = "sakuya_guiname_main_p1_transition_input_guard"
+				visible = "[Or(GetVariableSystem.Exists('sakuya_character_page_transition'), GetVariableSystem.Exists('sakuya_card_fade_transition'))]"
+				position = { -4 -16 }
+				size = { 326 529 }
+				allow_outside = yes
+				alwaystransparent = no
+			}
+
 			button = {
 				name = "sakuya_guiname_main_p1_frame_fork_input"
 				visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab')))]"
@@ -731,6 +2044,17 @@ window = {
 				onclick = "[GetVariableSystem.Set('sakuya_card_fade_transition', 'active')]"
 				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('restore_home','fade_out_other')]"
 				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('restore_home','fade_out_other')]"
+				onclick = "[GetVariableSystem.Set('sakuya_character_page_transition', 'active')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_page_character_title').InterruptThenTriggerAnimation('page_exit','page_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_page_character_content').InterruptThenTriggerAnimation('page_exit','page_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_1').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_2').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_3').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_4').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_5').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_6').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_7').InterruptThenTriggerAnimation('bookmark_exit','bookmark_enter')]"
+				onclick = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_1')]"
 				onclick = "[GetVariableSystem.Set('sakuya_tab', 'character')]"
 				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onmousehierarchyenter = "[GetVariableSystem.Set('sakuya_main_hover', 'character')]"
@@ -772,11 +2096,22 @@ window = {
 				size = { 326 529 }
 				allow_outside = yes
 				alwaystransparent = no
-				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p1_character_card').InterruptThenTriggerAnimation('enter_subpage','return_home_after_bookmarks')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p1_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
 				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
 				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p3_dynasty_card').InterruptThenTriggerAnimation('fade_out_other','restore_home')]"
+				onclick = "[GetVariableSystem.Clear('sakuya_character_bookmark_hover')]"
+				onclick = "[GetVariableSystem.Set('sakuya_character_page_transition', 'active')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_page_character_title').InterruptThenTriggerAnimation('page_enter','page_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_page_character_content').InterruptThenTriggerAnimation('page_enter','page_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_1').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_2').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_3').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_4').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_5').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_6').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
+				onclick = "[PdxGuiWidget.AccessParent.AccessParent.AccessParent.FindChild('sakuya_guiname_character_bookmark_row_7').InterruptThenTriggerAnimation('bookmark_enter','bookmark_exit')]"
 				onclick = "[GetVariableSystem.Clear('sakuya_tab')]"
 				onclick = "[GetVariableSystem.Clear('sakuya_main_hover')]"
 				onclick = "[GetVariableSystem.Clear('sakuya_card_fade_transition')]"
@@ -824,6 +2159,7 @@ window = {
 					position = { 10 0 }
 					duration = 0.33
 					using = Animation_Curve_Default
+					on_finish = "[GetVariableSystem.Clear('sakuya_p2_transition')]"
 				}
 
 				state = {
@@ -831,6 +2167,7 @@ window = {
 					position = { 425 0 }
 					duration = 0.33
 					using = Animation_Curve_Default
+					on_finish = "[GetVariableSystem.Clear('sakuya_p2_transition')]"
 				}
 
 				state = {
@@ -1581,6 +2918,16 @@ window = {
 					}
 				}
 
+			# The title card had no full-duration transition variable; this guard uses sakuya_p2_transition for its 0.33s move.
+			button = {
+				name = "sakuya_guiname_main_p2_transition_input_guard"
+				visible = "[Or(GetVariableSystem.Exists('sakuya_p2_transition'), GetVariableSystem.Exists('sakuya_card_fade_transition'))]"
+				position = { -4 -16 }
+				size = { 326 529 }
+				allow_outside = yes
+				alwaystransparent = no
+			}
+
 			button = {
 				name = "sakuya_guiname_main_p2_frame_fork_input"
 				visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab')))]"
@@ -1588,6 +2935,7 @@ window = {
 				size = { 326 529 }
 				allow_outside = yes
 				alwaystransparent = no
+				onclick = "[GetVariableSystem.Set('sakuya_p2_transition', 'active')]"
 				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_home_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_subpage_title').InterruptThenTriggerAnimation('return_home','enter_subpage')]"
@@ -1659,6 +3007,7 @@ window = {
 				size = { 326 529 }
 				allow_outside = yes
 				alwaystransparent = no
+				onclick = "[GetVariableSystem.Set('sakuya_p2_transition', 'active')]"
 				onclick = "[PdxGuiWidget.AccessParent.AccessParent.FindChild('sakuya_guiname_main_p2_title_card').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_home_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
 				onclick = "[PdxGuiWidget.AccessParent.FindChild('sakuya_guiname_main_p2_subpage_title').InterruptThenTriggerAnimation('enter_subpage','return_home')]"
@@ -2337,9 +3686,19 @@ window = {
 					}
 				}
 
+			# Moves through the complete dynasty animation chain and blocks the underlying portrait and house CoA only.
+			button = {
+				name = "sakuya_guiname_main_p3_transition_input_guard"
+				visible = "[Or(GetVariableSystem.Exists('sakuya_p3_transition'), GetVariableSystem.Exists('sakuya_card_fade_transition'))]"
+				position = { -4 -16 }
+				size = { 326 529 }
+				allow_outside = yes
+				alwaystransparent = no
+			}
+
 			button = {
 				name = "sakuya_guiname_main_p3_frame_fork_input"
-				visible = "[And(And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab'))), Not(GetVariableSystem.Exists('sakuya_p3_transition')))]"
+				visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists('sakuya_tab')))]"
 				position = { -4 -16 }
 				size = { 326 529 }
 				allow_outside = yes
@@ -2397,7 +3756,7 @@ window = {
 
 			button = {
 				name = "sakuya_guiname_main_p3_frame_fork_return_input"
-				visible = "[And(GetVariableSystem.HasValue('sakuya_tab', 'dynasty'), Not(GetVariableSystem.Exists('sakuya_p3_transition')))]"
+				visible = "[GetVariableSystem.HasValue('sakuya_tab', 'dynasty')]"
 				position = { -4 -16 }
 				size = { 326 529 }
 				allow_outside = yes
@@ -2443,8 +3802,977 @@ window = {
 		}
 		}
 
+		widget = {
+			name = "sakuya_guiname_page_character_title"
+			position = { 558 150 }
+			size = { 620 42 }
+			alpha = 0.01
+			visible = "[Or(GetVariableSystem.HasValue('sakuya_tab', 'character'), GetVariableSystem.Exists('sakuya_character_page_transition'))]"
+			state = {
+				name = page_enter
+				alpha = 1
+				delay = 0.16
+				duration = 0.10
+				using = Animation_Curve_Default
+			}
+			state = {
+				name = page_exit
+				alpha = 0.01
+				duration = 0.12
+				using = Animation_Curve_Default
+			}
 
+			state = {
+				name = sakuya_character_title_select_1
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_1')]"
+				next = sakuya_character_title_selected
+			}
 
+			state = {
+				name = sakuya_character_title_select_2
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_2')]"
+				next = sakuya_character_title_selected
+			}
+
+			state = {
+				name = sakuya_character_title_select_3
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_3')]"
+				next = sakuya_character_title_selected
+			}
+
+			state = {
+				name = sakuya_character_title_select_4
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_4')]"
+				next = sakuya_character_title_selected
+			}
+
+			state = {
+				name = sakuya_character_title_select_5
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_5')]"
+				next = sakuya_character_title_selected
+			}
+
+			state = {
+				name = sakuya_character_title_select_6
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_6')]"
+				next = sakuya_character_title_selected
+			}
+
+			state = {
+				name = sakuya_character_title_select_7
+				alpha = 0.01
+				duration = 0.07
+				using = Animation_Curve_Default
+				on_finish = "[GetVariableSystem.Set('sakuya_character_bookmark', 'item_7')]"
+				next = sakuya_character_title_selected
+			}
+
+			state = {
+				name = sakuya_character_title_selected
+				alpha = 1
+				duration = 0.09
+				using = Animation_Curve_Default
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_1"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_2"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_3"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_4"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_5"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_6"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+			text_single = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7')]"
+				size = { 620 42 }
+				text = "sakuya_character_bookmark_title_7"
+				font = "TitleFont"
+				fontsize = 24
+				fontsize_min = 18
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
+			}
+
+		}
+
+				widget = {
+			name = "sakuya_guiname_page_character_content"
+			position = { 425 190 }
+			size = { 797 454 }
+			alpha = 0.01
+			visible = "[Or(GetVariableSystem.HasValue('sakuya_tab', 'character'), GetVariableSystem.Exists('sakuya_character_page_transition'))]"
+			state = {
+				name = page_enter
+				alpha = 1
+				delay = 0.16
+				duration = 0.10
+				using = Animation_Curve_Default
+			}
+			state = {
+				name = page_exit
+				alpha = 0.01
+				duration = 0.12
+				using = Animation_Curve_Default
+			}
+
+			# v3 home dashboard UI only — no real cheat effects yet
+			widget = {
+				name = "sakuya_guiname_home_v3_dashboard"
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+
+				widget = {
+					name = "sakuya_home_summary_card"
+					position = { 4 0 }
+					size = { 789 88 }
+					icon = {
+						size = { 789 88 }
+						texture = "gfx/interface/component_tiles/tile_window_background.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 12 12 }
+						alpha = 0.55
+					}
+					icon = {
+						position = { 2 2 }
+						size = { 785 84 }
+						texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 10 10 }
+						alpha = 0.72
+					}
+					text_single = {
+						position = { 14 4 }
+						size = { 280 20 }
+						text = "sakuya_home_summary_title"
+						fontsize = 15
+						fontsize_min = 11
+						autoresize = no
+						align = left|nobaseline
+						default_format = "#COLOR:{0.820,0.725,0.486,1}"
+					}
+					widget = {
+						position = { 10 26 }
+						size = { 220 54 }
+						icon = {
+							size = { 220 54 }
+							texture = "gfx/interface/component_tiles/tile_window_background.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 8 8 }
+							alpha = 0.45
+						}
+						text_single = {
+							position = { 8 4 }
+							size = { 170 22 }
+							text = "sakuya_home_preview_name"
+							fontsize = 16
+							fontsize_min = 11
+							autoresize = no
+							align = left|nobaseline
+							default_format = "#COLOR:{0.875,0.780,0.560,1}"
+						}
+						text_single = {
+							position = { 8 28 }
+							size = { 170 20 }
+							text = "sakuya_home_preview_nickname"
+							fontsize = 12
+							fontsize_min = 9
+							autoresize = no
+							align = left|nobaseline
+							default_format = "#COLOR:{0.804,0.682,0.471,1}"
+						}
+						button_standard = {
+							name = "sakuya_home_rename_btn"
+							position = { 182 12 }
+							size = { 30 30 }
+							tooltip = "sakuya_home_rename_tt"
+							text_single = {
+								parentanchor = center
+								text = "sakuya_home_rename_glyph"
+								fontsize = 14
+								fontsize_min = 10
+								autoresize = no
+								align = center|nobaseline
+							}
+						}
+					}
+					widget = {
+						position = { 238 26 }
+						size = { 128 54 }
+						icon = {
+							size = { 128 54 }
+							texture = "gfx/interface/component_tiles/tile_window_background.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 8 8 }
+							alpha = 0.45
+						}
+						text_single = {
+							position = { 6 4 }
+							size = { 116 16 }
+							text = "sakuya_home_age_label"
+							fontsize = 11
+							fontsize_min = 8
+							autoresize = no
+							align = left|nobaseline
+							default_format = "#COLOR:{0.624,0.584,0.486,1}"
+						}
+						button_standard = {
+							name = "sakuya_home_age_dec"
+							position = { 8 24 }
+							size = { 28 26 }
+							text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 14 fontsize_min = 10 autoresize = no align = center|nobaseline }
+						}
+						text_single = {
+							position = { 40 24 }
+							size = { 40 26 }
+							text = "sakuya_home_preview_age"
+							fontsize = 14
+							fontsize_min = 10
+							autoresize = no
+							align = center|nobaseline
+							default_format = "#COLOR:{0.863,0.769,0.557,1}"
+						}
+						button_standard = {
+							name = "sakuya_home_age_inc"
+							position = { 84 24 }
+							size = { 28 26 }
+							text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 14 fontsize_min = 10 autoresize = no align = center|nobaseline }
+						}
+					}
+					button_standard = {
+						name = "sakuya_home_link_culture"
+						position = { 374 28 }
+						size = { 130 50 }
+						tooltip = "sakuya_home_link_culture_tt"
+						text_single = {
+							position = { 6 4 }
+							size = { 100 16 }
+							text = "sakuya_home_culture_label"
+							fontsize = 10
+							fontsize_min = 8
+							autoresize = no
+							align = left|nobaseline
+						}
+						text_single = {
+							position = { 6 24 }
+							size = { 100 18 }
+							text = "sakuya_home_preview_culture"
+							fontsize = 13
+							fontsize_min = 9
+							autoresize = no
+							align = left|nobaseline
+							default_format = "#COLOR:{0.831,0.757,0.592,1}"
+						}
+					}
+					button_standard = {
+						name = "sakuya_home_link_faith"
+						position = { 510 28 }
+						size = { 130 50 }
+						tooltip = "sakuya_home_link_faith_tt"
+						text_single = {
+							position = { 6 4 }
+							size = { 100 16 }
+							text = "sakuya_home_faith_label"
+							fontsize = 10
+							fontsize_min = 8
+							autoresize = no
+							align = left|nobaseline
+						}
+						text_single = {
+							position = { 6 24 }
+							size = { 100 18 }
+							text = "sakuya_home_preview_faith"
+							fontsize = 13
+							fontsize_min = 9
+							autoresize = no
+							align = left|nobaseline
+							default_format = "#COLOR:{0.831,0.757,0.592,1}"
+						}
+					}
+					button_standard = {
+						name = "sakuya_home_link_title"
+						position = { 646 28 }
+						size = { 130 50 }
+						tooltip = "sakuya_home_link_title_tt"
+						text_single = {
+							position = { 6 4 }
+							size = { 100 16 }
+							text = "sakuya_home_title_label"
+							fontsize = 10
+							fontsize_min = 8
+							autoresize = no
+							align = left|nobaseline
+						}
+						text_single = {
+							position = { 6 24 }
+							size = { 100 18 }
+							text = "sakuya_home_preview_title"
+							fontsize = 12
+							fontsize_min = 8
+							autoresize = no
+							align = left|nobaseline
+							default_format = "#COLOR:{0.831,0.757,0.592,1}"
+						}
+					}
+				}
+
+				widget = {
+					name = "sakuya_home_skills_card"
+					position = { 4 96 }
+					size = { 789 150 }
+					icon = {
+						size = { 789 150 }
+						texture = "gfx/interface/component_tiles/tile_window_background.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 12 12 }
+						alpha = 0.55
+					}
+					icon = {
+						position = { 2 2 }
+						size = { 785 146 }
+						texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 10 10 }
+						alpha = 0.72
+					}
+					text_single = {
+						position = { 14 4 }
+						size = { 320 20 }
+						text = "sakuya_home_skills_title"
+						fontsize = 15
+						fontsize_min = 11
+						autoresize = no
+						align = left|nobaseline
+						default_format = "#COLOR:{0.820,0.725,0.486,1}"
+					}
+					text_single = {
+						parentanchor = top|right
+						position = { -14 6 }
+						size = { 220 18 }
+						text = "sakuya_home_marked_binding"
+						fontsize = 11
+						fontsize_min = 8
+						autoresize = no
+						align = right|nobaseline
+						default_format = "#COLOR:{0.561,0.616,0.420,1}"
+					}
+					hbox = {
+						position = { 10 30 }
+						size = { 769 110 }
+						spacing = 6
+						widget = {
+							size = { 124 110 }
+							icon = {
+								size = { 124 110 }
+								texture = "gfx/interface/component_tiles/tile_window_background.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 8 8 }
+								alpha = 0.4
+							}
+							icon = {
+								parentanchor = top|hcenter
+								position = { 0 6 }
+								size = { 28 28 }
+								texture = "gfx/interface/icons/lifestyles/diplomacy_lifestyle.dds"
+							}
+							text_single = {
+								position = { 4 36 }
+								size = { 116 16 }
+								text = "sakuya_home_skill_diplomacy"
+								fontsize = 11
+								fontsize_min = 8
+								autoresize = no
+								align = center|nobaseline
+							}
+							text_single = {
+								position = { 4 52 }
+								size = { 116 24 }
+								text = "sakuya_home_preview_diplomacy"
+								fontsize = 20
+								fontsize_min = 12
+								autoresize = no
+								align = center|nobaseline
+								default_format = "#COLOR:{0.878,0.776,0.549,1}"
+							}
+							button_standard = {
+								position = { 28 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+							button_standard = {
+								position = { 66 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+						}
+						widget = {
+							size = { 124 110 }
+							icon = {
+								size = { 124 110 }
+								texture = "gfx/interface/component_tiles/tile_window_background.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 8 8 }
+								alpha = 0.4
+							}
+							icon = {
+								parentanchor = top|hcenter
+								position = { 0 6 }
+								size = { 28 28 }
+								texture = "gfx/interface/icons/icon_skill_martial.dds"
+							}
+							text_single = {
+								position = { 4 36 }
+								size = { 116 16 }
+								text = "sakuya_home_skill_martial"
+								fontsize = 11
+								fontsize_min = 8
+								autoresize = no
+								align = center|nobaseline
+							}
+							text_single = {
+								position = { 4 52 }
+								size = { 116 24 }
+								text = "sakuya_home_preview_martial"
+								fontsize = 20
+								fontsize_min = 12
+								autoresize = no
+								align = center|nobaseline
+								default_format = "#COLOR:{0.878,0.776,0.549,1}"
+							}
+							button_standard = {
+								position = { 28 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+							button_standard = {
+								position = { 66 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+						}
+						widget = {
+							size = { 124 110 }
+							icon = {
+								size = { 124 110 }
+								texture = "gfx/interface/component_tiles/tile_window_background.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 8 8 }
+								alpha = 0.4
+							}
+							icon = {
+								parentanchor = top|hcenter
+								position = { 0 6 }
+								size = { 28 28 }
+								texture = "gfx/interface/icons/icon_skill_stewardship.dds"
+							}
+							text_single = {
+								position = { 4 36 }
+								size = { 116 16 }
+								text = "sakuya_home_skill_stewardship"
+								fontsize = 11
+								fontsize_min = 8
+								autoresize = no
+								align = center|nobaseline
+							}
+							text_single = {
+								position = { 4 52 }
+								size = { 116 24 }
+								text = "sakuya_home_preview_stewardship"
+								fontsize = 20
+								fontsize_min = 12
+								autoresize = no
+								align = center|nobaseline
+								default_format = "#COLOR:{0.878,0.776,0.549,1}"
+							}
+							button_standard = {
+								position = { 28 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+							button_standard = {
+								position = { 66 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+						}
+						widget = {
+							size = { 124 110 }
+							icon = {
+								size = { 124 110 }
+								texture = "gfx/interface/component_tiles/tile_window_background.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 8 8 }
+								alpha = 0.4
+							}
+							icon = {
+								parentanchor = top|hcenter
+								position = { 0 6 }
+								size = { 28 28 }
+								texture = "gfx/interface/icons/icon_skill_intrigue.dds"
+							}
+							text_single = {
+								position = { 4 36 }
+								size = { 116 16 }
+								text = "sakuya_home_skill_intrigue"
+								fontsize = 11
+								fontsize_min = 8
+								autoresize = no
+								align = center|nobaseline
+							}
+							text_single = {
+								position = { 4 52 }
+								size = { 116 24 }
+								text = "sakuya_home_preview_intrigue"
+								fontsize = 20
+								fontsize_min = 12
+								autoresize = no
+								align = center|nobaseline
+								default_format = "#COLOR:{0.878,0.776,0.549,1}"
+							}
+							button_standard = {
+								position = { 28 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+							button_standard = {
+								position = { 66 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+						}
+						widget = {
+							size = { 124 110 }
+							icon = {
+								size = { 124 110 }
+								texture = "gfx/interface/component_tiles/tile_window_background.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 8 8 }
+								alpha = 0.4
+							}
+							icon = {
+								parentanchor = top|hcenter
+								position = { 0 6 }
+								size = { 28 28 }
+								texture = "gfx/interface/icons/icon_skill_learning.dds"
+							}
+							text_single = {
+								position = { 4 36 }
+								size = { 116 16 }
+								text = "sakuya_home_skill_learning"
+								fontsize = 11
+								fontsize_min = 8
+								autoresize = no
+								align = center|nobaseline
+							}
+							text_single = {
+								position = { 4 52 }
+								size = { 116 24 }
+								text = "sakuya_home_preview_learning"
+								fontsize = 20
+								fontsize_min = 12
+								autoresize = no
+								align = center|nobaseline
+								default_format = "#COLOR:{0.878,0.776,0.549,1}"
+							}
+							button_standard = {
+								position = { 28 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+							button_standard = {
+								position = { 66 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+						}
+						widget = {
+							size = { 124 110 }
+							icon = {
+								size = { 124 110 }
+								texture = "gfx/interface/component_tiles/tile_window_background.dds"
+								spriteType = Corneredstretched
+								spriteborder = { 8 8 }
+								alpha = 0.4
+							}
+							icon = {
+								parentanchor = top|hcenter
+								position = { 0 6 }
+								size = { 28 28 }
+								texture = "gfx/interface/icons/icon_prowess.dds"
+							}
+							text_single = {
+								position = { 4 36 }
+								size = { 116 16 }
+								text = "sakuya_home_skill_prowess"
+								fontsize = 11
+								fontsize_min = 8
+								autoresize = no
+								align = center|nobaseline
+							}
+							text_single = {
+								position = { 4 52 }
+								size = { 116 24 }
+								text = "sakuya_home_preview_prowess"
+								fontsize = 20
+								fontsize_min = 12
+								autoresize = no
+								align = center|nobaseline
+								default_format = "#COLOR:{0.878,0.776,0.549,1}"
+							}
+							button_standard = {
+								position = { 28 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+							button_standard = {
+								position = { 66 80 }
+								size = { 28 26 }
+								text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline }
+							}
+						}
+					}
+				}
+
+				widget = {
+					name = "sakuya_home_freq_card"
+					position = { 4 254 }
+					size = { 789 196 }
+					icon = {
+						size = { 789 196 }
+						texture = "gfx/interface/component_tiles/tile_window_background.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 12 12 }
+						alpha = 0.55
+					}
+					icon = {
+						position = { 2 2 }
+						size = { 785 192 }
+						texture = "gfx/interface/component_overlay/overlay_thin_frame.dds"
+						spriteType = Corneredstretched
+						spriteborder = { 10 10 }
+						alpha = 0.72
+					}
+					text_single = {
+						position = { 14 4 }
+						size = { 400 20 }
+						text = "sakuya_home_freq_title"
+						fontsize = 15
+						fontsize_min = 11
+						autoresize = no
+						align = left|nobaseline
+						default_format = "#COLOR:{0.820,0.725,0.486,1}"
+					}
+					text_single = {
+						position = { 14 28 }
+						size = { 200 16 }
+						text = "sakuya_home_resources_sub"
+						fontsize = 13
+						fontsize_min = 10
+						autoresize = no
+						align = left|nobaseline
+						default_format = "#COLOR:{0.796,0.702,0.475,1}"
+					}
+					text_single = {
+						position = { 180 28 }
+						size = { 250 16 }
+						text = "sakuya_home_resources_hint"
+						fontsize = 10
+						fontsize_min = 8
+						autoresize = no
+						align = right|nobaseline
+						default_format = "#COLOR:{0.459,0.427,0.365,1}"
+					}
+					widget = {
+						position = { 10 48 }
+						size = { 420 32 }
+						icon = {
+							size = { 420 32 }
+							texture = "gfx/interface/component_tiles/tile_window_background.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 6 6 }
+							alpha = 0.35
+						}
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/icon_gold.dds" }
+						text_single = { position = { 32 6 } size = { 90 20 } text = "sakuya_home_gold" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 130 6 } size = { 70 20 } text = "sakuya_home_preview_gold" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						button_standard = { position = { 210 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_ll" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 242 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 274 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 306 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_rr" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+					}
+					widget = {
+						position = { 10 84 }
+						size = { 420 32 }
+						icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.35 }
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/flat_icons/prestige.dds" }
+						text_single = { position = { 32 6 } size = { 90 20 } text = "sakuya_home_prestige" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 130 6 } size = { 70 20 } text = "sakuya_home_preview_prestige" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						button_standard = { position = { 210 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_ll" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 242 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 274 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 306 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_rr" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+					}
+					widget = {
+						position = { 10 120 }
+						size = { 420 32 }
+						icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.35 }
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/flat_icons/piety.dds" }
+						text_single = { position = { 32 6 } size = { 90 20 } text = "sakuya_home_piety" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 130 6 } size = { 70 20 } text = "sakuya_home_preview_piety" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						button_standard = { position = { 210 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_ll" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 242 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 274 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 306 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_rr" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+					}
+					widget = {
+						position = { 10 156 }
+						size = { 420 32 }
+						icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.35 }
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/legitimacy_level_icon.dds" }
+						text_single = { position = { 32 6 } size = { 90 20 } text = "sakuya_home_legitimacy" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 130 6 } size = { 70 20 } text = "sakuya_home_preview_legitimacy" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						button_standard = { position = { 210 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_ll" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 242 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 274 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 12 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 306 3 } size = { 28 26 } text_single = { parentanchor = center text = "sakuya_home_btn_rr" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+					}
+					text_single = {
+						position = { 450 28 }
+						size = { 160 16 }
+						text = "sakuya_home_state_sub"
+						fontsize = 13
+						fontsize_min = 10
+						autoresize = no
+						align = left|nobaseline
+						default_format = "#COLOR:{0.796,0.702,0.475,1}"
+					}
+					text_single = {
+						position = { 560 28 }
+						size = { 210 16 }
+						text = "sakuya_home_state_hint"
+						fontsize = 10
+						fontsize_min = 8
+						autoresize = no
+						align = right|nobaseline
+						default_format = "#COLOR:{0.459,0.427,0.365,1}"
+					}
+					widget = {
+						position = { 450 48 }
+						size = { 326 32 }
+						icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.35 }
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/stress/icon_stress.dds" }
+						text_single = { position = { 30 6 } size = { 70 20 } text = "sakuya_home_stress" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 100 6 } size = { 50 20 } text = "sakuya_home_preview_stress" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						button_standard = { position = { 160 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_ll" fontsize = 10 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 190 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 220 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 250 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_rr" fontsize = 10 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+					}
+					widget = {
+						position = { 450 84 }
+						size = { 326 32 }
+						icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.35 }
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/icon_dread.dds" }
+						text_single = { position = { 30 6 } size = { 70 20 } text = "sakuya_home_dread" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 100 6 } size = { 50 20 } text = "sakuya_home_preview_dread" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						button_standard = { position = { 160 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_ll" fontsize = 10 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 190 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_minus" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 220 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_plus" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+						button_standard = { position = { 250 3 } size = { 26 26 } text_single = { parentanchor = center text = "sakuya_home_btn_rr" fontsize = 10 fontsize_min = 8 autoresize = no align = center|nobaseline } }
+					}
+					widget = {
+						position = { 450 120 }
+						size = { 326 32 }
+						icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.35 }
+						icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/character_status/icon_health.dds" }
+						text_single = { position = { 30 6 } size = { 70 20 } text = "sakuya_home_health" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
+						text_single = { position = { 100 6 } size = { 50 20 } text = "sakuya_home_preview_health" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						text_single = { position = { 156 6 } size = { 160 20 } text = "sakuya_home_health_note" fontsize = 10 fontsize_min = 7 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.514,0.576,0.416,1}" }
+					}
+				}
+			}
+
+			widget = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+				text_single = {
+					parentanchor = center
+					size = { 620 80 }
+					text = "sakuya_home_placeholder_skills"
+					font = "TitleFont"
+					fontsize = 24
+					fontsize_min = 14
+					autoresize = no
+					align = center|nobaseline
+					default_format = "#COLOR:{0.639,0.581,0.492,0.85};bold;glow_color:{0,0,0,0.85}"
+				}
+			}
+			widget = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_3')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+				text_single = {
+					parentanchor = center
+					size = { 620 80 }
+					text = "sakuya_home_placeholder_traits"
+					font = "TitleFont"
+					fontsize = 24
+					fontsize_min = 14
+					autoresize = no
+					align = center|nobaseline
+					default_format = "#COLOR:{0.639,0.581,0.492,0.85};bold;glow_color:{0,0,0,0.85}"
+				}
+			}
+			widget = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_4')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+				text_single = {
+					parentanchor = center
+					size = { 620 80 }
+					text = "sakuya_home_placeholder_identity"
+					font = "TitleFont"
+					fontsize = 24
+					fontsize_min = 14
+					autoresize = no
+					align = center|nobaseline
+					default_format = "#COLOR:{0.639,0.581,0.492,0.85};bold;glow_color:{0,0,0,0.85}"
+				}
+			}
+			widget = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_5')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+				text_single = {
+					parentanchor = center
+					size = { 620 80 }
+					text = "sakuya_home_placeholder_relations"
+					font = "TitleFont"
+					fontsize = 24
+					fontsize_min = 14
+					autoresize = no
+					align = center|nobaseline
+					default_format = "#COLOR:{0.639,0.581,0.492,0.85};bold;glow_color:{0,0,0,0.85}"
+				}
+			}
+			widget = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_6')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+				text_single = {
+					parentanchor = center
+					size = { 620 80 }
+					text = "sakuya_home_placeholder_titles"
+					font = "TitleFont"
+					fontsize = 24
+					fontsize_min = 14
+					autoresize = no
+					align = center|nobaseline
+					default_format = "#COLOR:{0.639,0.581,0.492,0.85};bold;glow_color:{0,0,0,0.85}"
+				}
+			}
+			widget = {
+				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_7')]"
+				size = { 797 454 }
+				using = Animation_ShowHide_Standard
+				text_single = {
+					parentanchor = center
+					size = { 620 80 }
+					text = "sakuya_home_placeholder_other"
+					font = "TitleFont"
+					fontsize = 24
+					fontsize_min = 14
+					autoresize = no
+					align = center|nobaseline
+					default_format = "#COLOR:{0.639,0.581,0.492,0.85};bold;glow_color:{0,0,0,0.85}"
+				}
+			}
+
+		}
 		widget = {
 			name = "sakuya_guiname_page_title"
 			position = { 425 137 }
