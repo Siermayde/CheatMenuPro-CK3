@@ -2,7 +2,9 @@
 scratch_view_*.txt
 *.py
 *.ps1
+!tools/*.ps1
 .idea/
 .vscode/
 .gemini/
 *.log
+tools/_auto_git_state/
