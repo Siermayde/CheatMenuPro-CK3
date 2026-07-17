@@ -1,3 +1,57 @@
+sakuya_home_age_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		global_var:sakuya_marked_character = {
+			is_alive = yes
+			age >= 1
+		}
+	}
+	effect = {
+		global_var:sakuya_marked_character = {
+			change_age = -1
+		}
+	}
+}
+
+sakuya_home_age_minus_player_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		age >= 1
+	}
+	effect = {
+		change_age = -1
+	}
+}
+
+sakuya_home_age_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		global_var:sakuya_marked_character = {
+			is_alive = yes
+		}
+	}
+	effect = {
+		global_var:sakuya_marked_character = {
+			change_age = 1
+		}
+	}
+}
+
+sakuya_home_age_plus_player_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		change_age = 1
+	}
+}
+
 sakuya_home_diplomacy_minus_gui = {
 	scope = character
 	is_shown = { always = yes }
