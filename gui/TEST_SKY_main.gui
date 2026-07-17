@@ -5997,6 +5997,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0015_learning_scheme_phase_duration_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0015_learning_scheme_phase_duration_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0015_learning_scheme_phase_duration_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0015_learning_scheme_phase_duration_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -6411,6 +6412,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0034_prowess_scheme_phase_duration_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0034_prowess_scheme_phase_duration_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0034_prowess_scheme_phase_duration_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0034_prowess_scheme_phase_duration_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -6867,6 +6869,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0055_diplomacy_scheme_phase_duration_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -6888,6 +6891,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0056_stewardship_scheme_phase_duration_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7062,6 +7066,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0064_martial_scheme_phase_duration_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7086,6 +7091,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ATTRIBUTE_0065_intrigue_scheme_phase_duration_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7271,6 +7277,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_CONTROL_0002_monthly_county_control_decline_at_war_factor_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0002_monthly_county_control_decline_at_war_factor_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0002_monthly_county_control_decline_at_war_factor_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0002_monthly_county_control_decline_at_war_factor_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7292,6 +7299,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_CONTROL_0003_monthly_county_control_decline_factor_even_if_baron_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0003_monthly_county_control_decline_factor_even_if_baron_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0003_monthly_county_control_decline_factor_even_if_baron_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0003_monthly_county_control_decline_factor_even_if_baron_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7379,6 +7387,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_CONTROL_0007_monthly_county_control_decline_factor_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0007_monthly_county_control_decline_factor_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0007_monthly_county_control_decline_factor_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_CONTROL_0007_monthly_county_control_decline_factor_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7696,6 +7705,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0003_development_decline_factor_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0003_development_decline_factor_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0003_development_decline_factor_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0003_development_decline_factor_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7717,6 +7727,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0004_enemy_political_scheme_success_chance_growth_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0004_enemy_political_scheme_success_chance_growth_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0004_enemy_political_scheme_success_chance_growth_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0004_enemy_political_scheme_success_chance_growth_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7783,6 +7794,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0007_enemy_personal_scheme_success_chance_growth_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0007_enemy_personal_scheme_success_chance_growth_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0007_enemy_personal_scheme_success_chance_growth_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0007_enemy_personal_scheme_success_chance_growth_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7804,6 +7816,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0008_enemy_hostile_scheme_success_chance_growth_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0008_enemy_hostile_scheme_success_chance_growth_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0008_enemy_hostile_scheme_success_chance_growth_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0008_enemy_hostile_scheme_success_chance_growth_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -7870,6 +7883,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DEVELOPMENT_0011_enemy_contract_scheme_success_chance_growth_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -8361,6 +8375,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0019_holding_build_speed_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0019_holding_build_speed_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0019_holding_build_speed_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_DOMAIN_0019_holding_build_speed_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -8845,6 +8860,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0001_mercenary_hire_cost_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0001_mercenary_hire_cost_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0001_mercenary_hire_cost_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0001_mercenary_hire_cost_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -8908,6 +8924,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0004_same_culture_holy_order_hire_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0004_same_culture_holy_order_hire_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0004_same_culture_holy_order_hire_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0004_same_culture_holy_order_hire_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -8932,6 +8949,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0005_men_at_arms_maintenance_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0005_men_at_arms_maintenance_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0005_men_at_arms_maintenance_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0005_men_at_arms_maintenance_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -8974,6 +8992,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0007_holding_build_gold_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0007_holding_build_gold_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0007_holding_build_gold_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0007_holding_build_gold_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -8995,6 +9014,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0008_title_creation_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0008_title_creation_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0008_title_creation_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0008_title_creation_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9019,6 +9039,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0009_horde_conversion_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0009_horde_conversion_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0009_horde_conversion_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0009_horde_conversion_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9061,6 +9082,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0011_men_at_arms_recruitment_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0011_men_at_arms_recruitment_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0011_men_at_arms_recruitment_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0011_men_at_arms_recruitment_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9127,6 +9149,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0014_same_culture_holy_order_hire_cost_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0014_same_culture_holy_order_hire_cost_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0014_same_culture_holy_order_hire_cost_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0014_same_culture_holy_order_hire_cost_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9169,6 +9192,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0016_same_culture_mercenary_hire_cost_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0016_same_culture_mercenary_hire_cost_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0016_same_culture_mercenary_hire_cost_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0016_same_culture_mercenary_hire_cost_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9193,6 +9217,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0017_embarkation_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0017_embarkation_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0017_embarkation_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0017_embarkation_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9235,6 +9260,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0019_same_culture_mercenary_hire_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0019_same_culture_mercenary_hire_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0019_same_culture_mercenary_hire_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0019_same_culture_mercenary_hire_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9280,6 +9306,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0021_build_gold_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0021_build_gold_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0021_build_gold_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0021_build_gold_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9301,6 +9328,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0022_domicile_build_gold_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0022_domicile_build_gold_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0022_domicile_build_gold_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0022_domicile_build_gold_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9322,6 +9350,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0023_title_creation_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0023_title_creation_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0023_title_creation_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0023_title_creation_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9388,6 +9417,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0026_holy_order_hire_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9475,6 +9505,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0030_levy_maintenance_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9496,6 +9527,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0031_holy_order_hire_cost_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9517,6 +9549,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0032_mercenary_hire_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9562,6 +9595,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0034_army_maintenance_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9583,6 +9617,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_ECONOMY_0035_build_herd_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9653,6 +9688,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0002_county_fertility_decline_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0002_county_fertility_decline_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0002_county_fertility_decline_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_FERTILITY_0002_county_fertility_decline_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -9942,6 +9978,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_GARRISON_0006_siege_phase_time_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_GARRISON_0006_siege_phase_time_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_GARRISON_0006_siege_phase_time_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_GARRISON_0006_siege_phase_time_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -10078,6 +10115,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_HEALTH_0002_stress_gain_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_HEALTH_0002_stress_gain_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_HEALTH_0002_stress_gain_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_HEALTH_0002_stress_gain_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -11095,6 +11133,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0021_enemy_terrain_advantage_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0021_enemy_terrain_advantage_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0021_enemy_terrain_advantage_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_LIFESPAN_0021_enemy_terrain_advantage_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -11893,6 +11932,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0011_different_faith_county_opinion_mult_even_if_baron_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0011_different_faith_county_opinion_mult_even_if_baron_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0011_different_faith_county_opinion_mult_even_if_baron_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0011_different_faith_county_opinion_mult_even_if_baron_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -12133,6 +12173,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0022_strife_opinion_gain_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0022_strife_opinion_gain_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0022_strife_opinion_gain_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0022_strife_opinion_gain_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -12415,6 +12456,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0035_dread_decay_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0035_dread_decay_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0035_dread_decay_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0035_dread_decay_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -12697,6 +12739,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0048_dread_loss_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0048_dread_loss_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0048_dread_loss_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0048_dread_loss_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -12784,6 +12827,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0052_dread_decay_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0052_dread_decay_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0052_dread_decay_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0052_dread_decay_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13003,6 +13047,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0062_different_faith_county_opinion_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13243,6 +13288,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OPINION_0073_men_at_arms_maintenance_per_dread_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13442,6 +13488,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0007_provisions_use_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0007_provisions_use_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0007_provisions_use_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0007_provisions_use_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13487,6 +13534,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0009_hard_casualty_modifier_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0009_hard_casualty_modifier_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0009_hard_casualty_modifier_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0009_hard_casualty_modifier_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13508,6 +13556,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0010_provisions_loss_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0010_provisions_loss_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0010_provisions_loss_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0010_provisions_loss_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13595,6 +13644,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0014_inbreeding_chance_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0014_inbreeding_chance_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0014_inbreeding_chance_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0014_inbreeding_chance_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13616,6 +13666,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0015_monthly_tyranny_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0015_monthly_tyranny_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0015_monthly_tyranny_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0015_monthly_tyranny_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -13769,6 +13820,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0022_tyranny_gain_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0022_tyranny_gain_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0022_tyranny_gain_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0022_tyranny_gain_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -14096,6 +14148,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0037_artifact_decay_reduction_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0037_artifact_decay_reduction_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0037_artifact_decay_reduction_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0037_artifact_decay_reduction_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -14312,6 +14365,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0047_negative_random_genetic_chance_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0047_negative_random_genetic_chance_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0047_negative_random_genetic_chance_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0047_negative_random_genetic_chance_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -14333,6 +14387,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0048_short_reign_duration_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0048_short_reign_duration_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0048_short_reign_duration_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0048_short_reign_duration_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -14486,6 +14541,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0055_retreat_losses_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0055_retreat_losses_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0055_retreat_losses_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0055_retreat_losses_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -14660,6 +14716,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_OTHER_0063_negative_inactive_inheritance_chance_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15015,6 +15072,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0002_build_piety_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0002_build_piety_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0002_build_piety_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0002_build_piety_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15036,6 +15094,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0003_faith_conversion_piety_cost_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0003_faith_conversion_piety_cost_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0003_faith_conversion_piety_cost_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0003_faith_conversion_piety_cost_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15255,6 +15314,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0013_title_creation_piety_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0013_title_creation_piety_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0013_title_creation_piety_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0013_title_creation_piety_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15318,6 +15378,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0016_faith_creation_piety_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0016_faith_creation_piety_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0016_faith_creation_piety_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0016_faith_creation_piety_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15450,6 +15511,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0022_title_creation_piety_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0022_title_creation_piety_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0022_title_creation_piety_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0022_title_creation_piety_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15471,6 +15533,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0023_holding_build_piety_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0023_holding_build_piety_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0023_holding_build_piety_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0023_holding_build_piety_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15579,6 +15642,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0028_faith_creation_piety_cost_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0028_faith_creation_piety_cost_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0028_faith_creation_piety_cost_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0028_faith_creation_piety_cost_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15690,6 +15754,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PIETY_0033_faith_conversion_piety_cost_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15718,6 +15783,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0001_legitimacy_loss_mult_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0001_legitimacy_loss_mult_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0001_legitimacy_loss_mult_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0001_legitimacy_loss_mult_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -15868,6 +15934,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0008_build_prestige_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0008_build_prestige_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0008_build_prestige_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0008_build_prestige_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16369,6 +16436,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0031_holding_build_prestige_cost_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0031_holding_build_prestige_cost_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0031_holding_build_prestige_cost_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_PRESTIGE_0031_holding_build_prestige_cost_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16505,6 +16573,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0002_personal_scheme_phase_duration_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0002_personal_scheme_phase_duration_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0002_personal_scheme_phase_duration_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0002_personal_scheme_phase_duration_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16571,6 +16640,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0005_enemy_contract_scheme_success_chance_max_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0005_enemy_contract_scheme_success_chance_max_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0005_enemy_contract_scheme_success_chance_max_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0005_enemy_contract_scheme_success_chance_max_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16658,6 +16728,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0009_hostile_scheme_phase_duration_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0009_hostile_scheme_phase_duration_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0009_hostile_scheme_phase_duration_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0009_hostile_scheme_phase_duration_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16679,6 +16750,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0010_political_scheme_phase_duration_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0010_political_scheme_phase_duration_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0010_political_scheme_phase_duration_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0010_political_scheme_phase_duration_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16745,6 +16817,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0013_enemy_political_scheme_success_chance_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0013_enemy_political_scheme_success_chance_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0013_enemy_political_scheme_success_chance_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0013_enemy_political_scheme_success_chance_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16787,6 +16860,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0015_enemy_personal_scheme_success_chance_max_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0015_enemy_personal_scheme_success_chance_max_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0015_enemy_personal_scheme_success_chance_max_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0015_enemy_personal_scheme_success_chance_max_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16832,6 +16906,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0017_enemy_hostile_scheme_success_chance_max_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0017_enemy_hostile_scheme_success_chance_max_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0017_enemy_hostile_scheme_success_chance_max_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0017_enemy_hostile_scheme_success_chance_max_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16853,6 +16928,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0018_contract_scheme_phase_duration_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0018_contract_scheme_phase_duration_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0018_contract_scheme_phase_duration_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0018_contract_scheme_phase_duration_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16874,6 +16950,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0019_enemy_political_scheme_success_chance_max_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0019_enemy_political_scheme_success_chance_max_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0019_enemy_political_scheme_success_chance_max_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0019_enemy_political_scheme_success_chance_max_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16940,6 +17017,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0022_hostile_county_attrition_raiding_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0022_hostile_county_attrition_raiding_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0022_hostile_county_attrition_raiding_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0022_hostile_county_attrition_raiding_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -16961,6 +17039,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0023_enemy_scheme_secrecy_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0023_enemy_scheme_secrecy_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0023_enemy_scheme_secrecy_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0023_enemy_scheme_secrecy_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17006,6 +17085,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0025_enemy_contract_scheme_success_chance_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0025_enemy_contract_scheme_success_chance_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0025_enemy_contract_scheme_success_chance_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0025_enemy_contract_scheme_success_chance_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17114,6 +17194,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0030_enemy_personal_scheme_success_chance_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17135,6 +17216,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0031_hostile_county_attrition_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17156,6 +17238,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_SCHEME_0032_enemy_hostile_scheme_success_chance_add_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17710,6 +17793,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0004_great_project_build_speed_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0004_great_project_build_speed_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0004_great_project_build_speed_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0004_great_project_build_speed_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17734,6 +17818,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0005_domicile_build_speed_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0005_domicile_build_speed_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0005_domicile_build_speed_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0005_domicile_build_speed_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17842,6 +17927,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0010_travel_danger_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0010_travel_danger_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0010_travel_danger_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0010_travel_danger_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17863,6 +17949,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0011_build_speed_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0011_build_speed_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0011_build_speed_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0011_build_speed_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -17908,6 +17995,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_CHARACTER_TRAVEL_0013_epidemic_travel_danger_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
@@ -18268,6 +18356,7 @@ window = {
 	tooltip = "TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_LOC_TT"
 	click_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_ADD_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	onctrl = "[GetScriptedGui('TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_SUB_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 	}
 	rightclick_modifiers = {
 	ondefault = "[GetScriptedGui('TEST_SKY_MODIFIER_PROVINCE_OTHER_0002_hard_casualty_winter_VALUE_05_REMOVE_SGUI').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
