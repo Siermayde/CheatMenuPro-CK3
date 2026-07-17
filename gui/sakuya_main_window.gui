@@ -4095,16 +4095,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4119,16 +4123,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_martial_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_martial_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_martial_minus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_martial_minus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_martial_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_martial_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_martial_plus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_martial_plus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4143,16 +4151,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4167,16 +4179,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4191,16 +4207,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_learning_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_learning_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_learning_minus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_learning_minus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_learning_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_learning_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_learning_plus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_learning_plus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4215,16 +4235,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_prowess_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_prowess_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_prowess_minus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_prowess_minus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_prowess_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_prowess_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_prowess_plus_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_prowess_plus_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4249,32 +4273,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_1000_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_100_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_100_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_1000_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4289,32 +4321,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4329,32 +4369,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4370,32 +4418,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_10_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_1_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_1_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_10_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4410,32 +4466,40 @@ window = {
 							button_standard = {
 								position = { 190 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 224 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 258 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 292 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4451,32 +4515,40 @@ window = {
 							button_standard = {
 								position = { 190 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 224 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 258 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 292 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4581,16 +4653,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_minus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+											ondefault = "[GetScriptedGui('sakuya_home_diplomacy_minus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_plus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_diplomacy_plus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4605,16 +4681,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_martial_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_martial_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_martial_minus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_martial_minus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_martial_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_martial_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_martial_plus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_martial_plus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4629,16 +4709,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_minus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_stewardship_minus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_plus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_stewardship_plus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4653,16 +4737,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_minus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_intrigue_minus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_plus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_intrigue_plus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4677,16 +4765,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_learning_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_learning_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_learning_minus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_learning_minus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_learning_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_learning_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_learning_plus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_learning_plus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4701,16 +4793,20 @@ window = {
 								button_standard = {
 									position = { 12 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_prowess_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_prowess_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_prowess_minus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_prowess_minus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_minus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
 								button_standard = {
 									position = { 70 82 }
 									size = { 42 26 }
-									enabled = "[GetScriptedGui('sakuya_home_prowess_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-									onclick = "[GetScriptedGui('sakuya_home_prowess_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									enabled = "[GetScriptedGui('sakuya_home_prowess_plus_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									click_modifiers = {
+										ondefault = "[GetScriptedGui('sakuya_home_prowess_plus_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+									}
 									tooltip = "sakuya_home_adjust_plus_1_tt"
 									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 								}
@@ -4735,32 +4831,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_1000_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_minus_1000_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_1000_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_100_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_minus_100_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_100_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_100_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_plus_100_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_100_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_1000_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_gold_plus_1000_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_1000_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4775,32 +4879,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_500_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_minus_500_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_minus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_plus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_500_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_prestige_plus_500_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4815,32 +4927,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_500_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_minus_500_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_minus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_plus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_500_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_piety_plus_500_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_500_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4856,32 +4976,40 @@ window = {
 							button_standard = {
 								position = { 270 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_10_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 307 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_1_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 344 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_1_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 381 3 }
 								size = { 32 27 }
-								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_10_tt"
 								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4896,32 +5024,40 @@ window = {
 							button_standard = {
 								position = { 190 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_minus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 224 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_10_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_minus_10_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 258 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_10_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_plus_10_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 292 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_stress_plus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
@@ -4937,32 +5073,40 @@ window = {
 							button_standard = {
 								position = { 190 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_minus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 224 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_10_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_minus_10_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_minus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 258 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_10_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_plus_10_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_10_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
 							button_standard = {
 								position = { 292 3 }
 								size = { 30 27 }
-								enabled = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
-								onclick = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_50_player_gui').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								click_modifiers = {
+									ondefault = "[GetScriptedGui('sakuya_home_dread_plus_50_player_gui').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+								}
 								tooltip = "sakuya_home_adjust_plus_50_tt"
 								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
 							}
