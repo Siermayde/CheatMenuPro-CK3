@@ -3897,8 +3897,8 @@ window = {
 				size = { 620 42 }
 				text = "sakuya_character_bookmark_title_1"
 				font = "TitleFont"
-				fontsize = 24
-				fontsize_min = 18
+				fontsize = 30
+				fontsize_min = 22
 				autoresize = no
 				align = left|nobaseline
 				default_format = "#COLOR:{0.639,0.581,0.492,1};bold;glow_color:{0,0,0,0.85}"
@@ -3999,110 +3999,984 @@ window = {
 			}
 
 
-			# ø® 1 / µ⁄ 1 “≥£∫”––ß±Íº«Ω«…´”≈œ»£ª√ª”–±Íº« ±Ωµº∂Œ™µ±«∞ÕÊº“°£
+			# Âç° 1 / Á¨¨ 1 È°µÔºöÊúâÊïàÊ†áËÆ∞ËßíËâ≤‰ºòÂÖàÔºõÊ≤°ÊúâÊ†áËÆ∞Êó∂ÈôçÁ∫ß‰∏∫ÂΩìÂâçÁé©ÂÆ∂„ÄÇ
 			widget = {
 				name = "sakuya_guiname_home_overview"
 				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_1')]"
 				size = { 797 454 }
 				using = Animation_ShowHide_Standard
-			widget = {
-				name = "sakuya_guiname_home_overview_marked"
-				datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
-				visible = "[And(GetGlobalVariable('sakuya_marked_character').IsSet, And(Character.IsValid, Character.IsAlive))]"
-				size = { 797 454 }
 
-				# ’™“™«¯”Ú£∫”Î HTML ≤Œøºµƒ {4,0}/{789,88} ∂‘∆Î°£
 				widget = {
-					position = { 4 0 }
-					size = { 789 88 }
-					widget = { position = { 10 26 } size = { 220 54 } icon = { size = { 220 54 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 8 16 } size = { 204 24 } text = "[Character.GetFirstNameNicknamedNoTooltipRegnal]" fontsize = 16 fontsize_min = 11 autoresize = no align = center|nobaseline } }
-					widget = { position = { 238 26 } size = { 128 54 } icon = { size = { 128 54 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 116 16 } text = "sakuya_home_age" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } text_single = { position = { 6 23 } size = { 116 22 } text = "[Character.GetAge]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 374 28 } size = { 128 50 } icon = { size = { 128 50 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 116 16 } text = "sakuya_home_culture" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } widget = { datacontext = "[Character.GetCulture]" visible = "[Culture.IsValid]" size = { 128 50 } text_single = { position = { 6 23 } size = { 116 22 } text = "[Culture.GetNameNoTooltip]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline } } }
-					widget = { position = { 510 28 } size = { 128 50 } icon = { size = { 128 50 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 116 16 } text = "sakuya_home_faith" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } widget = { datacontext = "[Character.GetFaith]" visible = "[Faith.IsValid]" size = { 128 50 } text_single = { position = { 6 23 } size = { 116 22 } text = "[Faith.GetNameNoTooltip]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline } } }
-					widget = { position = { 646 28 } size = { 133 50 } visible = "[Character.GetPrimaryTitle.IsValid]" icon = { size = { 133 50 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 121 16 } text = "sakuya_home_primary_title" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } text_single = { position = { 6 23 } size = { 121 22 } text = "[Character.GetPrimaryTitle.GetNameNoTooltip]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-				}
+					name = "sakuya_guiname_home_overview_marked"
+					datacontext = "[GetGlobalVariable('sakuya_marked_character').Char]"
+					visible = "[And(GetGlobalVariable('sakuya_marked_character').IsSet, And(Character.IsValid, Character.IsAlive))]"
+					size = { 797 454 }
 
-				# ¡˘Œ¨«¯”Ú£∫”Î HTML ≤Œøºµƒ {4,96}/{789,150} ∂‘∆Î°£
-				widget = {
-					position = { 4 96 }
-					size = { 789 150 }
-					hbox = {
-						position = { 10 30 }
-						size = { 779 110 }
-						spacing = 6
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/lifestyles/diplomacy_lifestyle.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_diplomacy" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'diplomacy' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_martial.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_martial" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'martial' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_stewardship.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_stewardship" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'stewardship' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_intrigue.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_intrigue" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'intrigue' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_learning.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_learning" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'learning' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_prowess.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_prowess" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'prowess' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
+					# ÊëòË¶ÅÂå∫ÂüüÔºö‰øùÊåÅ HTML ÂèÇËÄÉÁöÑ {4,0}/{789,88} Âá†‰ΩïÔºåÊîæÂ§ßÊ∏∏ÊàèÂÜÖÂ≠óÂè∑„ÄÇ
+					widget = {
+						position = { 4 0 }
+						size = { 789 88 }
+						widget = {
+							position = { 10 20 }
+							size = { 220 62 }
+							icon = { position = { 0 61 } size = { 220 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 8 16 } size = { 168 30 } text = "[Character.GetFirstNameNicknamedNoTooltipRegnal]" fontsize = 20 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 184 15 }
+								size = { 30 30 }
+								enabled = no
+								tooltip = "sakuya_page_btn_placeholder_tt"
+								text_single = { parentanchor = center size = { 30 30 } text = "sakuya_home_btn_edit" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 238 20 }
+							size = { 128 62 }
+							icon = { position = { 0 61 } size = { 128 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 6 3 } size = { 116 20 } text = "sakuya_home_age" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+							button_standard = {
+								position = { 6 27 }
+								size = { 30 27 }
+								enabled = no
+								tooltip = "sakuya_page_btn_placeholder_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							text_single = { position = { 39 29 } size = { 50 24 } text = "[Character.GetAge]" fontsize = 17 fontsize_min = 13 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 92 27 }
+								size = { 30 27 }
+								enabled = no
+								tooltip = "sakuya_page_btn_placeholder_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 374 22 }
+							size = { 128 58 }
+							icon = { position = { 0 57 } size = { 128 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 7 4 } size = { 114 19 } text = "sakuya_home_culture" fontsize = 14 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							widget = { datacontext = "[Character.GetCulture]" visible = "[Culture.IsValid]" size = { 128 58 } text_single = { position = { 7 26 } size = { 100 25 } text = "[Culture.GetNameNoTooltip]" fontsize = 17 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
+							text_single = { position = { 106 26 } size = { 15 25 } text = "sakuya_home_link_arrow" fontsize = 18 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						}
+						widget = {
+							position = { 510 22 }
+							size = { 128 58 }
+							icon = { position = { 0 57 } size = { 128 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 7 4 } size = { 114 19 } text = "sakuya_home_faith" fontsize = 14 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							widget = { datacontext = "[Character.GetFaith]" visible = "[Faith.IsValid]" size = { 128 58 } text_single = { position = { 7 26 } size = { 100 25 } text = "[Faith.GetNameNoTooltip]" fontsize = 17 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
+							text_single = { position = { 106 26 } size = { 15 25 } text = "sakuya_home_link_arrow" fontsize = 18 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						}
+						widget = {
+							position = { 646 22 }
+							size = { 133 58 }
+							visible = "[Character.GetPrimaryTitle.IsValid]"
+							icon = { position = { 0 57 } size = { 133 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 7 4 } size = { 119 19 } text = "sakuya_home_primary_title" fontsize = 14 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 7 26 } size = { 104 25 } text = "[Character.GetPrimaryTitle.GetNameNoTooltip]" fontsize = 17 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							text_single = { position = { 111 26 } size = { 15 25 } text = "sakuya_home_link_arrow" fontsize = 18 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						}
+					}
+
+					# ÂÖ≠Áª¥Âå∫ÂüüÔºö‰øùÁïôÂèÇËÄÉÁ®øÂçïË°åÂØÜÂ∫¶ÔºåÂπ∂Âä†ÂÖ•ÁúüÂÆû +/-1„ÄÇ
+					widget = {
+						position = { 4 96 }
+						size = { 789 150 }
+						hbox = {
+							position = { 10 28 }
+							size = { 779 110 }
+							spacing = 6
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/lifestyles/diplomacy_lifestyle.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_diplomacy" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'diplomacy' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_martial.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_martial" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'martial' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_martial_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_martial_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_martial_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_martial_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_stewardship.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_stewardship" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'stewardship' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_intrigue.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_intrigue" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'intrigue' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_learning.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_learning" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'learning' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_learning_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_learning_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_learning_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_learning_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_prowess.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_prowess" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'prowess' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_prowess_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_prowess_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_prowess_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_prowess_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+						}
+					}
+
+					# È´òÈ¢ëËµÑÊ∫êÂíåÁä∂ÊÄÅÔºöÂèÇËÄÉÁ®øÁöÑÂõõÊ°£ÊåâÈíÆ‰∏éÂàÜÊ†è„ÄÇ
+					widget = {
+						position = { 4 254 }
+						size = { 789 196 }
+						text_single = { position = { 10 22 } size = { 160 22 } text = "sakuya_home_resources" fontsize = 16 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						text_single = { position = { 450 22 } size = { 160 22 } text = "sakuya_home_status" fontsize = 16 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						icon = { position = { 439 27 } size = { 1 161 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+						widget = {
+							position = { 10 48 }
+							size = { 420 34 }
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/icon_gold.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_gold" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetGold|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_1000_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_100_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_100_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_1000_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 10 84 }
+							size = { 420 34 }
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/flat_icons/prestige.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_prestige" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetPrestige|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 10 120 }
+							size = { 420 34 }
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/flat_icons/piety.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_piety" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetPiety|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 10 156 }
+							size = { 420 34 }
+							visible = "[Character.ShouldShowLegitimacy]"
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+						icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/legitimacy_level_icon.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_legitimacy" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetLegitimacy|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_10_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_1_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_1_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_10_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 450 48 }
+							size = { 326 34 }
+							icon = { position = { 0 33 } size = { 326 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/stress/icon_stress.dds" }
+							text_single = { position = { 34 7 } size = { 90 21 } text = "sakuya_home_stress" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 128 7 } size = { 54 21 } text = "[Character.GetStressProgress|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 190 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 224 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 258 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 292 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 450 84 }
+							size = { 326 34 }
+							visible = "[Character.HasLandedTitles]"
+							icon = { position = { 0 33 } size = { 326 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/icon_dread.dds" }
+							text_single = { position = { 34 7 } size = { 90 21 } text = "sakuya_home_dread" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 128 7 } size = { 54 21 } text = "[Character.GetDread|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" tooltip = "[Character.GetDreadBreakdown]" }
+							button_standard = {
+								position = { 190 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 224 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 258 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 292 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 450 120 }
+							size = { 326 34 }
+							icon = { position = { 0 33 } size = { 326 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							text_single = { position = { 34 7 } size = { 90 21 } text = "sakuya_home_health" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							icon = { position = { 143 5 } visible = "[Not( Character.IsDeadAndValid )]" size = { 24 24 } framesize = { 60 60 } frame = "[Character.GetHealthIconFrame]" texture = "gfx/interface/icons/character_status/icon_health.dds" tooltip = "[Character.GetHealthInfo]" }
+							icon = { position = { 143 5 } visible = "[Character.IsDeadAndValid]" size = { 24 24 } texture = "gfx/interface/icons/character_status/icon_dead.dds" tooltip = "CHARACTER_DEAD_TOOLTIP" }
+						}
 					}
 				}
 
-				# ∏ﬂ∆µ◊ ‘¥∫Õ◊¥Ã¨£∫”Î HTML ≤Œøºµƒ {4,254}/{789,196} ∂‘∆Î°£
 				widget = {
-					position = { 4 254 }
-					size = { 789 196 }
-					text_single = { position = { 10 28 } size = { 160 16 } text = "sakuya_home_resources" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
-					text_single = { position = { 450 28 } size = { 160 16 } text = "sakuya_home_status" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
-					widget = { position = { 10 48 } size = { 420 32 } icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/icon_gold.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_gold" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetGold|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 10 84 } size = { 420 32 } icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/flat_icons/prestige.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_prestige" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetPrestige|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 10 120 } size = { 420 32 } icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/flat_icons/piety.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_piety" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetPiety|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 10 156 } size = { 420 32 } visible = "[Character.ShouldShowLegitimacy]" icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_legitimacy" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } widget = { position = { 145 1 } size = { 200 30 } datacontext = "[Character.GetLegitimacyType]" datacontext = "[Character.GetLegitimacyLevel]" hbox = { spacing = 3 icon = { size = { 30 30 } texture = "[Character.GetLegitimacyType.GetLevelsIcon]" framesize = { 70 70 } frame = "[IntToFrameIndex( LegitimacyLevel.GetIndex )]" } text_single = { text = CHARACTER_WINDOW_LEGITIMACY_LEVEL align = nobaseline } } } }
-					widget = { position = { 450 48 } size = { 326 32 } icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/stress/icon_stress.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_stress_level" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetStressLevel]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 450 84 } size = { 326 32 } visible = "[Character.HasLandedTitles]" icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/icon_dread.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_dread" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetDread|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 450 120 } size = { 326 32 } icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } text_single = { position = { 30 6 } size = { 105 20 } text = "sakuya_home_health" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } icon = { position = { 150 4 } visible = "[Not( Character.IsDeadAndValid )]" size = { 23 23 } framesize = { 60 60 } frame = "[Character.GetHealthIconFrame]" texture = "gfx/interface/icons/character_status/icon_health.dds" tooltip = "CHARACTER_VIEW_ALIVE_TT" } icon = { position = { 150 4 } visible = "[Character.IsDeadAndValid]" size = { 23 23 } texture = "gfx/interface/icons/character_status/icon_dead.dds" tooltip = "CHARACTER_DEAD_TOOLTIP" } }
-				}
-			}
-			widget = {
-				name = "sakuya_guiname_home_overview_player"
-				datacontext = "[GetPlayer]"
-				visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), GetPlayer.IsValid)]"
-				size = { 797 454 }
+					name = "sakuya_guiname_home_overview_player"
+					datacontext = "[GetPlayer]"
+					visible = "[And(Not(GetGlobalVariable('sakuya_marked_character').IsSet), GetPlayer.IsValid)]"
+					size = { 797 454 }
 
-				# ’™“™«¯”Ú£∫”Î HTML ≤Œøºµƒ {4,0}/{789,88} ∂‘∆Î°£
-				widget = {
-					position = { 4 0 }
-					size = { 789 88 }
-					widget = { position = { 10 26 } size = { 220 54 } icon = { size = { 220 54 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 8 16 } size = { 204 24 } text = "[Character.GetFirstNameNicknamedNoTooltipRegnal]" fontsize = 16 fontsize_min = 11 autoresize = no align = center|nobaseline } }
-					widget = { position = { 238 26 } size = { 128 54 } icon = { size = { 128 54 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 116 16 } text = "sakuya_home_age" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } text_single = { position = { 6 23 } size = { 116 22 } text = "[Character.GetAge]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 374 28 } size = { 128 50 } icon = { size = { 128 50 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 116 16 } text = "sakuya_home_culture" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } widget = { datacontext = "[Character.GetCulture]" visible = "[Culture.IsValid]" size = { 128 50 } text_single = { position = { 6 23 } size = { 116 22 } text = "[Culture.GetNameNoTooltip]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline } } }
-					widget = { position = { 510 28 } size = { 128 50 } icon = { size = { 128 50 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 116 16 } text = "sakuya_home_faith" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } widget = { datacontext = "[Character.GetFaith]" visible = "[Faith.IsValid]" size = { 128 50 } text_single = { position = { 6 23 } size = { 116 22 } text = "[Faith.GetNameNoTooltip]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline } } }
-					widget = { position = { 646 28 } size = { 133 50 } visible = "[Character.GetPrimaryTitle.IsValid]" icon = { size = { 133 50 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.42 } text_single = { position = { 6 4 } size = { 121 16 } text = "sakuya_home_primary_title" fontsize = 11 fontsize_min = 8 autoresize = no align = left|nobaseline } text_single = { position = { 6 23 } size = { 121 22 } text = "[Character.GetPrimaryTitle.GetNameNoTooltip]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-				}
+					# ÊëòË¶ÅÂå∫ÂüüÔºö‰øùÊåÅ HTML ÂèÇËÄÉÁöÑ {4,0}/{789,88} Âá†‰ΩïÔºåÊîæÂ§ßÊ∏∏ÊàèÂÜÖÂ≠óÂè∑„ÄÇ
+					widget = {
+						position = { 4 0 }
+						size = { 789 88 }
+						widget = {
+							position = { 10 20 }
+							size = { 220 62 }
+							icon = { position = { 0 61 } size = { 220 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 8 16 } size = { 168 30 } text = "[Character.GetFirstNameNicknamedNoTooltipRegnal]" fontsize = 20 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 184 15 }
+								size = { 30 30 }
+								enabled = no
+								tooltip = "sakuya_page_btn_placeholder_tt"
+								text_single = { parentanchor = center size = { 30 30 } text = "sakuya_home_btn_edit" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 238 20 }
+							size = { 128 62 }
+							icon = { position = { 0 61 } size = { 128 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 6 3 } size = { 116 20 } text = "sakuya_home_age" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+							button_standard = {
+								position = { 6 27 }
+								size = { 30 27 }
+								enabled = no
+								tooltip = "sakuya_page_btn_placeholder_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							text_single = { position = { 39 29 } size = { 50 24 } text = "[Character.GetAge]" fontsize = 17 fontsize_min = 13 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 92 27 }
+								size = { 30 27 }
+								enabled = no
+								tooltip = "sakuya_page_btn_placeholder_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 374 22 }
+							size = { 128 58 }
+							icon = { position = { 0 57 } size = { 128 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 7 4 } size = { 114 19 } text = "sakuya_home_culture" fontsize = 14 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							widget = { datacontext = "[Character.GetCulture]" visible = "[Culture.IsValid]" size = { 128 58 } text_single = { position = { 7 26 } size = { 100 25 } text = "[Culture.GetNameNoTooltip]" fontsize = 17 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
+							text_single = { position = { 106 26 } size = { 15 25 } text = "sakuya_home_link_arrow" fontsize = 18 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						}
+						widget = {
+							position = { 510 22 }
+							size = { 128 58 }
+							icon = { position = { 0 57 } size = { 128 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 7 4 } size = { 114 19 } text = "sakuya_home_faith" fontsize = 14 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							widget = { datacontext = "[Character.GetFaith]" visible = "[Faith.IsValid]" size = { 128 58 } text_single = { position = { 7 26 } size = { 100 25 } text = "[Faith.GetNameNoTooltip]" fontsize = 17 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
+							text_single = { position = { 106 26 } size = { 15 25 } text = "sakuya_home_link_arrow" fontsize = 18 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						}
+						widget = {
+							position = { 646 22 }
+							size = { 133 58 }
+							visible = "[Character.GetPrimaryTitle.IsValid]"
+							icon = { position = { 0 57 } size = { 133 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+							text_single = { position = { 7 4 } size = { 119 19 } text = "sakuya_home_primary_title" fontsize = 14 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 7 26 } size = { 104 25 } text = "[Character.GetPrimaryTitle.GetNameNoTooltip]" fontsize = 17 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							text_single = { position = { 111 26 } size = { 15 25 } text = "sakuya_home_link_arrow" fontsize = 18 fontsize_min = 14 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						}
+					}
 
-				# ¡˘Œ¨«¯”Ú£∫”Î HTML ≤Œøºµƒ {4,96}/{789,150} ∂‘∆Î°£
-				widget = {
-					position = { 4 96 }
-					size = { 789 150 }
-					hbox = {
-						position = { 10 30 }
-						size = { 779 110 }
-						spacing = 6
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/lifestyles/diplomacy_lifestyle.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_diplomacy" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'diplomacy' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_martial.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_martial" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'martial' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_stewardship.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_stewardship" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'stewardship' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_intrigue.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_intrigue" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'intrigue' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_skill_learning.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_learning" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'learning' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { size = { 124 110 } icon = { size = { 124 110 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 8 8 } alpha = 0.40 } icon = { parentanchor = top|hcenter position = { 0 6 } size = { 28 28 } texture = "gfx/interface/icons/icon_prowess.dds" } text_single = { position = { 4 36 } size = { 116 16 } text = "sakuya_home_prowess" fontsize = 11 fontsize_min = 8 autoresize = no align = center|nobaseline } text_single = { position = { 4 53 } size = { 116 28 } text = "[Character.GetSkill( 'prowess' )]" fontsize = 20 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
+					# ÂÖ≠Áª¥Âå∫ÂüüÔºö‰øùÁïôÂèÇËÄÉÁ®øÂçïË°åÂØÜÂ∫¶ÔºåÂπ∂Âä†ÂÖ•ÁúüÂÆû +/-1„ÄÇ
+					widget = {
+						position = { 4 96 }
+						size = { 789 150 }
+						hbox = {
+							position = { 10 28 }
+							size = { 779 110 }
+							spacing = 6
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/lifestyles/diplomacy_lifestyle.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_diplomacy" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'diplomacy' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_diplomacy_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_diplomacy_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_martial.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_martial" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'martial' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_martial_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_martial_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_martial_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_martial_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_stewardship.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_stewardship" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'stewardship' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_stewardship_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_stewardship_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_intrigue.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_intrigue" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'intrigue' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_intrigue_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_intrigue_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_skill_learning.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_learning" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'learning' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_learning_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_learning_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_learning_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_learning_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+							widget = {
+								size = { 124 110 }
+								icon = { size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.75 } }
+								icon = { position = { 0 109 } size = { 124 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.55 } }
+								icon = { parentanchor = top|hcenter position = { 0 4 } size = { 30 30 } texture = "gfx/interface/icons/icon_prowess.dds" }
+								text_single = { position = { 4 34 } size = { 116 20 } text = "sakuya_home_prowess" fontsize = 14 fontsize_min = 11 autoresize = no align = center|nobaseline }
+								text_single = { position = { 4 52 } size = { 116 29 } text = "[Character.GetSkill( 'prowess' )]" fontsize = 23 fontsize_min = 17 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								button_standard = {
+									position = { 12 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_prowess_minus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_prowess_minus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_minus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+								button_standard = {
+									position = { 70 82 }
+									size = { 42 26 }
+									enabled = "[GetScriptedGui('sakuya_home_prowess_plus_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									onclick = "[GetScriptedGui('sakuya_home_prowess_plus_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									tooltip = "sakuya_home_adjust_plus_1_tt"
+									text_single = { parentanchor = center size = { 42 26 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+								}
+							}
+						}
+					}
+
+					# È´òÈ¢ëËµÑÊ∫êÂíåÁä∂ÊÄÅÔºöÂèÇËÄÉÁ®øÁöÑÂõõÊ°£ÊåâÈíÆ‰∏éÂàÜÊ†è„ÄÇ
+					widget = {
+						position = { 4 254 }
+						size = { 789 196 }
+						text_single = { position = { 10 22 } size = { 160 22 } text = "sakuya_home_resources" fontsize = 16 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						text_single = { position = { 450 22 } size = { 160 22 } text = "sakuya_home_status" fontsize = 16 fontsize_min = 12 autoresize = no align = left|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+						icon = { position = { 439 27 } size = { 1 161 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+						widget = {
+							position = { 10 48 }
+							size = { 420 34 }
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/icon_gold.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_gold" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetGold|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_minus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_1000_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_minus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_100_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_plus_100_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_100_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_gold_plus_1000_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_1000_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 10 84 }
+							size = { 420 34 }
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/flat_icons/prestige.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_prestige" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetPrestige|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_prestige_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 10 120 }
+							size = { 420 34 }
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/flat_icons/piety.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_piety" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetPiety|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_minus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_piety_plus_500_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_500_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 10 156 }
+							size = { 420 34 }
+							visible = "[Character.ShouldShowLegitimacy]"
+							icon = { position = { 0 33 } size = { 420 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+						icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/legitimacy_level_icon.dds" }
+							text_single = { position = { 34 7 } size = { 100 21 } text = "sakuya_home_legitimacy" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 138 7 } size = { 120 21 } text = "[Character.GetLegitimacy|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 270 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_10_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 307 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_minus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_1_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 344 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_1_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_1_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 381 3 }
+								size = { 32 27 }
+								enabled = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_legitimacy_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_10_tt"
+								text_single = { parentanchor = center size = { 32 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 450 48 }
+							size = { 326 34 }
+							icon = { position = { 0 33 } size = { 326 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/stress/icon_stress.dds" }
+							text_single = { position = { 34 7 } size = { 90 21 } text = "sakuya_home_stress" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 128 7 } size = { 54 21 } text = "[Character.GetStressProgress|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							button_standard = {
+								position = { 190 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 224 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 258 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 292 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_stress_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 450 84 }
+							size = { 326 34 }
+							visible = "[Character.HasLandedTitles]"
+							icon = { position = { 0 33 } size = { 326 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							icon = { position = { 4 5 } size = { 24 24 } texture = "gfx/interface/icons/icon_dread.dds" }
+							text_single = { position = { 34 7 } size = { 90 21 } text = "sakuya_home_dread" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							text_single = { position = { 128 7 } size = { 54 21 } text = "[Character.GetDread|0]" fontsize = 17 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" tooltip = "[Character.GetDreadBreakdown]" }
+							button_standard = {
+								position = { 190 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_minus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 224 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_minus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_minus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_minus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 258 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_plus_10_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_10_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+							button_standard = {
+								position = { 292 3 }
+								size = { 30 27 }
+								enabled = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').IsValid( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								onclick = "[GetScriptedGui('sakuya_home_dread_plus_50_gui').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+								tooltip = "sakuya_home_adjust_plus_50_tt"
+								text_single = { parentanchor = center size = { 30 27 } text = "sakuya_home_btn_far_plus" fontsize = 16 fontsize_min = 12 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" }
+							}
+						}
+						widget = {
+							position = { 450 120 }
+							size = { 326 34 }
+							icon = { position = { 0 33 } size = { 326 1 } texture = "gfx/interface/component_tiles/tile_window_background.dds" color = { 0.86 0.70 0.35 0.42 } }
+							text_single = { position = { 34 7 } size = { 90 21 } text = "sakuya_home_health" fontsize = 15 fontsize_min = 11 autoresize = no align = left|nobaseline }
+							icon = { position = { 143 5 } visible = "[Not( Character.IsDeadAndValid )]" size = { 24 24 } framesize = { 60 60 } frame = "[Character.GetHealthIconFrame]" texture = "gfx/interface/icons/character_status/icon_health.dds" tooltip = "[Character.GetHealthInfo]" }
+							icon = { position = { 143 5 } visible = "[Character.IsDeadAndValid]" size = { 24 24 } texture = "gfx/interface/icons/character_status/icon_dead.dds" tooltip = "CHARACTER_DEAD_TOOLTIP" }
+						}
 					}
 				}
-
-				# ∏ﬂ∆µ◊ ‘¥∫Õ◊¥Ã¨£∫”Î HTML ≤Œøºµƒ {4,254}/{789,196} ∂‘∆Î°£
-				widget = {
-					position = { 4 254 }
-					size = { 789 196 }
-					text_single = { position = { 10 28 } size = { 160 16 } text = "sakuya_home_resources" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
-					text_single = { position = { 450 28 } size = { 160 16 } text = "sakuya_home_status" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline }
-					widget = { position = { 10 48 } size = { 420 32 } icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/icon_gold.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_gold" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetGold|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 10 84 } size = { 420 32 } icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/flat_icons/prestige.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_prestige" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetPrestige|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 10 120 } size = { 420 32 } icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/flat_icons/piety.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_piety" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetPiety|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 10 156 } size = { 420 32 } visible = "[Character.ShouldShowLegitimacy]" icon = { size = { 420 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_legitimacy" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } widget = { position = { 145 1 } size = { 200 30 } datacontext = "[Character.GetLegitimacyType]" datacontext = "[Character.GetLegitimacyLevel]" hbox = { spacing = 3 icon = { size = { 30 30 } texture = "[Character.GetLegitimacyType.GetLevelsIcon]" framesize = { 70 70 } frame = "[IntToFrameIndex( LegitimacyLevel.GetIndex )]" } text_single = { text = CHARACTER_WINDOW_LEGITIMACY_LEVEL align = nobaseline } } } }
-					widget = { position = { 450 48 } size = { 326 32 } icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/stress/icon_stress.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_stress_level" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetStressLevel]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 450 84 } size = { 326 32 } visible = "[Character.HasLandedTitles]" icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } icon = { position = { 4 4 } size = { 22 22 } texture = "gfx/interface/icons/icon_dread.dds" } text_single = { position = { 32 6 } size = { 105 20 } text = "sakuya_home_dread" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } text_single = { position = { 145 6 } size = { 95 20 } text = "[Character.GetDread|0]" fontsize = 13 fontsize_min = 9 autoresize = no align = center|nobaseline default_format = "#COLOR:{0.863,0.776,0.557,1}" } }
-					widget = { position = { 450 120 } size = { 326 32 } icon = { size = { 326 32 } texture = "gfx/interface/component_tiles/tile_window_background.dds" spriteType = Corneredstretched spriteborder = { 6 6 } alpha = 0.34 } text_single = { position = { 30 6 } size = { 105 20 } text = "sakuya_home_health" fontsize = 12 fontsize_min = 9 autoresize = no align = left|nobaseline } icon = { position = { 150 4 } visible = "[Not( Character.IsDeadAndValid )]" size = { 23 23 } framesize = { 60 60 } frame = "[Character.GetHealthIconFrame]" texture = "gfx/interface/icons/character_status/icon_health.dds" tooltip = "CHARACTER_VIEW_ALIVE_TT" } icon = { position = { 150 4 } visible = "[Character.IsDeadAndValid]" size = { 23 23 } texture = "gfx/interface/icons/character_status/icon_dead.dds" tooltip = "CHARACTER_DEAD_TOOLTIP" } }
-				}
-			}
 			}
 			widget = {
 				visible = "[GetVariableSystem.HasValue('sakuya_character_bookmark', 'item_2')]"

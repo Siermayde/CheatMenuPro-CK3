@@ -1,0 +1,413 @@
+sakuya_home_diplomacy_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		diplomacy >= 1
+	}
+	effect = {
+		add_diplomacy_skill = -1
+	}
+}
+
+sakuya_home_diplomacy_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_diplomacy_skill = 1
+	}
+}
+
+sakuya_home_martial_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		martial >= 1
+	}
+	effect = {
+		add_martial_skill = -1
+	}
+}
+
+sakuya_home_martial_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_martial_skill = 1
+	}
+}
+
+sakuya_home_stewardship_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		stewardship >= 1
+	}
+	effect = {
+		add_stewardship_skill = -1
+	}
+}
+
+sakuya_home_stewardship_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_stewardship_skill = 1
+	}
+}
+
+sakuya_home_intrigue_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		intrigue >= 1
+	}
+	effect = {
+		add_intrigue_skill = -1
+	}
+}
+
+sakuya_home_intrigue_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_intrigue_skill = 1
+	}
+}
+
+sakuya_home_learning_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		learning >= 1
+	}
+	effect = {
+		add_learning_skill = -1
+	}
+}
+
+sakuya_home_learning_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_learning_skill = 1
+	}
+}
+
+sakuya_home_prowess_minus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		prowess >= 1
+	}
+	effect = {
+		add_prowess_skill = -1
+	}
+}
+
+sakuya_home_prowess_plus_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_prowess_skill = 1
+	}
+}
+
+sakuya_home_gold_minus_1000_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		gold >= 1000
+	}
+	effect = {
+		add_gold = -1000
+	}
+}
+
+sakuya_home_gold_minus_100_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		gold >= 100
+	}
+	effect = {
+		add_gold = -100
+	}
+}
+
+sakuya_home_gold_plus_100_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_gold = 100
+	}
+}
+
+sakuya_home_gold_plus_1000_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_gold = 1000
+	}
+}
+
+sakuya_home_prestige_minus_500_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		prestige >= 500
+	}
+	effect = {
+		add_prestige = -500
+	}
+}
+
+sakuya_home_prestige_minus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		prestige >= 50
+	}
+	effect = {
+		add_prestige = -50
+	}
+}
+
+sakuya_home_prestige_plus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_prestige = 50
+	}
+}
+
+sakuya_home_prestige_plus_500_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_prestige = 500
+	}
+}
+
+sakuya_home_piety_minus_500_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		piety >= 500
+	}
+	effect = {
+		add_piety = -500
+	}
+}
+
+sakuya_home_piety_minus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		piety >= 50
+	}
+	effect = {
+		add_piety = -50
+	}
+}
+
+sakuya_home_piety_plus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_piety = 50
+	}
+}
+
+sakuya_home_piety_plus_500_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_piety = 500
+	}
+}
+
+sakuya_home_legitimacy_minus_10_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		legitimacy >= 10
+	}
+	effect = {
+		add_legitimacy = -10
+	}
+}
+
+sakuya_home_legitimacy_minus_1_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		legitimacy >= 1
+	}
+	effect = {
+		add_legitimacy = -1
+	}
+}
+
+sakuya_home_legitimacy_plus_1_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_legitimacy = 1
+	}
+}
+
+sakuya_home_legitimacy_plus_10_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_legitimacy = 10
+	}
+}
+
+sakuya_home_stress_minus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		stress >= 50
+	}
+	effect = {
+		add_stress = -50
+	}
+}
+
+sakuya_home_stress_minus_10_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		stress >= 10
+	}
+	effect = {
+		add_stress = -10
+	}
+}
+
+sakuya_home_stress_plus_10_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_stress = 10
+	}
+}
+
+sakuya_home_stress_plus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_stress = 50
+	}
+}
+
+sakuya_home_dread_minus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		dread >= 50
+	}
+	effect = {
+		add_dread = -50
+	}
+}
+
+sakuya_home_dread_minus_10_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+		dread >= 10
+	}
+	effect = {
+		add_dread = -10
+	}
+}
+
+sakuya_home_dread_plus_10_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_dread = 10
+	}
+}
+
+sakuya_home_dread_plus_50_gui = {
+	scope = character
+	is_shown = { always = yes }
+	is_valid = {
+		is_alive = yes
+	}
+	effect = {
+		add_dread = 50
+	}
+}
